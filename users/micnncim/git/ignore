@@ -1,0 +1,17 @@
+.DS_Store
+.envrc
+.idea
+.netrwhist
+.node-version
+.vscode
+*.iml
+*.log
+*.pem
+*~
+/.direnv/
+/.nix/
+/.pre-commit-config.yaml
+/.secrets/
+/.scripts/
+/.testdata/
+/shell.nix

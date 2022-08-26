@@ -1,0 +1,37 @@
+[files]
+extend-exclude = [ 
+    "*.json",
+    "*.toml",
+    "*generate*",
+    "go.mod", 
+    "go.sum",
+    "node_modules",
+    "vendor", 
+]
+ignore-hidden = true
+ignore-files = true
+ignore-dot = true
+ignore-vcs = true
+ignore-global = true
+ignore-parent = true
+
+[default]
+binary = false
+check-filename = true
+check-file = true
+unicode = true
+ignore-hex = true
+identifier-leading-digits = false
+locale = "en"
+
+[default.extend-identifiers]
+
+[default.extend-words]
+
+[type.cert]
+extend-glob = []
+check-file = false
+
+[type.lock]
+extend-glob = []
+check-file = false

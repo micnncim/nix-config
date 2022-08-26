@@ -1,0 +1,85 @@
+# https://starship.rs
+
+# https://starship.rs/config/#prompt
+format = """\
+  $directory\
+  $git_branch\
+  $git_commit\
+  $git_state\
+  $git_status\
+  ${custom.pr_status}\
+  $time\
+  $cmd_duration\
+  $line_break\
+  $kubernetes\
+  $line_break\
+  $gcloud\
+  $line_break\
+  $character\
+  """
+
+# https://starship.rs/config/#character
+[character]
+format = "$symbol  "
+success_symbol = "[•](bold green)"
+error_symbol = "[•](bold red)"
+vicmd_symbol = "[V](bold green)"
+
+# https://starship.rs/config/#directory
+[directory]
+format="[$path]($style)[$read_only]($read_only_style) "
+style = "blue"
+truncation_length = 100 # suppress truncation
+truncate_to_repo = false
+
+# https://starship.rs/config/#time
+[time]
+disabled = false
+format = '[$time]($style) '
+style = 'yellow'
+time_format = "%T"
+utc_time_offset = "local"
+time_range = "-"
+
+# https://starship.rs/config/#command-duration
+[cmd_duration]
+format = "[$duration]($style) "
+min_time = 1000
+style = "yellow"
+
+# https://starship.rs/config/#git-branch
+[git_branch]
+format = "[$symbol$branch]($style) "
+symbol = "ψ "
+style = "green"
+
+# https://starship.rs/config/#git-status
+[git_status]
+format = "[(\\[$all_status$ahead_behind\\] )]($style)"
+style = "green"
+
+# https://starship.rs/config/#git-state
+[git_state]
+format = "\\([$state( $progress_current/$progress_total )]($style)\\)"
+style = "bold yellow"
+
+# https://starship.rs/config/#kubernetes
+[kubernetes]
+format = "[$symbol$context( \\($namespace\\))]($style)"
+symbol = "☸  "
+style = "cyan"
+disabled = false
+
+# https://starship.rs/config/#gcloud
+[gcloud]
+format = "[$symbol$account(@$domain) (\\($project:$region\\)) (\\[$active\\])]($style) "
+symbol = "☁️  "
+style =	"blue"
+
+# https://starship.rs/config/#custom-commands
+[custom.pr_status]
+command = "gh-pr-status" # https://github.com/micnncim/gh-commands/blob/main/commands/gh-pr-status
+when = "[ -d .git ]"
+format = "[$output]($style) "
+style = "cyan"
+ignore_timeout = true

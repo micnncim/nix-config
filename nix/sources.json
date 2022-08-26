@@ -1,0 +1,110 @@
+{
+    "dagger": {
+        "branch": "v0.2.31",
+        "description": "A portable devkit for CI/CD pipelines",
+        "homepage": "https://dagger.io",
+        "owner": "dagger",
+        "repo": "dagger",
+        "rev": "8146f4d9a2c8ca715c856365dd5c8bb25203f384",
+        "sha256": "1j5qgj2hx1r45hdfd5ihx1xq27acf7sgd8imlkm4p1rjsnva510v",
+        "type": "tarball",
+        "url": "https://github.com/dagger/dagger/archive/8146f4d9a2c8ca715c856365dd5c8bb25203f384.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "fish-bass": {
+        "branch": "master",
+        "description": "Make Bash utilities usable in Fish shell",
+        "homepage": null,
+        "owner": "edc",
+        "repo": "bass",
+        "rev": "2fd3d2157d5271ca3575b13daec975ca4c10577a",
+        "sha256": "0mb01y1d0g8ilsr5m8a71j6xmqlyhf8w4xjf00wkk8k41cz3ypky",
+        "type": "tarball",
+        "url": "https://github.com/edc/bass/archive/2fd3d2157d5271ca3575b13daec975ca4c10577a.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "fish-foreign-env": {
+        "branch": "master",
+        "description": "Run foreign bash scripts and capture exported environment variables",
+        "homepage": "",
+        "owner": "oh-my-fish",
+        "repo": "plugin-foreign-env",
+        "rev": "b3dd471bcc885b597c3922e4de836e06415e52dd",
+        "sha256": "13wdsvpazivlxk921ccqbk7gl6ya2md8f45rckbn8rn119ckf7fy",
+        "type": "tarball",
+        "url": "https://github.com/oh-my-fish/plugin-foreign-env/archive/b3dd471bcc885b597c3922e4de836e06415e52dd.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "fish-nix-env": {
+        "branch": "master",
+        "description": "Nix environment setup for the fish shell",
+        "homepage": "",
+        "owner": "lilyball",
+        "repo": "nix-env.fish",
+        "rev": "7b65bd228429e852c8fdfa07601159130a818cfa",
+        "sha256": "069ybzdj29s320wzdyxqjhmpm9ir5815yx6n522adav0z2nz8vs4",
+        "type": "tarball",
+        "url": "https://github.com/lilyball/nix-env.fish/archive/7b65bd228429e852c8fdfa07601159130a818cfa.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "fzf": {
+        "branch": "0.32.1",
+        "description": ":cherry_blossom: A command-line fuzzy finder",
+        "homepage": "",
+        "owner": "junegunn",
+        "repo": "fzf",
+        "rev": "4993d19466d5f3ac127de5c0c461cde7ef1894d7",
+        "sha256": "194xz7jrjsl9i88gy9kr90sw9aif9iskwdnhbq85l48h86hlrm42",
+        "type": "tarball",
+        "url": "https://github.com/junegunn/fzf/archive/4993d19466d5f3ac127de5c0c461cde7ef1894d7.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "gctx": {
+        "branch": "main",
+        "description": null,
+        "homepage": null,
+        "owner": "micnncim",
+        "repo": "gctx",
+        "rev": "76e8834ad0e997124f66d81e387845cd2207b376",
+        "sha256": "0s4w4x5jwpgmc6x9llfa5pysrvvqhjwqg6qsiclg4qhpm3z1n3q8",
+        "type": "tarball",
+        "url": "https://github.com/micnncim/gctx/archive/76e8834ad0e997124f66d81e387845cd2207b376.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "gh": {
+        "branch": "v2.14.7",
+        "description": "GitHub’s official command line tool",
+        "homepage": "https://cli.github.com",
+        "owner": "cli",
+        "repo": "cli",
+        "rev": "2fc0ffd0be5f438e581aaf4a448ed01b03883211",
+        "sha256": "09ni6a2arvlcpqjj7sj7aapn6pj315j91pd3rma9vjxjsfmlrsi0",
+        "type": "tarball",
+        "url": "https://github.com/cli/cli/archive/2fc0ffd0be5f438e581aaf4a448ed01b03883211.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "nixpkgs": {
+        "branch": "release-22.05",
+        "description": "Nix Packages collection",
+        "homepage": "",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "06ac9cdfe43f3c0fecfe98258996820c6005c6ea",
+        "sha256": "1pi348ymn7hjfr034ji2r4bic8w88avs7f47j4wy019nqmw8cgmv",
+        "type": "tarball",
+        "url": "https://github.com/NixOS/nixpkgs/archive/06ac9cdfe43f3c0fecfe98258996820c6005c6ea.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
+    "nixpkgs-unstable": {
+        "branch": "nixpkgs-unstable",
+        "description": "Nix Packages collection",
+        "homepage": "",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "963d27a0767422be9b8686a8493dcade6acee992",
+        "sha256": "054zd1q913zsshcj1jgvcaccjj1ab15k0hyg3q1cxnggg8p854qb",
+        "type": "tarball",
+        "url": "https://github.com/NixOS/nixpkgs/archive/963d27a0767422be9b8686a8493dcade6acee992.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    }
+}
