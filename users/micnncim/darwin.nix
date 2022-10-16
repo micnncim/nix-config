@@ -42,6 +42,9 @@ in
 
   services.nix-daemon.enable = true;
 
+  # Some GUI applications are not available on nixpkgs.
+  # Using Homebrew for convenience though it's possible to compose Nix packages
+  # for these applications.
   homebrew = {
     enable = true;
     casks = [
@@ -50,6 +53,7 @@ in
       "bartender"
       "cron"
       "discord"
+      "docker"
       "figma"
       "gather"
       "google-chrome"
