@@ -28,41 +28,23 @@
   outputs =
     { self, nixpkgs, nixpkgs-unstable, home-manager, darwin, ... }@inputs:
     let
-      system = "aarch64-darwin";
-      username = "micnncim";
-      hostname = "${username}";
+      mkDarwin = import ./lib/mk-darwin.nix;
 
-      nixpkgsConfig = {
-        config = { allowUnfree = true; };
-        overlays = import ./lib/overlays.nix ++ [
-          (final: prev: {
-            go = inputs.nixpkgs-unstable.legacyPackages.${prev.system}.go_1_19;
-            inherit (inputs.nixpkgs-unstable.legacyPackages.${prev.system})
-              gh gopls;
-          })
-        ];
-      };
+      overlays = import ./lib/overlays.nix ++ [
+        (final: prev: {
+          go = inputs.nixpkgs-unstable.legacyPackages.${prev.system}.go_1_19;
+          inherit (inputs.nixpkgs-unstable.legacyPackages.${prev.system})
+            gh gopls;
+        })
+      ];
     in
     {
       darwinConfigurations = {
-        ${hostname} = darwin.lib.darwinSystem {
-          inherit system;
-
-          modules = [
-            ./users/${username}/darwin.nix
-            home-manager.darwinModules.home-manager
-            {
-              nixpkgs = nixpkgsConfig;
-
-              home-manager.useGlobalPkgs = true;
-              home-manager.useUserPackages = true;
-              home-manager.users.${username} =
-                import ./users/${username}/home-manager.nix;
-            }
-          ];
+        micnncim = mkDarwin rec {
+          inherit darwin home-manager overlays;
+          system = "aarch64-darwin";
+          username = "micnncim";
         };
       };
-
-      packages.${system}.default = home-manager.defaultPackage.${system};
     };
 }
