@@ -102,7 +102,7 @@ in
 
   system.keyboard = {
     enableKeyMapping = true;
-    remapCapsLockToEscape = true;
+    remapCapsLockToControl = true;
   };
 
   # TODO(micnncim): Add more.
