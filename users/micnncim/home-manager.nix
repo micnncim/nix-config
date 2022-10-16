@@ -148,6 +148,7 @@ in
     };
     interactiveShellInit = lib.strings.concatStrings (lib.strings.intersperse "\n" [
       "fish_add_path /etc/profiles/per-user/${username}/bin"
+      "source ${pkgs.google-cloud-sdk}/google-cloud-sdk/path.fish.inc"
       (builtins.readFile ./fish/config.fish)
       "set -g SHELL ${pkgs.fish}/bin/fish"
     ]);
@@ -155,7 +156,12 @@ in
       (n: {
         name = n;
         src = sources.${n};
-      }) [ "fish-bass" "fish-nix-env" "fish-foreign-env" ];
+      }) [
+      "fish-bass"
+      "fish-foreign-env"
+      "fish-gcloud-completion"
+      "fish-nix-env"
+    ];
   };
 
   programs.fzf = {

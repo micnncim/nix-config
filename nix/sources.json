@@ -35,6 +35,18 @@
         "url": "https://github.com/oh-my-fish/plugin-foreign-env/archive/b3dd471bcc885b597c3922e4de836e06415e52dd.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
+    "fish-gcloud-completion": {
+        "branch": "master",
+        "description": "Google Cloud Platform SDK command line utilities shell completion for fish",
+        "homepage": null,
+        "owner": "lgathy",
+        "repo": "google-cloud-sdk-fish-completion",
+        "rev": "bc24b0bf7da2addca377d89feece4487ca0b1e9c",
+        "sha256": "03zzggi64fhk0yx705h8nbg3a02zch9y49cdvzgnmpi321vz71h4",
+        "type": "tarball",
+        "url": "https://github.com/lgathy/google-cloud-sdk-fish-completion/archive/bc24b0bf7da2addca377d89feece4487ca0b1e9c.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
     "fish-nix-env": {
         "branch": "master",
         "description": "Nix environment setup for the fish shell",
