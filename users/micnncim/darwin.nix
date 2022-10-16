@@ -4,11 +4,6 @@
 let username = "micnncim";
 in
 {
-  users.users.${username} = {
-    home = "/Users/${username}";
-    shell = pkgs.fish;
-  };
-
   #---------------------------------------------------------------------
   # Nix
   #---------------------------------------------------------------------
@@ -94,6 +89,15 @@ in
   # System Preferences
   #---------------------------------------------------------------------
 
+  users.users.${username} = {
+    home = "/Users/${username}";
+    shell = pkgs.fish;
+  };
+
+  environment = {
+    loginShell = "/etc/profiles/per-user/${username}/bin/fish";
+  };
+
   # Currently, applications aren't linked to /Application.
   # https://github.com/LnL7/nix-darwin/issues/139#issuecomment-663117229
   system.build.applications = pkgs.lib.mkForce (pkgs.buildEnv {
@@ -110,7 +114,9 @@ in
 
   # TODO(micnncim): Add more.
   system.defaults = {
-    NSGlobalDomain = { KeyRepeat = 1; };
+    NSGlobalDomain = {
+      KeyRepeat = 1;
+    };
 
     dock.autohide = true;
 
