@@ -31,6 +31,8 @@ $ sudo mv /etc/nix/nix.conf /etc/nix/.nix-darwin.bkp.nix.conf
 ```console
 $ nix-env -i jq
 $ nix-env -iA cachix -f https://cachix.org/api/v1/install
+// Homebrew for GUI apps
+$ /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 ```
 
 ## 4. Build configuration
@@ -38,6 +40,9 @@ $ nix-env -iA cachix -f https://cachix.org/api/v1/install
 > **Note**
 > You might need to rename a hostname before running the following commands.
 > Run `scutil --set HostName <hostname>` for example.
+
+> **Note**
+> Some system preference might need restarting the machine.
 
 ```console
 $ make build
