@@ -2,15 +2,17 @@ OUT := result
 
 CACHIX_CACHE ?= micnncim-nix-config
 
+NIX_NAME ?= "darwinConfigurations.$(shell hostname).system"
+
 .PHONY: build
 build:
-	@nix build "$(HOME)/.config/nixpkgs#darwinConfigurations.$(shell hostname).system" --json \
+	@nix build ".#$(NIX_NAME)" --json \
 		| jq -r '.[].outputs | to_entries[].value' \
 		| cachix push "$(CACHIX_CACHE)"
 
 .PHONY: switch
 switch: $(OUT)/sw/bin/darwin-rebuild
-	@$(OUT)/sw/bin/darwin-rebuild switch --flake "$(HOME)/.config/nixpkgs"
+	@$(OUT)/sw/bin/darwin-rebuild switch --flake "."
 
 .PHONY: fmt
 fmt:
