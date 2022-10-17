@@ -4,6 +4,7 @@ fish_add_path /opt/homebrew/bin
 fish_add_path /run/current-system/sw/bin
 fish_add_path $HOME/.krew/bin
 fish_add_path $HOME/.nix-defexpr/channels
+fish_add_path $HOME/go/bin
 
 abbr -a -U cat bat
 abbr -a -U g git
