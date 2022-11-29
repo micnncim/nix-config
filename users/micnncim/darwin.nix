@@ -115,7 +115,7 @@ in
 
     dock.autohide = true;
 
-    screencapture.location = "/Users/${username}/Google Drive/Screenshots";
+    screencapture.location = "/Users/${username}/Google \Drive/My \Drive/Screenshots";
 
     trackpad.Clicking = true;
   };
