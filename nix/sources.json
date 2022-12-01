@@ -59,18 +59,6 @@
         "url": "https://github.com/lilyball/nix-env.fish/archive/7b65bd228429e852c8fdfa07601159130a818cfa.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
-    "fzf": {
-        "branch": "0.32.1",
-        "description": ":cherry_blossom: A command-line fuzzy finder",
-        "homepage": "",
-        "owner": "junegunn",
-        "repo": "fzf",
-        "rev": "4993d19466d5f3ac127de5c0c461cde7ef1894d7",
-        "sha256": "194xz7jrjsl9i88gy9kr90sw9aif9iskwdnhbq85l48h86hlrm42",
-        "type": "tarball",
-        "url": "https://github.com/junegunn/fzf/archive/4993d19466d5f3ac127de5c0c461cde7ef1894d7.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
-    },
     "gctx": {
         "branch": "main",
         "description": null,

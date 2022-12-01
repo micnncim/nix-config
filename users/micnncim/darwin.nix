@@ -9,7 +9,7 @@ in
   #---------------------------------------------------------------------
 
   nix = {
-    trustedUsers = [ "@admin" ];
+    configureBuildUsers = true;
 
     # Enable experimental Nix command and Flakes.
     extraOptions = ''
@@ -25,11 +25,13 @@ in
       options = "--delete-older-than 7d";
     };
 
-    binaryCaches = [ "https://micnncim-nix-config.cachix.org" ];
-    binaryCachePublicKeys = [ "micnncim-nix-config.cachix.org-1:VYYe2Nwe1oFIkXavwNfp9L9F5S8LCLCA5/1YaFy9lFc=" ];
-  };
+    settings = {
+      trusted-users = [ "@admin" ];
 
-  users.nix.configureBuildUsers = true;
+      substituters = [ "https://micnncim-nix-config.cachix.org" ];
+      trusted-public-keys = [ "micnncim-nix-config.cachix.org-1:VYYe2Nwe1oFIkXavwNfp9L9F5S8LCLCA5/1YaFy9lFc=" ];
+    };
+  };
 
   #---------------------------------------------------------------------
   # Programs

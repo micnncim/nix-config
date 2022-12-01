@@ -6,6 +6,8 @@ let
   inherit (pkgs) stdenv;
 in
 {
+  home.stateVersion = "22.11";
+
   xdg.enable = true;
 
   #---------------------------------------------------------------------
