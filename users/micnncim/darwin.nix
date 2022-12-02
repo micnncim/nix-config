@@ -112,6 +112,8 @@ in
   # TODO(micnncim): Add more.
   system.defaults = {
     NSGlobalDomain = {
+      ApplePressAndHoldEnabled = true;
+      InitialKeyRepeat = 10;
       KeyRepeat = 1;
     };
 
