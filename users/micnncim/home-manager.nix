@@ -59,6 +59,9 @@ in
       stern
       tailscale
 
+      # Fonts
+      nerdfonts
+
       # Node packages
       nodePackages.markdownlint-cli
 
