@@ -104,24 +104,26 @@ in
       log-file /var/log/gpg-agent.log
     '';
 
-  xdg.configFile."alacritty/alacritty.yml".source = ./alacritty.yml;
-  xdg.configFile."bat/.batrc".source = ./.batrc;
-  xdg.configFile."fd/ignore".source = ./fdignore;
-  xdg.configFile."gh/config.yml".source = ./gh/config.yml;
-  xdg.configFile."git" = {
-    recursive = true;
-    source = ./git;
-  };
-  xdg.configFile."git/templates/hooks".source =
-    config.lib.file.mkOutOfStoreSymlink "${config.xdg.configHome}/git/hooks";
-  xdg.configFile."karabiner/karabiner.json".source = ./karabiner.json;
-  xdg.configFile."pre-commit/.pre-commit-config.yaml".source =
-    ./.pre-commit-config.yaml;
-  xdg.configFile."ripgrep/.ripgreprc".source = ./.ripgreprc;
-  xdg.configFile."starship/starship.toml".source = ./starship.toml;
-  xdg.configFile."tmux" = {
-    recursive = true;
-    source = ./tmux;
+  xdg.configFile = {
+    "alacritty/alacritty.yml".source = ./alacritty.yml;
+    "bat/.batrc".source = ./.batrc;
+    "fd/ignore".source = ./fdignore;
+    "gh/config.yml".source = ./gh/config.yml;
+    "git" = {
+      recursive = true;
+      source = ./git;
+    };
+    "git/templates/hooks".source =
+      config.lib.file.mkOutOfStoreSymlink "${config.xdg.configHome}/git/hooks";
+    "karabiner/karabiner.json".source = ./karabiner.json;
+    "pre-commit/.pre-commit-config.yaml".source =
+      ./.pre-commit-config.yaml;
+    "ripgrep/.ripgreprc".source = ./.ripgreprc;
+    "starship/starship.toml".source = ./starship.toml;
+    "tmux" = {
+      recursive = true;
+      source = ./tmux;
+    };
   };
 
   #---------------------------------------------------------------------
