@@ -113,7 +113,7 @@ in
   system.defaults = {
     NSGlobalDomain = {
       ApplePressAndHoldEnabled = true;
-      InitialKeyRepeat = 10;
+      InitialKeyRepeat = 20;
       KeyRepeat = 1;
     };
 
