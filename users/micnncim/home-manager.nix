@@ -45,19 +45,19 @@ in
       cachix
       docker
       docker-compose
-      gh
       ghq
       git-lfs
       (google-cloud-sdk.withExtraComponents ([ google-cloud-sdk.components.gke-gcloud-auth-plugin ]))
       gopls
       krew
-      kubectl
       kubectx
       pinentry
       rnix-lsp
       starship
       stern
       tailscale
+      unstable.gh
+      unstable.kubectl
 
       # Fonts
       nerdfonts
