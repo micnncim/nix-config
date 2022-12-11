@@ -65,6 +65,9 @@ in
       # Node packages
       nodePackages.markdownlint-cli
 
+      # Unstable packages
+      unstable._1password
+
       # GUI
       alacritty
       slack
