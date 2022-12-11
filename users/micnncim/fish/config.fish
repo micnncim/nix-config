@@ -17,6 +17,9 @@ abbr -a -U v nvim
 
 starship init fish | source
 
+# https://developer.1password.com/docs/cli/shell-plugins/
+source $HOME/.op/plugins.sh
+
 if isatty
     set -x GPG_TTY (tty)
 end

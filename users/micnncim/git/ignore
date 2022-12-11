@@ -10,6 +10,7 @@
 /.bin/
 /.direnv/
 /.nix/
+/.op/
 /.pre-commit-config.yaml
 /.scripts/
 /.secrets/
