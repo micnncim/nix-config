@@ -34,6 +34,10 @@
         (final: prev: {
           # Example of bringing in an unstable package:
           # go = inputs.nixpkgs-unstable.legacyPackages.${prev.system}.go_1_19;
+          unstable = import nixpkgs-unstable {
+            system = prev.system;
+            config.allowUnfree = true;
+          };
         })
       ];
     in
