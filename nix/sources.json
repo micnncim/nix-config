@@ -83,6 +83,18 @@
         "url": "https://github.com/cli/cli/archive/2fc0ffd0be5f438e581aaf4a448ed01b03883211.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
+    "kubectl-reveal-secret": {
+        "branch": "main",
+        "description": null,
+        "homepage": null,
+        "owner": "micnncim",
+        "repo": "kubectl-reveal-secret",
+        "rev": "1df0beeab3eb26284e2f3a24f9898c29b37caf92",
+        "sha256": "00vpg9h58bzgyaql4rdjx9lfi10aj9d6jag9q1cdn1wydw6rvch7",
+        "type": "tarball",
+        "url": "https://github.com/micnncim/kubectl-reveal-secret/archive/1df0beeab3eb26284e2f3a24f9898c29b37caf92.tar.gz",
+        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
+    },
     "nixpkgs": {
         "branch": "release-22.05",
         "description": "Nix Packages collection",

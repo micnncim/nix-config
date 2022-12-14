@@ -72,6 +72,7 @@ in
 
       # Custom packages
       _gctx
+      _kubectl-reveal-secret
     ] ++ lib.optionals stdenv.isDarwin [ pinentry_mac ];
 
   home.shellAliases = {
