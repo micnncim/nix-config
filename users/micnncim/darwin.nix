@@ -72,6 +72,7 @@ in
       "google-drive"
       "google-japanese-ime"
       "karabiner-elements"
+      "muzzle"
       "notion"
       "raycast"
       "stats"
