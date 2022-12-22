@@ -1,16 +1,4 @@
 {
-    "dagger": {
-        "branch": "v0.2.31",
-        "description": "A portable devkit for CI/CD pipelines",
-        "homepage": "https://dagger.io",
-        "owner": "dagger",
-        "repo": "dagger",
-        "rev": "8146f4d9a2c8ca715c856365dd5c8bb25203f384",
-        "sha256": "1j5qgj2hx1r45hdfd5ihx1xq27acf7sgd8imlkm4p1rjsnva510v",
-        "type": "tarball",
-        "url": "https://github.com/dagger/dagger/archive/8146f4d9a2c8ca715c856365dd5c8bb25203f384.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
-    },
     "fish-bass": {
         "branch": "master",
         "description": "Make Bash utilities usable in Fish shell",
@@ -69,18 +57,6 @@
         "sha256": "0s4w4x5jwpgmc6x9llfa5pysrvvqhjwqg6qsiclg4qhpm3z1n3q8",
         "type": "tarball",
         "url": "https://github.com/micnncim/gctx/archive/76e8834ad0e997124f66d81e387845cd2207b376.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
-    },
-    "gh": {
-        "branch": "v2.14.7",
-        "description": "GitHub’s official command line tool",
-        "homepage": "https://cli.github.com",
-        "owner": "cli",
-        "repo": "cli",
-        "rev": "2fc0ffd0be5f438e581aaf4a448ed01b03883211",
-        "sha256": "09ni6a2arvlcpqjj7sj7aapn6pj315j91pd3rma9vjxjsfmlrsi0",
-        "type": "tarball",
-        "url": "https://github.com/cli/cli/archive/2fc0ffd0be5f438e581aaf4a448ed01b03883211.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     },
     "kubectl-reveal-secret": {
