@@ -50,6 +50,7 @@ in
       (google-cloud-sdk.withExtraComponents ([ google-cloud-sdk.components.gke-gcloud-auth-plugin ]))
       gopls
       krew
+      kubectl
       kubectx
       pinentry
       rnix-lsp
@@ -57,7 +58,6 @@ in
       stern
       tailscale
       unstable.gh
-      unstable.kubectl
 
       # Fonts
       nerdfonts
