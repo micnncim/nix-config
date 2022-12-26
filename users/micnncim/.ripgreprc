@@ -3,11 +3,10 @@
 
 --colors=match:fg:green
 
---glob=!*/git*
---glob=!*/node_modules*
---glob=!*/dist*
---glob=!*.lock*
---glob=!*-lock*
+--glob=!node_modules
+--glob=!dist
+--glob=!*.lock
+--glob=!*-lock
 
 --type-add
 web:*.{html,css,js}*
