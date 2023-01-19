@@ -3,10 +3,12 @@
 
 --colors=match:fg:green
 
---glob=!node_modules
---glob=!dist
---glob=!*.lock
 --glob=!*-lock
+--glob=!*.lock
+--glob=!coverage
+--glob=!dist
+--glob=!dist-types
+--glob=!node_modules
 
 --type-add
 web:*.{html,css,js}*
