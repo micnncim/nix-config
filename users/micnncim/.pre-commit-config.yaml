@@ -16,8 +16,6 @@ repos:
     stages: [commit]
   - id: check-yaml
     stages: [commit]
-  - id: detect-aws-credentials
-    stages: [commit]
   - id: detect-private-key
     stages: [commit]
   - id: end-of-file-fixer
