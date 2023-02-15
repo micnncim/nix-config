@@ -74,6 +74,7 @@ in
       "google-drive"
       "google-japanese-ime"
       "karabiner-elements"
+      "keyboardcleantool"
       "muzzle"
       "notion"
       "raycast"
