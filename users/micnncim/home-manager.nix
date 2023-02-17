@@ -145,6 +145,7 @@ in
 
   programs.fish = {
     enable = true;
+    package = pkgs.unstable.fish;
     functions = {
       # Do not show any greeting
       fish_greeting = "";
