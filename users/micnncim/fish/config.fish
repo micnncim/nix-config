@@ -6,15 +6,24 @@ fish_add_path $HOME/.krew/bin
 fish_add_path $HOME/.nix-defexpr/channels
 fish_add_path $HOME/go/bin
 
-abbr -a -U cat bat
-abbr -a -U c code
-abbr -a -U g git
-abbr -a -U k kubectl
-abbr -a -U kn kubens
-abbr -a -U kx kubectx
-abbr -a -U mkdir mkdir -p
-abbr -a -U rm rip
-abbr -a -U v nvim
+# Use `--regex` to avoid conflicts with other abbreviations.
+abbr -a bat --regex '^cat$' bat
+abbr -a code --regex '^c$' code
+abbr -a git --regex '^g$' git
+abbr -a help --regex '^h$' help
+abbr -a kubectl --regex '^k$' kubectl
+abbr -a kubectx --regex '^kx$' kubectx
+abbr -a kubectl --regex '^kn$' kubens
+abbr -a mkdir --regex '^mkdir$' mkdir -p
+abbr -a rip --regex '^rm$' rip
+abbr -a nvim --regex '^v$' nvim
+
+abbr -a --position anywhere --function __abbr_gcloud -- -p
+
+abbr -a --position anywhere --function __abbr_kubectl -- d
+abbr -a --position anywhere --function __abbr_kubectl -- g
+abbr -a --position anywhere --function __abbr_kubectl -- -c
+abbr -a --position anywhere --function __abbr_kubectl -- -n
 
 starship init fish | source
 

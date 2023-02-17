@@ -152,6 +152,8 @@ in
       fish_user_key_bindings = ''
         bind \c] __ghq_jump
       '';
+      __abbr_gcloud = (builtins.readFile ./fish/functions/__abbr_gcloud.fish);
+      __abbr_kubectl = (builtins.readFile ./fish/functions/__abbr_kubectl.fish);
       __ghq_jump = (builtins.readFile ./fish/functions/__ghq_jump.fish);
       fkill = (builtins.readFile ./fish/functions/fkill.fish);
       help = (builtins.readFile ./fish/functions/help.fish);
