@@ -75,6 +75,7 @@ in
       "google-japanese-ime"
       "karabiner-elements"
       "keyboardcleantool"
+      "keycastr"
       "muzzle"
       "notion"
       "raycast"
