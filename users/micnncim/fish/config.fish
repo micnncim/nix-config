@@ -7,6 +7,7 @@ fish_add_path $HOME/.nix-defexpr/channels
 fish_add_path $HOME/go/bin
 
 abbr -a -U cat bat
+abbr -a -U c code
 abbr -a -U g git
 abbr -a -U k kubectl
 abbr -a -U kn kubens
