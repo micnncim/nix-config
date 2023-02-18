@@ -65,7 +65,6 @@ in
 
       # GUI
       alacritty
-      slack
       vscode
 
       # Custom packages

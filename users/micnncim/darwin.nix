@@ -79,6 +79,7 @@ in
       "muzzle"
       "notion"
       "raycast"
+      "slack"
       "stats"
       "vivaldi"
     ];
