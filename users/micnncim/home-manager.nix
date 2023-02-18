@@ -50,6 +50,7 @@ in
       krew
       kubectl
       kubectx
+      nixfmt
       pinentry
       rnix-lsp
       starship
