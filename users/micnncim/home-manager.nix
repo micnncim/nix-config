@@ -53,6 +53,7 @@ in
       nixfmt
       pinentry
       rnix-lsp
+      rust-analyzer
       starship
       stern
       tailscale
