@@ -18,12 +18,12 @@ abbr -a mkdir --regex '^mkdir$' mkdir -p
 abbr -a rip --regex '^rm$' rip
 abbr -a nvim --regex '^v$' nvim
 
-abbr -a --position anywhere --function __abbr_gcloud -- -p
+abbr -a --position anywhere --function __abbr_flag_c -- -c
+abbr -a --position anywhere --function __abbr_flag_n -- -n
+abbr -a --position anywhere --function __abbr_flag_p -- -p
 
-abbr -a --position anywhere --function __abbr_kubectl -- d
-abbr -a --position anywhere --function __abbr_kubectl -- g
-abbr -a --position anywhere --function __abbr_kubectl -- -c
-abbr -a --position anywhere --function __abbr_kubectl -- -n
+abbr -a --position anywhere --function __abbr_subcommand_d -- d
+abbr -a --position anywhere --function __abbr_subcommand_g -- g
 
 starship init fish | source
 
