@@ -79,13 +79,13 @@ in
       "muzzle"
       "notion"
       "raycast"
+      "readdle-spark"
       "slack"
       "stats"
       "vivaldi"
     ];
     masApps = {
       "Get Plain Text" = 508368068;
-      Spark = 1176895641;
     };
   };
 
