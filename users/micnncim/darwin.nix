@@ -85,7 +85,6 @@ in
     ];
     masApps = {
       "Get Plain Text" = 508368068;
-      Magnet = 441258766;
       Spark = 1176895641;
     };
   };
