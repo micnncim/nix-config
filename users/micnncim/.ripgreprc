@@ -9,6 +9,8 @@
 --glob=!dist
 --glob=!dist-types
 --glob=!node_modules
+--glob=!result
+--glob=!target
 
 --type-add
 web:*.{html,css,js}*
