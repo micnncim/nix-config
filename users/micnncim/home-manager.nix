@@ -153,7 +153,7 @@ in
       fish_user_key_bindings = ''
         bind \c] __ghq_jump
       '';
-      __abbr_flag_c = (builtins.readFile ./fish/functions/__abbr_flag_c.fish);
+      __abbr_flag_ctx = (builtins.readFile ./fish/functions/__abbr_flag_ctx.fish);
       __abbr_flag_n = (builtins.readFile ./fish/functions/__abbr_flag_n.fish);
       __abbr_flag_p = (builtins.readFile ./fish/functions/__abbr_flag_p.fish);
       __abbr_subcommand_d = (builtins.readFile ./fish/functions/__abbr_subcommand_d.fish);

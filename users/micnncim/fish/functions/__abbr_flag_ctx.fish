@@ -1,7 +1,7 @@
-# function __abbr_flag_c
+# function __abbr_flag_ctx
 set -l cmd (commandline -op)
 
-if [ "$cmd[-1]" != "-c" ]
+if [ "$cmd[-1]" != "-ctx" ]
     return 1
 end
 

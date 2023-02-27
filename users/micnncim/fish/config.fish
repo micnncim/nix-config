@@ -18,7 +18,7 @@ abbr -a mkdir --regex '^mkdir$' mkdir -p
 abbr -a rip --regex '^rm$' rip
 abbr -a nvim --regex '^v$' nvim
 
-abbr -a --position anywhere --function __abbr_flag_c -- -c
+abbr -a --position anywhere --function __abbr_flag_ctx -- -ctx
 abbr -a --position anywhere --function __abbr_flag_n -- -n
 abbr -a --position anywhere --function __abbr_flag_p -- -p
 
