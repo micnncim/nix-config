@@ -83,6 +83,7 @@ in
       "slack"
       "stats"
       "vivaldi"
+      "zoom"
     ];
     masApps = {
       "Get Plain Text" = 508368068;
