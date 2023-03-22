@@ -158,6 +158,7 @@ in
       __abbr_flag_p = (builtins.readFile ./fish/functions/__abbr_flag_p.fish);
       __abbr_subcommand_d = (builtins.readFile ./fish/functions/__abbr_subcommand_d.fish);
       __abbr_subcommand_g = (builtins.readFile ./fish/functions/__abbr_subcommand_g.fish);
+      __abbr_subcommand_l = (builtins.readFile ./fish/functions/__abbr_subcommand_l.fish);
       __ghq_jump = (builtins.readFile ./fish/functions/__ghq_jump.fish);
       fkill = (builtins.readFile ./fish/functions/fkill.fish);
       help = (builtins.readFile ./fish/functions/help.fish);

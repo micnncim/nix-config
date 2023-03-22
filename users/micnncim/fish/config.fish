@@ -24,6 +24,7 @@ abbr -a --position anywhere --function __abbr_flag_p -- -p
 
 abbr -a --position anywhere --function __abbr_subcommand_d -- d
 abbr -a --position anywhere --function __abbr_subcommand_g -- g
+abbr -a --position anywhere --function __abbr_subcommand_l -- l
 
 starship init fish | source
 
