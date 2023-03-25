@@ -87,6 +87,7 @@ in
     ];
     masApps = {
       "Get Plain Text" = 508368068;
+      Xcode = 497799835;
     };
   };
 
