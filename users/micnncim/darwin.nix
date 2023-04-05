@@ -83,6 +83,7 @@ in
       "readdle-spark"
       "slack"
       "stats"
+      "sf-symbols"
       "vivaldi"
       "zoom"
     ];
