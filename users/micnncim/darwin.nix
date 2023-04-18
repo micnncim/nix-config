@@ -82,6 +82,7 @@ in
       "raycast"
       "readdle-spark"
       "slack"
+      "spotify"
       "stats"
       "sf-symbols"
       "vivaldi"
