@@ -67,7 +67,6 @@ in
 
       # GUI
       alacritty
-      vscode
 
       # Custom packages
       _gctx

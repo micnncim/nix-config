@@ -86,6 +86,7 @@ in
       "stats"
       "sf-symbols"
       "vivaldi"
+      "visual-studio-code"
       "zoom"
     ];
     masApps = {
