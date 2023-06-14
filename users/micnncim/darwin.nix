@@ -82,6 +82,7 @@ in
       "notion"
       "raycast"
       "readdle-spark"
+      "rewind"
       "sf-symbols"
       "slack"
       "spotify"
