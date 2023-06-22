@@ -13,7 +13,10 @@ in
 
     # Enable experimental Nix command and Flakes.
     extraOptions = ''
-      auto-optimise-store = true
+      # Set to false as a workaround the following error:
+      # error: cannot link '/nix/store/.tmp-link' to '/nix/store/.links/...': File exists
+      # See https://github.com/NixOS/nix/issues/7273 for more details.
+      auto-optimise-store = false
       experimental-features = nix-command flakes
       keep-outputs = true
       keep-derivations = true
@@ -119,14 +122,19 @@ in
     loginShell = "/etc/profiles/per-user/${username}/bin/fish";
   };
 
-  # Currently, applications aren't linked to /Application.
-  # https://github.com/LnL7/nix-darwin/issues/139#issuecomment-663117229
-  system.build.applications = pkgs.lib.mkForce (pkgs.buildEnv {
-    name = "applications";
-    paths = config.environment.systemPackages
-      ++ config.home-manager.users.${username}.home.packages;
-    pathsToLink = "/Applications";
-  });
+  # This fails with the following error:
+  # Creating home file links in /Users/micnncim
+  #   mkdir: cannot create directory ‘/Users/micnncim/Applications’: File exists
+  #   ln: failed to create symbolic link '/Users/micnncim/Applications/Home Manager Apps': No such file or directory
+  #
+  # # Currently, applications aren't linked to /Application.
+  # # https://github.com/LnL7/nix-darwin/issues/139#issuecomment-663117229
+  # system.build.applications = pkgs.lib.mkForce (pkgs.buildEnv {
+  #   name = "applications";
+  #   paths = config.environment.systemPackages
+  #     ++ config.home-manager.users.${username}.home.packages;
+  #   pathsToLink = "/Applications";
+  # });
 
   system.keyboard = {
     enableKeyMapping = true;
