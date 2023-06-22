@@ -4,6 +4,11 @@ CACHIX_CACHE ?= micnncim-nix-config
 
 NIX_NAME ?= "darwinConfigurations.$(shell hostname).system"
 
+.DEFAULT_GOAL := install
+
+.PHONY: install
+install: build switch
+
 .PHONY: build
 build:
 	@nix build ".#$(NIX_NAME)" --json \
