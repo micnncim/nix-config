@@ -94,7 +94,6 @@ in
     EDITOR = "nvim";
     PAGER = "less";
     MANPAGER = "sh -c 'col -bx | ${pkgs.bat}/bin/bat -l man -p'";
-    GOROOT = "${pkgs.go}/share/go";
     RIPGREP_CONFIG_PATH = "${config.xdg.configHome}/ripgrep/.ripgreprc";
     STARSHIP_CONFIG = "${config.xdg.configHome}/starship/starship.toml";
     # https://cloud.google.com/blog/products/containers-kubernetes/kubectl-auth-changes-in-gke
@@ -183,13 +182,6 @@ in
   programs.fzf = {
     enable = true;
     defaultOptions = [ "--reverse" "--height 40%" "--multi" "--cycle" ];
-  };
-
-  programs.go = {
-    enable = true;
-    goPath = "go";
-    goBin = "go/bin";
-    goPrivate = [ "github.com/micnncim" ];
   };
 
   programs.gpg = {
