@@ -18,6 +18,23 @@ format = """\
   $character\
   """
 
+palette = 'nord'
+
+# Nord theme
+# Ref: https://www.nordtheme.com/#palettes-modularity
+[palettes.nord]
+cyan   = '#8fbcbb' # frost1
+blue   = '#81a1c1' # frost3
+red    = '#bf616a'
+orange = '#d08770'
+yellow = '#ebcb8b'
+green  = '#a3be8c'
+purple = '#b48ead'
+# frost1 = '#8fbcbb'
+# frost2 = '#88c0d0'
+# frost3 = '#81a1c1'
+# frost4 = '#5e81ac'
+
 # https://starship.rs/config/#character
 [character]
 format = "$symbol  "
