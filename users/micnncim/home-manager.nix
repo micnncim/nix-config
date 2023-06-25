@@ -94,6 +94,7 @@ in
     EDITOR = "nvim";
     PAGER = "less";
     MANPAGER = "sh -c 'col -bx | ${pkgs.bat}/bin/bat -l man -p'";
+    BAT_CONFIG_PATH = "${config.xdg.configHome}/bat/.batrc";
     RIPGREP_CONFIG_PATH = "${config.xdg.configHome}/ripgrep/.ripgreprc";
     STARSHIP_CONFIG = "${config.xdg.configHome}/starship/starship.toml";
     # https://cloud.google.com/blog/products/containers-kubernetes/kubectl-auth-changes-in-gke
@@ -111,6 +112,7 @@ in
   xdg.configFile = {
     "alacritty/alacritty.yml".source = ./alacritty.yml;
     "bat/.batrc".source = ./.batrc;
+    "dircolors/.dircolors".source = ./.dircolors;
     "fd/ignore".source = ./fdignore;
     "gh/config.yml".source = ./gh/config.yml;
     "git" = {
@@ -192,9 +194,9 @@ in
 
   programs.neovim = {
     enable = true;
-    plugins = with pkgs; [ vimPlugins.onehalf vimPlugins.vim-markdown ];
+    plugins = with pkgs; [ vimPlugins.nord-nvim vimPlugins.vim-markdown ];
     extraConfig = ''
-      colorscheme onehalfdark
+      colorscheme nord
 
       set number
     '';
@@ -203,7 +205,14 @@ in
   programs.tmux = {
     enable = true;
     plugins = with pkgs; [
+      tmuxPlugins.copycat
+      tmuxPlugins.fzf-tmux-url
+      tmuxPlugins.logging
+      tmuxPlugins.nord
+      tmuxPlugins.open
       tmuxPlugins.resurrect
+      tmuxPlugins.tmux-fzf
+      tmuxPlugins.yank
       {
         plugin = tmuxPlugins.continuum;
         extraConfig = ''
@@ -211,12 +220,6 @@ in
           set -g @continuum-save-interval '5' # minutes
         '';
       }
-      tmuxPlugins.copycat
-      tmuxPlugins.yank
-      tmuxPlugins.open
-      tmuxPlugins.logging
-      tmuxPlugins.tmux-fzf
-      tmuxPlugins.fzf-tmux-url
     ];
   };
 }

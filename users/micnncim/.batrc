@@ -1,4 +1,4 @@
---theme=OneHalfDark
+--theme=Nord
 
 # Use Python syntax for .bazel and .bzl
 --map-syntax bazel:py
