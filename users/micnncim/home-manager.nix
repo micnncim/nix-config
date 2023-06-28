@@ -21,7 +21,6 @@ in
       coreutils
       curl
       git
-      tmux
       tree
       watch
       wget
@@ -126,10 +125,6 @@ in
       ./.pre-commit-config.yaml;
     "ripgrep/.ripgreprc".source = ./.ripgreprc;
     "starship/starship.toml".source = ./starship.toml;
-    "tmux" = {
-      recursive = true;
-      source = ./tmux;
-    };
   };
 
   #---------------------------------------------------------------------
@@ -224,8 +219,8 @@ in
       tmuxPlugins.copycat
       tmuxPlugins.fzf-tmux-url
       tmuxPlugins.logging
-      tmuxPlugins.nord
       tmuxPlugins.open
+      tmuxPlugins.prefix-highlight
       tmuxPlugins.resurrect
       tmuxPlugins.tmux-fzf
       tmuxPlugins.yank
@@ -236,6 +231,15 @@ in
           set -g @continuum-save-interval '5' # minutes
         '';
       }
+      {
+        plugin = tmuxPlugins.nord;
+        extraConfig = ''
+          # Disable patched fonts.
+          # https://www.nordtheme.com/docs/ports/tmux/configuration
+          set -g @nord_tmux_no_patched_font '1'
+        '';
+      }
     ];
+    extraConfig = builtins.readFile ./tmux.conf;
   };
 }
