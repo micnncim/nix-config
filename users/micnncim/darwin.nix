@@ -122,19 +122,14 @@ in
     loginShell = "/etc/profiles/per-user/${username}/bin/fish";
   };
 
-  # This fails with the following error:
-  # Creating home file links in /Users/micnncim
-  #   mkdir: cannot create directory ‘/Users/micnncim/Applications’: File exists
-  #   ln: failed to create symbolic link '/Users/micnncim/Applications/Home Manager Apps': No such file or directory
-  #
-  # # Currently, applications aren't linked to /Application.
-  # # https://github.com/LnL7/nix-darwin/issues/139#issuecomment-663117229
-  # system.build.applications = pkgs.lib.mkForce (pkgs.buildEnv {
-  #   name = "applications";
-  #   paths = config.environment.systemPackages
-  #     ++ config.home-manager.users.${username}.home.packages;
-  #   pathsToLink = "/Applications";
-  # });
+  # Currently, application aren't linked to /Application.
+  # https://github.com/LnL7/nix-darwin/issues/139#issuecomment-663117229
+  system.build.applications = pkgs.lib.mkForce (pkgs.buildEnv {
+    name = "applications";
+    paths = config.environment.systemPackages
+      ++ config.home-manager.users.${username}.home.packages;
+    pathsToLink = "/Applications";
+  });
 
   system.keyboard = {
     enableKeyMapping = true;
