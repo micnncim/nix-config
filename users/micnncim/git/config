@@ -34,8 +34,8 @@ undo = "!f() { \\\n    git reset --hard $(git rev-parse --abbrev-ref HEAD)@{${1-
 alias = !git config --list | grep 'alias\\.' | sed 's/alias\\.\\([^=]*\\)=\\(.*\\)/\\1\\\t => \\2/' | sort
 
 [pager]
-show = delta
-diff = delta
+diff = delta --color-only --syntax-theme Nord
+show = delta --color-only --syntax-theme Nord
 
 [delta]
 line-numbers = true
@@ -50,7 +50,7 @@ defaultBranch = main
 gpgsign = true
 
 [interactive]
-diffFilter = delta --color-only
+diffFilter = delta --color-only --syntax-theme Nord
 
 [add.interactive]
 useBuiltin = false
