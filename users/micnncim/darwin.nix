@@ -80,6 +80,7 @@ in
       "karabiner-elements"
       "keyboardcleantool"
       "keycastr"
+      "kindle"
       "linear-linear"
       "muzzle"
       "notion"
