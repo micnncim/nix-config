@@ -85,7 +85,6 @@ in
       "muzzle"
       "notion"
       "raycast"
-      "readdle-spark"
       "rewind"
       "sf-symbols"
       "slack"
@@ -97,6 +96,7 @@ in
     ];
     masApps = {
       "Get Plain Text" = 508368068;
+      Spark = 1176895641;
       Xcode = 497799835;
     };
   };
