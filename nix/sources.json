@@ -46,53 +46,5 @@
         "type": "tarball",
         "url": "https://github.com/lilyball/nix-env.fish/archive/7b65bd228429e852c8fdfa07601159130a818cfa.tar.gz",
         "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
-    },
-    "gctx": {
-        "branch": "main",
-        "description": null,
-        "homepage": null,
-        "owner": "micnncim",
-        "repo": "gctx",
-        "rev": "76e8834ad0e997124f66d81e387845cd2207b376",
-        "sha256": "0s4w4x5jwpgmc6x9llfa5pysrvvqhjwqg6qsiclg4qhpm3z1n3q8",
-        "type": "tarball",
-        "url": "https://github.com/micnncim/gctx/archive/76e8834ad0e997124f66d81e387845cd2207b376.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
-    },
-    "kubectl-reveal-secret": {
-        "branch": "main",
-        "description": null,
-        "homepage": null,
-        "owner": "micnncim",
-        "repo": "kubectl-reveal-secret",
-        "rev": "1df0beeab3eb26284e2f3a24f9898c29b37caf92",
-        "sha256": "00vpg9h58bzgyaql4rdjx9lfi10aj9d6jag9q1cdn1wydw6rvch7",
-        "type": "tarball",
-        "url": "https://github.com/micnncim/kubectl-reveal-secret/archive/1df0beeab3eb26284e2f3a24f9898c29b37caf92.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
-    },
-    "nixpkgs": {
-        "branch": "release-22.05",
-        "description": "Nix Packages collection",
-        "homepage": "",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "06ac9cdfe43f3c0fecfe98258996820c6005c6ea",
-        "sha256": "1pi348ymn7hjfr034ji2r4bic8w88avs7f47j4wy019nqmw8cgmv",
-        "type": "tarball",
-        "url": "https://github.com/NixOS/nixpkgs/archive/06ac9cdfe43f3c0fecfe98258996820c6005c6ea.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
-    },
-    "nixpkgs-unstable": {
-        "branch": "nixpkgs-unstable",
-        "description": "Nix Packages collection",
-        "homepage": "",
-        "owner": "NixOS",
-        "repo": "nixpkgs",
-        "rev": "963d27a0767422be9b8686a8493dcade6acee992",
-        "sha256": "054zd1q913zsshcj1jgvcaccjj1ab15k0hyg3q1cxnggg8p854qb",
-        "type": "tarball",
-        "url": "https://github.com/NixOS/nixpkgs/archive/963d27a0767422be9b8686a8493dcade6acee992.tar.gz",
-        "url_template": "https://github.com/<owner>/<repo>/archive/<rev>.tar.gz"
     }
 }

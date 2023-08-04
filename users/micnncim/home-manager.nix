@@ -67,10 +67,10 @@ in
       # GUI
       alacritty
 
-      # Custom packages
-      _gctx
-      _kubectl-reveal-secret
-      _slack_cli
+      # NUR
+      nur.repos.micnncim.gctx
+      nur.repos.micnncim.kubectl-reveal-secret
+      nur.repos.micnncim.slack-cli
     ] ++ lib.optionals stdenv.isDarwin [ pinentry_mac ];
 
   home.shellAliases = {

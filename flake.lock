@@ -41,18 +41,36 @@
         "type": "github"
       }
     },
-    "nixpkgs": {
+    "micnncim-nur": {
+      "inputs": {
+        "nixpkgs": "nixpkgs"
+      },
       "locked": {
-        "lastModified": 1691119371,
-        "narHash": "sha256-MMH1/c4fmlXR3cUk6W/YS6IdBg8YISCCvw3vIs9W9Tk=",
-        "owner": "nixos",
-        "repo": "nixpkgs",
-        "rev": "4bef9baf0c00633fb02330509e7101a82b7629e4",
+        "lastModified": 1691144684,
+        "narHash": "sha256-PDGsAKzEyXQNkdyhFzI3S++noWey7CGwvN7fbhF8+Ig=",
+        "owner": "micnncim",
+        "repo": "nur",
+        "rev": "b0f0cd5a624b4db4df28035721e15a67123c9002",
         "type": "github"
       },
       "original": {
-        "owner": "nixos",
-        "ref": "release-23.05",
+        "owner": "micnncim",
+        "repo": "nur",
+        "type": "github"
+      }
+    },
+    "nixpkgs": {
+      "locked": {
+        "lastModified": 1691003216,
+        "narHash": "sha256-Qq/MPkhS12Bl0X060pPvX3v9ac3f2rRQfHjjozPh/Qs=",
+        "owner": "NixOS",
+        "repo": "nixpkgs",
+        "rev": "4a56ce9727a0c5478a836a0d8a8f641c5b9a3d5f",
+        "type": "github"
+      },
+      "original": {
+        "owner": "NixOS",
+        "ref": "nixpkgs-unstable",
         "repo": "nixpkgs",
         "type": "github"
       }
@@ -73,12 +91,45 @@
         "type": "github"
       }
     },
+    "nixpkgs_2": {
+      "locked": {
+        "lastModified": 1691139802,
+        "narHash": "sha256-L3MUKtAeYSqWnX9TIXjKlxSsuDq2oni3YgURlMMQkNU=",
+        "owner": "nixos",
+        "repo": "nixpkgs",
+        "rev": "b5fec0f26cd8bee6918fc697f326a3669e109d46",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nixos",
+        "ref": "release-23.05",
+        "repo": "nixpkgs",
+        "type": "github"
+      }
+    },
+    "nur": {
+      "locked": {
+        "lastModified": 1691145978,
+        "narHash": "sha256-AfzxUMLtcFVqlsgn0odeYDzK6F1ILQYo4Ro78c9yyRc=",
+        "owner": "nix-community",
+        "repo": "NUR",
+        "rev": "f7f54482b8cb013d0298f732f3aa4258ab2f72c8",
+        "type": "github"
+      },
+      "original": {
+        "owner": "nix-community",
+        "repo": "NUR",
+        "type": "github"
+      }
+    },
     "root": {
       "inputs": {
         "darwin": "darwin",
         "home-manager": "home-manager",
-        "nixpkgs": "nixpkgs",
-        "nixpkgs-unstable": "nixpkgs-unstable"
+        "micnncim-nur": "micnncim-nur",
+        "nixpkgs": "nixpkgs_2",
+        "nixpkgs-unstable": "nixpkgs-unstable",
+        "nur": "nur"
       }
     }
   },

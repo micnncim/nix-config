@@ -2,41 +2,48 @@
   description = "Nix systems and tools by micnncim";
 
   inputs = {
-    # Pin our primary nixpkgs repository. This is the main nixpkgs repository
-    # we'll use for our configurations. Be very careful changing this because
-    # it'll impact your entire system.
     nixpkgs.url = "github:nixos/nixpkgs/release-23.05";
-
-    # We use the unstable nixpkgs repo for some packages.
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixpkgs-unstable";
 
-    darwin = {
-      url = "github:lnl7/nix-darwin";
-
-      # We want home-manager to use the same set of nixpkgs as our system.
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
+    nur.url = "github:nix-community/NUR";
+    micnncim-nur.url = "github:micnncim/nur";
 
     home-manager = {
       url = "github:nix-community/home-manager/release-23.05";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
 
-      # We want home-manager to use the same set of nixpkgs as our system.
+    darwin = {
+      url = "github:lnl7/nix-darwin";
       inputs.nixpkgs.follows = "nixpkgs";
     };
   };
 
   outputs =
-    { self, nixpkgs, nixpkgs-unstable, home-manager, darwin, ... }@inputs:
+    { self
+    , nixpkgs
+    , nixpkgs-unstable
+    , nur
+    , micnncim-nur
+    , home-manager
+    , darwin
+    , ...
+    }@inputs:
     let
       mkDarwin = import ./lib/mk-darwin.nix;
 
       overlays = import ./lib/overlays.nix ++ [
         (final: prev: {
-          # Example of bringing in an unstable package:
-          # go = inputs.nixpkgs-unstable.legacyPackages.${prev.system}.go_1_19;
           unstable = import nixpkgs-unstable {
             system = prev.system;
             config.allowUnfree = true;
+          };
+          nur = import nur {
+            nurpkgs = prev;
+            pkgs = prev;
+            repoOverrides = {
+              micnncim = import micnncim-nur { pkgs = prev; };
+            };
           };
         })
       ];
