@@ -40,17 +40,16 @@ in
       typos
 
       # Dev
-      buildkit
-      docker
+      (google-cloud-sdk.withExtraComponents ([ google-cloud-sdk.components.gke-gcloud-auth-plugin ]))
       ghq
       git-lfs
-      (google-cloud-sdk.withExtraComponents ([ google-cloud-sdk.components.gke-gcloud-auth-plugin ]))
       kubectl
       kubectx
       nixfmt
       pinentry
+      podman
+      qemu
       rnix-lsp
-      rust-analyzer
       starship
       stern
       tailscale

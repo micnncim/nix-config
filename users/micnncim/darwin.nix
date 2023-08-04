@@ -71,7 +71,6 @@ in
       "bartender"
       "cron"
       "discord"
-      "docker"
       "figma"
       "gather"
       "google-chrome"
