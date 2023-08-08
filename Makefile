@@ -15,6 +15,16 @@ build:
 		| jq -r '.[].outputs | to_entries[].value' \
 		| cachix push "$(CACHIX_CACHE)"
 
+.PHONY: bootstrap
+bootstrap:
+	@if ! command -v nix > /dev/null && ! command -v nix-env > /dev/null; then \
+		curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install; \
+	fi
+	@if ! command -v cachix > /dev/null; then \
+		nix-env -iA cachix -f https://cachix.org/api/v1/install; \
+	fi
+	@nix build ".#$(NIX_NAME)"
+
 .PHONY: switch
 switch: $(OUT)/sw/bin/darwin-rebuild
 	@$(OUT)/sw/bin/darwin-rebuild switch --flake "."
