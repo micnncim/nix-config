@@ -43,17 +43,21 @@ in
       (google-cloud-sdk.withExtraComponents ([ google-cloud-sdk.components.gke-gcloud-auth-plugin ]))
       ghq
       git-lfs
-      kubectl
-      kubectx
-      nixfmt
       pinentry
-      podman
-      qemu
-      rnix-lsp
       starship
-      stern
       tailscale
       unstable.gh
+
+      # Container
+      kubectl
+      kubectx
+      podman
+      qemu
+      stern
+
+      # Nix
+      nixfmt
+      rnix-lsp
 
       # Fonts
       nerdfonts
