@@ -15,4 +15,6 @@
 /.scripts/
 /.secrets/
 /.testdata/
+/result/
 /shell.nix
+/target/
