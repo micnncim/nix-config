@@ -28,7 +28,6 @@ in
       # Utils
       bat
       delta
-      exa
       fd
       jq
       pre-commit
@@ -38,6 +37,7 @@ in
       sd
       tealdeer
       typos
+      unstable.eza
 
       # Dev
       (google-cloud-sdk.withExtraComponents ([ google-cloud-sdk.components.gke-gcloud-auth-plugin ]))
@@ -75,10 +75,10 @@ in
     ] ++ lib.optionals stdenv.isDarwin [ pinentry_mac ];
 
   home.shellAliases = {
-    ll = "exa -la";
-    llt = "exa -laTF --git --group-directories-first --git-ignore --ignore-glob .git";
-    ls = "exa";
-    lt = "exa -T";
+    ll = "eza -la";
+    llt = "eza -laTF --git --group-directories-first --git-ignore --ignore-glob .git";
+    ls = "eza";
+    lt = "eza -T";
   };
 
   #---------------------------------------------------------------------
