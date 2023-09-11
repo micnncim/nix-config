@@ -100,7 +100,6 @@ in
       "stats"
       "visual-studio-code"
       "vivaldi"
-      "webex"
       "zoom"
     ];
     masApps = {
