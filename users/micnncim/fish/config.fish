@@ -38,5 +38,5 @@ if isatty
 end
 
 if not set -q TMUX
-    exec tmux
+    exec tmux; or echo "failed to launch tmux"
 end
