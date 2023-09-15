@@ -15,6 +15,10 @@ build:
 		| jq -r '.[].outputs | to_entries[].value' \
 		| cachix push "$(CACHIX_CACHE)"
 
+.PHONY: build/no-cache
+build/no-cache:
+	@nix build ".#$(NIX_NAME)"
+
 .PHONY: bootstrap
 bootstrap:
 	@if ! command -v nix > /dev/null && ! command -v nix-env > /dev/null; then \
