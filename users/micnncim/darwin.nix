@@ -62,6 +62,10 @@ in
   # for these applications.
   homebrew = {
     enable = true;
+    onActivation = {
+      upgrade = true;
+      cleanup = "uninstall";
+    };
     casks = [
       "1password"
       # As of writing, the CLI requires itself to be installed in /usr/local/bin/op,
