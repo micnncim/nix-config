@@ -56,6 +56,7 @@ in
       stern
 
       # Nix
+      comma
       nixfmt
       rnix-lsp
 
@@ -202,6 +203,12 @@ in
     enable = true;
     homedir = "${config.home.homeDirectory}/.gnupg";
     scdaemonSettings = { disable-ccid = true; };
+  };
+
+  programs.nix-index = {
+    enable = true;
+    enableBashIntegration = true;
+    enableFishIntegration = true;
   };
 
   programs.neovim = {
