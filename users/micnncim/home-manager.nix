@@ -4,8 +4,7 @@ let
   sources = import ../../nix/sources.nix;
   username = "micnncim";
   inherit (pkgs) stdenv;
-in
-{
+in {
   home.stateVersion = "22.11";
 
   xdg.enable = true;
@@ -40,7 +39,8 @@ in
       unstable.eza
 
       # Dev
-      (google-cloud-sdk.withExtraComponents ([ google-cloud-sdk.components.gke-gcloud-auth-plugin ]))
+      (google-cloud-sdk.withExtraComponents
+        ([ google-cloud-sdk.components.gke-gcloud-auth-plugin ]))
       gh
       ghq
       git-lfs
@@ -79,7 +79,8 @@ in
 
   home.shellAliases = {
     ll = "eza -la";
-    llt = "eza -laTF --git --group-directories-first --git-ignore --ignore-glob .git";
+    llt =
+      "eza -laTF --git --group-directories-first --git-ignore --ignore-glob .git";
     ls = "eza";
     lt = "eza -T";
   };
@@ -125,8 +126,7 @@ in
     "git/templates/hooks".source =
       config.lib.file.mkOutOfStoreSymlink "${config.xdg.configHome}/git/hooks";
     "karabiner/karabiner.json".source = ./karabiner.json;
-    "pre-commit/.pre-commit-config.yaml".source =
-      ./.pre-commit-config.yaml;
+    "pre-commit/.pre-commit-config.yaml".source = ./.pre-commit-config.yaml;
     "ripgrep/.ripgreprc".source = ./.ripgreprc;
     "starship/starship.toml".source = ./starship.toml;
   };
@@ -152,27 +152,31 @@ in
       fish_user_key_bindings = ''
         bind \c] __ghq_jump
       '';
-      __abbr_flag_ctx = (builtins.readFile ./fish/functions/__abbr_flag_ctx.fish);
+      __abbr_flag_ctx =
+        (builtins.readFile ./fish/functions/__abbr_flag_ctx.fish);
       __abbr_flag_n = (builtins.readFile ./fish/functions/__abbr_flag_n.fish);
       __abbr_flag_p = (builtins.readFile ./fish/functions/__abbr_flag_p.fish);
-      __abbr_subcommand_d = (builtins.readFile ./fish/functions/__abbr_subcommand_d.fish);
-      __abbr_subcommand_g = (builtins.readFile ./fish/functions/__abbr_subcommand_g.fish);
-      __abbr_subcommand_l = (builtins.readFile ./fish/functions/__abbr_subcommand_l.fish);
+      __abbr_subcommand_d =
+        (builtins.readFile ./fish/functions/__abbr_subcommand_d.fish);
+      __abbr_subcommand_g =
+        (builtins.readFile ./fish/functions/__abbr_subcommand_g.fish);
+      __abbr_subcommand_l =
+        (builtins.readFile ./fish/functions/__abbr_subcommand_l.fish);
       __ghq_jump = (builtins.readFile ./fish/functions/__ghq_jump.fish);
       fkill = (builtins.readFile ./fish/functions/fkill.fish);
       help = (builtins.readFile ./fish/functions/help.fish);
     };
-    interactiveShellInit = lib.strings.concatStrings (lib.strings.intersperse "\n" [
-      "fish_add_path /etc/profiles/per-user/${username}/bin"
-      "source ${pkgs.google-cloud-sdk}/google-cloud-sdk/path.fish.inc"
-      (builtins.readFile ./fish/config.fish)
-      "set -g SHELL ${pkgs.fish}/bin/fish"
-    ]);
-    plugins = map
-      (n: {
-        name = n;
-        src = sources.${n};
-      }) [
+    interactiveShellInit = lib.strings.concatStrings
+      (lib.strings.intersperse "\n" [
+        "fish_add_path /etc/profiles/per-user/${username}/bin"
+        "source ${pkgs.google-cloud-sdk}/google-cloud-sdk/path.fish.inc"
+        (builtins.readFile ./fish/config.fish)
+        "set -g SHELL ${pkgs.fish}/bin/fish"
+      ]);
+    plugins = map (n: {
+      name = n;
+      src = sources.${n};
+    }) [
       "fish-bass"
       "fish-foreign-env"
       "fish-gcloud-completion"

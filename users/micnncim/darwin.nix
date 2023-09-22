@@ -2,8 +2,7 @@
 
 # TODO(micnncim): Make this a function that accepts variables in `let`.
 let username = "micnncim";
-in
-{
+in {
   #---------------------------------------------------------------------
   # Nix
   #---------------------------------------------------------------------
@@ -131,9 +130,7 @@ in
     shell = pkgs.fish;
   };
 
-  environment = {
-    loginShell = "/etc/profiles/per-user/${username}/bin/fish";
-  };
+  environment = { loginShell = "/etc/profiles/per-user/${username}/bin/fish"; };
 
   # Currently, application aren't linked to /Application.
   # https://github.com/LnL7/nix-darwin/issues/139#issuecomment-663117229
@@ -158,7 +155,8 @@ in
 
     dock.autohide = true;
 
-    screencapture.location = "/Users/${username}/Google \Drive/My \Drive/Screenshots";
+    screencapture.location =
+      "/Users/${username}/Google Drive/My Drive/Screenshots";
 
     trackpad.Clicking = true;
   };

@@ -1,6 +1,6 @@
 { darwin, home-manager, system, username, overlays }:
 
-darwin.lib.darwinSystem rec {
+darwin.lib.darwinSystem {
   inherit system;
 
   modules = [

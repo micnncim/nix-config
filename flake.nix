@@ -19,16 +19,8 @@
     };
   };
 
-  outputs =
-    { self
-    , nixpkgs
-    , nixpkgs-unstable
-    , nur
-    , micnncim-nur
-    , home-manager
-    , darwin
-    , ...
-    }@inputs:
+  outputs = { self, nixpkgs, nixpkgs-unstable, nur, micnncim-nur, home-manager
+    , darwin, ... }@inputs:
     let
       mkDarwin = import ./lib/mk-darwin.nix;
 
@@ -47,10 +39,9 @@
           };
         })
       ];
-    in
-    {
+    in {
       darwinConfigurations = {
-        sirius = mkDarwin rec {
+        sirius = mkDarwin {
           inherit darwin home-manager overlays;
           system = "aarch64-darwin";
           username = "micnncim";
