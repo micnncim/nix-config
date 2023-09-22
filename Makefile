@@ -2,7 +2,8 @@ OUT := result
 
 CACHIX_CACHE ?= micnncim-nix-config
 
-NIX_NAME ?= "darwinConfigurations.$(shell hostname).system"
+HOSTNAME ?= $(shell hostname)
+NIX_NAME ?= darwinConfigurations.$(HOSTNAME).system
 
 .DEFAULT_GOAL := install
 
@@ -19,39 +20,6 @@ build:
 build/no-cache:
 	@nix build ".#$(NIX_NAME)"
 
-.PHONY: bootstrap
-bootstrap:
-	@if ! command -v nix > /dev/null && ! command -v nix-env > /dev/null; then \
-		curl --proto '=https' --tlsv1.2 -sSf -L https://install.determinate.systems/nix | sh -s -- install; \
-	fi
-	@if ! command -v cachix > /dev/null; then \
-		nix-env -iA cachix -f https://cachix.org/api/v1/install; \
-	fi
-	@nix build ".#$(NIX_NAME)"
-
 .PHONY: switch
 switch: $(OUT)/sw/bin/darwin-rebuild
 	@$(OUT)/sw/bin/darwin-rebuild switch --flake "."
-
-.PHONY: fmt
-fmt:
-	@find . -type f -name '*.nix' -not -path './nix/*' | xargs nixfmt
-
-.PHONY: lint
-lint: lint/darwin lint/flake lint/fmt lint/statix
-
-.PHONY: lint/darwin
-lint/darwin: $(OUT)/sw/bin/darwin-rebuild
-	@$(OUT)/sw/bin/darwin-rebuild check --flake .
-
-.PHONY: lint/flake
-lint/flake:
-	@nix flake check .
-
-.PHONY: lint/fmt
-lint/fmt:
-	@find . -type f -name '*.nix' -not -path './nix/*' | xargs nixfmt --check
-
-.PHONY: lint/statix
-lint/statix:
-	@statix check . -i nix
