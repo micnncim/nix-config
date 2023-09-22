@@ -50,7 +50,7 @@
     in
     {
       darwinConfigurations = {
-        micnncim = mkDarwin rec {
+        sirius = mkDarwin rec {
           inherit darwin home-manager overlays;
           system = "aarch64-darwin";
           username = "micnncim";
