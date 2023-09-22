@@ -41,12 +41,18 @@ in
 
       # Dev
       (google-cloud-sdk.withExtraComponents ([ google-cloud-sdk.components.gke-gcloud-auth-plugin ]))
+      gh
       ghq
       git-lfs
+      nodePackages.markdownlint-cli
       pinentry
+      shellcheck
       starship
-      tailscale
-      unstable.gh
+
+      # Language servers
+      nil
+      nodePackages.bash-language-server
+      nodePackages.yaml-language-server
 
       # Container
       kubectl
@@ -58,13 +64,9 @@ in
       # Nix
       comma
       nixfmt
-      rnix-lsp
 
       # Fonts
       nerdfonts
-
-      # Node packages
-      nodePackages.markdownlint-cli
 
       # GUI
       alacritty
