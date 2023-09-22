@@ -4,7 +4,8 @@ let
   sources = import ../../nix/sources.nix;
   username = "micnncim";
   inherit (pkgs) stdenv;
-in {
+in
+{
   home.stateVersion = "22.11";
 
   xdg.enable = true;
@@ -63,7 +64,7 @@ in {
 
       # Nix
       comma
-      nixfmt
+      nixpkgs-fmt
 
       # Fonts
       nerdfonts
@@ -173,10 +174,11 @@ in {
         (builtins.readFile ./fish/config.fish)
         "set -g SHELL ${pkgs.fish}/bin/fish"
       ]);
-    plugins = map (n: {
-      name = n;
-      src = sources.${n};
-    }) [
+    plugins = map
+      (n: {
+        name = n;
+        src = sources.${n};
+      }) [
       "fish-bass"
       "fish-foreign-env"
       "fish-gcloud-completion"
