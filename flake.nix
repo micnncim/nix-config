@@ -5,7 +5,11 @@
     nixpkgs.url = "github:nixos/nixpkgs/release-23.05";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixpkgs-unstable";
 
-    nur.url = "github:nix-community/NUR";
+    nur = {
+      url = "github:nix-community/NUR";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     micnncim-nur.url = "github:micnncim/nur";
 
     home-manager = {
