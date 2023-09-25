@@ -30,6 +30,7 @@ in
       delta
       fd
       jq
+      neofetch
       pre-commit
       procs
       ripgrep
