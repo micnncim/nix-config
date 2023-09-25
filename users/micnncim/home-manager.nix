@@ -153,20 +153,21 @@ in
       fish_user_key_bindings = ''
         bind \c] __ghq_jump
       '';
-      __abbr_flag_ctx =
-        (builtins.readFile ./fish/functions/__abbr_flag_ctx.fish);
-      __abbr_flag_n = (builtins.readFile ./fish/functions/__abbr_flag_n.fish);
-      __abbr_flag_p = (builtins.readFile ./fish/functions/__abbr_flag_p.fish);
-      __abbr_subcommand_d =
-        (builtins.readFile ./fish/functions/__abbr_subcommand_d.fish);
-      __abbr_subcommand_g =
-        (builtins.readFile ./fish/functions/__abbr_subcommand_g.fish);
-      __abbr_subcommand_l =
-        (builtins.readFile ./fish/functions/__abbr_subcommand_l.fish);
-      __ghq_jump = (builtins.readFile ./fish/functions/__ghq_jump.fish);
-      fkill = (builtins.readFile ./fish/functions/fkill.fish);
-      help = (builtins.readFile ./fish/functions/help.fish);
-    };
+    } // builtins.listToAttrs (map
+      (n: {
+        name = n;
+        value = (builtins.readFile ./fish/functions/${n}.fish);
+      }) [
+      "__abbr_flag_ctx"
+      "__abbr_flag_n"
+      "__abbr_flag_p"
+      "__abbr_subcommand_d"
+      "__abbr_subcommand_g"
+      "__abbr_subcommand_l"
+      "__ghq_jump"
+      "fkill"
+      "help"
+    ]);
     interactiveShellInit = lib.strings.concatStrings
       (lib.strings.intersperse "\n" [
         "fish_add_path /etc/profiles/per-user/${username}/bin"
