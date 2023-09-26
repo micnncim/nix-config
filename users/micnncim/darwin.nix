@@ -12,10 +12,7 @@ in {
 
     # Enable experimental Nix command and Flakes.
     extraOptions = ''
-      # Set to false as a workaround the following error:
-      # error: cannot link '/nix/store/.tmp-link' to '/nix/store/.links/...': File exists
-      # See https://github.com/NixOS/nix/issues/7273 for more details.
-      auto-optimise-store = false
+      auto-optimise-store = true
       experimental-features = nix-command flakes
       keep-outputs = true
       keep-derivations = true
