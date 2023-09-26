@@ -38,6 +38,7 @@ in
       sd
       tealdeer
       typos
+      unstable.atuin
       unstable.eza
 
       # Dev
