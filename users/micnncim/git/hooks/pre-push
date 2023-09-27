@@ -26,9 +26,11 @@ check_executables() {
 main() {
   check_executables
 
-  local config="${XDG_CONFIG_HOME}/pre-commit/.pre-commit-config.yaml"
-  if [[ -f ".pre-commit-config.yaml" ]]; then
-    config=".pre-commit-config.yaml"
+  local -r config_base=".pre-commit-config.yaml"
+
+  local config="${XDG_CONFIG_HOME}/pre-commit/${config_base}"
+  if [[ -f "${config_base}" ]]; then
+    config="${config_base}"
   fi
 
   local -r cmd="pre-commit run --config ${config} --hook-stage push --color always"
