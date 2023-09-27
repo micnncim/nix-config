@@ -51,7 +51,7 @@
       };
     in
     {
-      darwinConfigurations.sirius = mkDarwin {
+      darwinConfigurations.vega = mkDarwin {
         system = "aarch64-darwin";
         username = "micnncim";
       };
