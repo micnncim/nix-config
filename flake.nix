@@ -30,8 +30,6 @@
     , ...
     }@inputs:
     let
-      mkDarwin = import ./lib/mk-darwin.nix;
-
       overlays = import ./lib/overlays.nix ++ [
         (final: prev: {
           unstable = import nixpkgs-unstable {
@@ -47,14 +45,15 @@
           };
         })
       ];
+
+      mkDarwin = import ./lib/mk-darwin.nix {
+        inherit inputs overlays;
+      };
     in
     {
-      darwinConfigurations = {
-        sirius = mkDarwin {
-          inherit darwin home-manager overlays;
-          system = "aarch64-darwin";
-          username = "micnncim";
-        };
+      darwinConfigurations.sirius = mkDarwin {
+        system = "aarch64-darwin";
+        username = "micnncim";
       };
     };
 }

@@ -1,11 +1,13 @@
-{ darwin, home-manager, system, username, overlays }:
+{ inputs, overlays }:
 
-darwin.lib.darwinSystem {
+{ system, username }:
+
+inputs.darwin.lib.darwinSystem {
   inherit system;
 
   modules = [
     ../users/${username}/darwin.nix
-    home-manager.darwinModules.home-manager
+    inputs.home-manager.darwinModules.home-manager
     {
       nixpkgs = {
         config = { allowUnfree = true; };
