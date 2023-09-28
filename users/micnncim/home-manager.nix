@@ -66,6 +66,7 @@ in
 
       # Nix
       comma
+      niv
       nixpkgs-fmt
 
       # Fonts
