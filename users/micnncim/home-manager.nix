@@ -225,11 +225,34 @@ in
 
   programs.neovim = {
     enable = true;
-    plugins = with pkgs; [ vimPlugins.nord-nvim vimPlugins.vim-markdown ];
+    plugins = with pkgs; [
+      vimPlugins.nord-nvim
+      vimPlugins.nvim-surround
+      vimPlugins.nvim-treesitter
+      vimPlugins.vim-markdown
+      {
+        plugin = vimPlugins.hop-nvim;
+        type = "lua";
+        config = ''
+          require'hop'.setup { keys = 'uhetonasidkmjwqv' } -- Dvorak
+          nmap("<Leader>w", ":HopWord<CR>")
+          nmap("<Leader>l", ":HopLine<CR>")
+          nmap("<Leader>s", ":HopChar1<CR>")
+        '';
+      }
+    ];
     extraConfig = ''
       colorscheme nord
 
       set number
+
+      nnoremap <Space> <Nop>
+      let g:mapleader = "\<Space>"
+    '';
+    extraLuaConfig = ''
+      local function nmap(shortcut, command, opts)
+        vim.keymap.set("n", shortcut, command, opts or { noremap = true, silent = true })
+      end
     '';
   };
 
