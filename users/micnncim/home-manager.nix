@@ -67,7 +67,9 @@ in
       # Nix
       comma
       niv
+      nix-init
       nixpkgs-fmt
+      nurl
 
       # Fonts
       nerdfonts
