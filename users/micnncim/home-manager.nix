@@ -239,18 +239,26 @@ in
   programs.neovim = {
     enable = true;
     plugins = with pkgs; [
+      vimPlugins.copilot-vim
       vimPlugins.nord-nvim
-      vimPlugins.nvim-surround
       vimPlugins.nvim-treesitter
+      vimPlugins.nvim-treesitter-textobjects
       vimPlugins.vim-markdown
       {
         plugin = vimPlugins.hop-nvim;
         type = "lua";
         config = ''
-          require'hop'.setup { keys = 'uhetonasidkmjwqv' } -- Dvorak
+          require("hop").setup { keys = 'uhetonasidkmjwqv' } -- Dvorak
           nmap("<Leader>w", ":HopWord<CR>")
           nmap("<Leader>l", ":HopLine<CR>")
           nmap("<Leader>s", ":HopChar1<CR>")
+        '';
+      }
+      {
+        plugin = vimPlugins.nvim-surround;
+        type = "lua";
+        config = ''
+          require("nvim-surround").setup()
         '';
       }
     ];
