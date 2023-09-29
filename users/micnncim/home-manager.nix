@@ -40,6 +40,7 @@ in
       typos
       unstable.atuin
       unstable.eza
+      unstable.ripsecrets
 
       # Dev
       (google-cloud-sdk.withExtraComponents
