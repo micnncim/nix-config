@@ -1,4 +1,0 @@
-git_protocol: https
-editor: nvim
-aliases:
-  b: '!gh browse -b $(git rev-parse --abbrev-ref HEAD)'

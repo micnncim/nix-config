@@ -44,7 +44,6 @@ in
       # Dev
       (google-cloud-sdk.withExtraComponents
         ([ google-cloud-sdk.components.gke-gcloud-auth-plugin ]))
-      gh
       ghq
       git-lfs
       nodePackages.markdownlint-cli
@@ -124,7 +123,6 @@ in
     "bat/.batrc".source = ./.batrc;
     "dircolors/.dircolors".source = ./.dircolors;
     "fd/ignore".source = ./fdignore;
-    "gh/config.yml".source = ./gh/config.yml;
     "git" = {
       recursive = true;
       source = ./git;
@@ -210,6 +208,19 @@ in
       "marker" = "#a3be8b";
       "spinner" = "#b48dac";
       "header" = "#a3be8b";
+    };
+  };
+
+  programs.gh = {
+    enable = true;
+    extensions = with pkgs; [
+      gh-dash
+      nur.repos.micnncim.gh-sync
+    ];
+    settings = {
+      aliases = {
+        b = "!gh browse -b $(git rev-parse --abbrev-ref HEAD)";
+      };
     };
   };
 
