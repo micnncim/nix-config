@@ -33,11 +33,13 @@ in {
         "https://cache.nixos.org"
         "https://nix-community.cachix.org"
         "https://micnncim-nix-config.cachix.org"
+        "https://micnncim-nur.cachix.org"
       ];
       trusted-public-keys = [
         "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
         "nix-community.cachix.org-1:mB9FSh9qf2dCimDSUo8Zy7bkq5CX+/rkCWyvRCYg3Fs="
         "micnncim-nix-config.cachix.org-1:VYYe2Nwe1oFIkXavwNfp9L9F5S8LCLCA5/1YaFy9lFc="
+        "micnncim-nur.cachix.org-1:RkC5K3iXncMrkWOUFDVaqe1o8fbq2ISBHg8e+zY5U7M="
       ];
     };
   };
