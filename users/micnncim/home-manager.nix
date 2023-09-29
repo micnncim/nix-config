@@ -65,6 +65,7 @@ in
       stern
 
       # Nix
+      cachix
       comma
       niv
       nix-init
