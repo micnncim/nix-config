@@ -5,6 +5,8 @@
     nixpkgs.url = "github:nixos/nixpkgs/release-23.05";
     nixpkgs-unstable.url = "github:nixos/nixpkgs/nixpkgs-unstable";
 
+    flake-utils.url = "github:numtide/flake-utils";
+
     nur.url = "github:nix-community/NUR";
     micnncim-nur.url = "github:micnncim/nur";
 
@@ -23,6 +25,7 @@
     { self
     , nixpkgs
     , nixpkgs-unstable
+    , flake-utils
     , nur
     , micnncim-nur
     , home-manager
@@ -55,5 +58,16 @@
         system = "aarch64-darwin";
         username = "micnncim";
       };
-    };
+    } // flake-utils.lib.eachDefaultSystem (system: rec {
+      pkgs = nixpkgs.legacyPackages.${system};
+
+      devShells = {
+        default = pkgs.mkShell {
+          buildInputs = with pkgs; [
+            cachix
+            jq
+          ];
+        };
+      };
+    });
 }
