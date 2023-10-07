@@ -40,6 +40,7 @@ in
       typos
       unstable.atuin
       unstable.eza
+      unstable.markdownlint-cli
       unstable.ripsecrets
 
       # Dev
@@ -47,7 +48,6 @@ in
         ([ google-cloud-sdk.components.gke-gcloud-auth-plugin ]))
       ghq
       git-lfs
-      nodePackages.markdownlint-cli
       pinentry
       shellcheck
       starship
@@ -55,7 +55,7 @@ in
       # Language servers
       nil
       nodePackages.bash-language-server
-      nodePackages.yaml-language-server
+      unstable.yaml-language-server
 
       # Container
       kubectl
