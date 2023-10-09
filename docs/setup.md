@@ -29,12 +29,6 @@ nix profile install nixpkgs#nix-direnv
 direnv allow
 ```
 
-Install Homebrew:
-
-```console
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-```
-
 ## 4. Build configuration
 
 > **Note**

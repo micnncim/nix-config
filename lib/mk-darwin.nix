@@ -8,6 +8,7 @@ inputs.darwin.lib.darwinSystem {
   modules = [
     ../users/${username}/darwin.nix
     inputs.home-manager.darwinModules.home-manager
+    inputs.nix-homebrew.darwinModules.nix-homebrew
     {
       nixpkgs = {
         config = { allowUnfree = true; };
@@ -18,6 +19,13 @@ inputs.darwin.lib.darwinSystem {
       home-manager.useUserPackages = true;
       home-manager.users.${username} =
         import ../users/${username}/home-manager.nix;
+
+      nix-homebrew = {
+        enable = true;
+        enableRosetta = true;
+        user = "${username}";
+        # autoMigrate = true;
+      };
     }
   ];
 }

@@ -19,6 +19,8 @@
       url = "github:lnl7/nix-darwin";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nix-homebrew.url = "github:zhaofengli/nix-homebrew";
   };
 
   outputs =
@@ -30,6 +32,7 @@
     , micnncim-nur
     , home-manager
     , darwin
+    , nix-homebrew
     , ...
     }@inputs:
     let
