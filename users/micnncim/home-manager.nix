@@ -250,7 +250,7 @@ in
         plugin = vimPlugins.hop-nvim;
         type = "lua";
         config = ''
-          require("hop").setup { keys = 'uhetonasidkmjwqv' } -- Dvorak
+          require("hop").setup { keys = 'uhetonas' } -- Dvorak
           nmap("<Leader>w", ":HopWord<CR>")
           nmap("<Leader>l", ":HopLine<CR>")
           nmap("<Leader>s", ":HopChar1<CR>")
