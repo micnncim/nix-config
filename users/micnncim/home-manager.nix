@@ -172,6 +172,7 @@ in
       "__ghq_jump"
       "fkill"
       "help"
+      "xcode"
     ]);
     interactiveShellInit = lib.strings.concatStrings
       (lib.strings.intersperse "\n" [
