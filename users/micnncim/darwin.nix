@@ -79,6 +79,7 @@ in {
       "aerial"
       "alt-tab"
       "bartender"
+      "coscreen"
       "cron"
       "discord"
       "docker"
