@@ -165,6 +165,7 @@ in
       }) [
       "__abbr_flag_ctx"
       "__abbr_flag_n"
+      "__abbr_flag_o"
       "__abbr_flag_p"
       "__abbr_subcommand_d"
       "__abbr_subcommand_g"

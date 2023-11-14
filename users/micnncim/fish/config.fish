@@ -20,6 +20,7 @@ abbr -a nvim --regex '^v$' nvim
 
 abbr -a --position anywhere --function __abbr_flag_ctx -- -ctx
 abbr -a --position anywhere --function __abbr_flag_n -- -n
+abbr -a --position anywhere --function __abbr_flag_o -- -o
 abbr -a --position anywhere --function __abbr_flag_p -- -p
 
 abbr -a --position anywhere --function __abbr_subcommand_d -- d
