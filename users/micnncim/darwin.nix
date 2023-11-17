@@ -77,6 +77,7 @@ in {
       # See also https://1password.community/discussion/127950/v2-client-unable-to-connect-to-desktop-app.
       "1password-cli"
       "alt-tab"
+      "barrier"
       "bartender"
       "coscreen"
       "cron"
