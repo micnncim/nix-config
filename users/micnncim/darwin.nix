@@ -144,6 +144,7 @@ in {
   # TODO(micnncim): Add more.
   system.defaults = {
     NSGlobalDomain = {
+      "com.apple.trackpad.scaling" = 3.0;
       InitialKeyRepeat = 20;
       KeyRepeat = 1;
     };
