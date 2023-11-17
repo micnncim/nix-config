@@ -11,6 +11,13 @@ env:
   # check the local terminfo database and use `alacritty` if it is
   # available, otherwise `xterm-256color` is used.
   TERM: xterm-256color
+  # NOTE(micnncim): This is a workaround for the issue that `shell` whose value
+  # is `fish` does not start fish shell on macOS.
+  # 
+  # See:
+  # - https://github.com/alacritty/alacritty/issues/6412
+  # - https://github.com/alacritty/alacritty/issues/6746
+  SHELL: /etc/profiles/per-user/micnncim/bin/fish
 
 window:
   # Window dimensions (changes require restart)

@@ -180,7 +180,6 @@ in
         "fish_add_path /etc/profiles/per-user/${username}/bin"
         "source ${pkgs.google-cloud-sdk}/google-cloud-sdk/path.fish.inc"
         (builtins.readFile ./fish/config.fish)
-        "set -g SHELL ${pkgs.fish}/bin/fish"
       ]);
     plugins = map
       (n: {
