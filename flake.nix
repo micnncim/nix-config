@@ -61,6 +61,10 @@
         system = "aarch64-darwin";
         username = "micnncim";
       };
+      darwinConfigurations.albireo = mkDarwin {
+        system = "aarch64-darwin";
+        username = "micnncim";
+      };
     } // flake-utils.lib.eachDefaultSystem (system: rec {
       pkgs = nixpkgs.legacyPackages.${system};
 
