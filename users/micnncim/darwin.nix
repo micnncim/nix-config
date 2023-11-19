@@ -102,6 +102,7 @@ in {
       "zoom"
     ];
     masApps = {
+      Amphetamine = 937984704;
       "Get Plain Text" = 508368068;
       Spark = 1176895641;
     };
