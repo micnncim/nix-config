@@ -97,6 +97,7 @@ in {
       "slack"
       "spotify"
       "stats"
+      "tailscale"
       "visual-studio-code"
       "vivaldi"
       "zoom"
