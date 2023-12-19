@@ -79,6 +79,7 @@ in {
       "alt-tab"
       "barrier"
       "bartender"
+      "copilot-for-xcode"
       "coscreen"
       "cron"
       "discord"
