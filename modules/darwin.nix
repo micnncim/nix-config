@@ -1,8 +1,6 @@
-{ config, pkgs, lib, ... }:
+{ config, pkgs, lib, username, ... }:
 
-# TODO(micnncim): Make this a function that accepts variables in `let`.
-let username = "micnncim";
-in {
+{
   #---------------------------------------------------------------------
   # Nix
   #---------------------------------------------------------------------

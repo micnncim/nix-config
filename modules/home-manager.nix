@@ -1,8 +1,9 @@
+{ inputs, username, ... }:
+
 { config, lib, pkgs, ... }:
 
 let
-  sources = import ../../nix/sources.nix;
-  username = "micnncim";
+  sources = import ../nix/sources.nix;
   inherit (pkgs) stdenv;
 in
 {
