@@ -17,15 +17,15 @@ inputs.darwin.lib.darwinSystem {
 
       home-manager.useGlobalPkgs = true;
       home-manager.useUserPackages = true;
-      home-manager.users.${username} = import ../modules/home-manager.nix {
-        inherit inputs username;
+      home-manager.users.${username} = ../modules/home.nix;
+      home-manager.extraSpecialArgs = {
+        inherit inputs overlays system username;
       };
 
       nix-homebrew = {
         enable = true;
         enableRosetta = true;
         user = "${username}";
-        # autoMigrate = true;
       };
     }
 
@@ -33,7 +33,11 @@ inputs.darwin.lib.darwinSystem {
     # better based on these values.
     {
       config._module.args = {
-        inherit inputs overlays system username;
+        # inherit inputs overlays system username;
+        inputs = inputs;
+        overlays = overlays;
+        system = system;
+        username = username;
       };
     }
   ];
