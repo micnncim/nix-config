@@ -3,17 +3,17 @@
 {
   programs.tmux = {
     enable = true;
-    plugins = with pkgs; [
-      tmuxPlugins.copycat
-      tmuxPlugins.fzf-tmux-url
-      tmuxPlugins.logging
-      tmuxPlugins.open
-      tmuxPlugins.prefix-highlight
-      tmuxPlugins.resurrect
-      tmuxPlugins.tmux-fzf
-      tmuxPlugins.yank
+    plugins = with pkgs.tmuxPlugins; [
+      copycat
+      fzf-tmux-url
+      logging
+      open
+      prefix-highlight
+      resurrect
+      tmux-fzf
+      yank
       {
-        plugin = tmuxPlugins.continuum;
+        plugin = continuum;
         extraConfig = ''
           set -g @continuum-restore 'on'
           set -g @continuum-save-interval '5' # minutes
@@ -22,7 +22,7 @@
         '';
       }
       {
-        plugin = tmuxPlugins.nord;
+        plugin = nord;
         extraConfig = ''
           # Disable patched fonts.
           # https://www.nordtheme.com/docs/ports/tmux/configuration
