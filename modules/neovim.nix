@@ -3,14 +3,14 @@
 {
   programs.neovim = {
     enable = true;
-    plugins = with pkgs; [
-      vimPlugins.copilot-vim
-      vimPlugins.nord-nvim
-      vimPlugins.nvim-treesitter
-      vimPlugins.nvim-treesitter-textobjects
-      vimPlugins.vim-markdown
+    plugins = with pkgs.vimPlugins; [
+      copilot-vim
+      nord-nvim
+      nvim-treesitter
+      nvim-treesitter-textobjects
+      vim-markdown
       {
-        plugin = vimPlugins.hop-nvim;
+        plugin = hop-nvim;
         type = "lua";
         config = ''
           require("hop").setup { keys = 'uhetonas' } -- Dvorak
@@ -20,7 +20,7 @@
         '';
       }
       {
-        plugin = vimPlugins.nvim-surround;
+        plugin = nvim-surround;
         type = "lua";
         config = ''
           require("nvim-surround").setup()
