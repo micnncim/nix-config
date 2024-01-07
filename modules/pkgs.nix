@@ -6,14 +6,12 @@
       # Core
       coreutils
       curl
-      git
       tree
       watch
       wget
 
       # Utils
       bat
-      delta
       fd
       jq
       neofetch
@@ -61,9 +59,6 @@
 
       # Fonts
       nerdfonts
-
-      # GUI
-      alacritty
 
       # NUR
       nur.repos.micnncim.gctx
