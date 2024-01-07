@@ -31,7 +31,7 @@
     trackpad.Clicking = true;
   };
 
-  system.activationScripts.extraUserActivation.text = ''
+  system.activationScripts.vscode.text = ''
     defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
   '';
 }
