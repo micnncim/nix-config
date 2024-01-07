@@ -61,6 +61,10 @@
         system = "aarch64-darwin";
         username = "micnncim";
       };
+      darwinConfigurations.deneb = mkDarwin {
+        system = "aarch64-darwin";
+        username = "micnncim.v2";
+      };
       darwinConfigurations.albireo = mkDarwin {
         system = "aarch64-darwin";
         username = "micnncim";
