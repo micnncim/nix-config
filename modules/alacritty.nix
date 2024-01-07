@@ -7,14 +7,14 @@
     # values dynamically from Nix configuration and some tiny values for 
     # convenience.
     settings = {
-      import = [
-        "${config.xdg.configHome}/alacritty/colors.yml"
-        "${config.xdg.configHome}/alacritty/corsor.yml"
-        "${config.xdg.configHome}/alacritty/debug.yml"
-        "${config.xdg.configHome}/alacritty/keybindings.yml"
-        "${config.xdg.configHome}/alacritty/mouse.yml"
-        "${config.xdg.configHome}/alacritty/selection.yml"
-        "${config.xdg.configHome}/alacritty/window.yml"
+      import = map (path: "${config.xdg.configHome}/alacritty/${path}") [
+        "colors.yml"
+        "cursor.yml"
+        "debug.yml"
+        "keybindings.yml"
+        "mouse.yml"
+        "selection.yml"
+        "window.yml"
       ];
       env = {
         TERM = "xterm-256color";
