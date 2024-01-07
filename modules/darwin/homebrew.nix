@@ -20,7 +20,6 @@
       # See also https://1password.community/discussion/127950/v2-client-unable-to-connect-to-desktop-app.
       "1password-cli"
       "alt-tab"
-      "barrier"
       "bartender"
       "copilot-for-xcode"
       "coscreen"
@@ -33,7 +32,6 @@
       "google-japanese-ime"
       "karabiner-elements"
       "keyboardcleantool"
-      "keycastr"
       "muzzle"
       "notion"
       "raycast"
@@ -47,7 +45,6 @@
       "zoom"
     ];
     masApps = {
-      Amphetamine = 937984704;
       "Get Plain Text" = 508368068;
       Spark = 1176895641;
     };
