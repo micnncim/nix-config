@@ -20,6 +20,7 @@
       ps = "push";
       r = "remote";
       rs = "reset";
+      save = "!sh -c 'echo -n \"Enter stash message: \"; read message; git stash push -u -m \"$message\"'";
       st = "status";
       sw = "!f() { if [[ $# -ge 1 ]] ; then git switch $@; else git switch $(git for-each-ref --format='%(refname:short)' refs/heads/ | fzf); fi }; f";
     };
