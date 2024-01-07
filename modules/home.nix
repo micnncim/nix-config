@@ -12,6 +12,7 @@
     ./fish.nix
     ./fzf.nix
     ./gh.nix
+    ./git.nix
     ./gpg.nix
     ./neovim.nix
     ./nix-index.nix
