@@ -17,6 +17,7 @@
     ./neovim.nix
     ./nix-index.nix
     ./tmux.nix
+    ./xcode.nix
   ];
 
   home.stateVersion = "22.11";
