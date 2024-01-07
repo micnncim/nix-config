@@ -1,0 +1,34 @@
+window:
+  dimensions:
+    columns: 260
+    lines: 60
+  padding:
+    x: 8
+    y: 32
+  dynamic_padding: false
+  dynamic_title: true
+  decorations: transparent
+  startup_mode: Windowed
+  opacity: 1.0
+
+scrolling:
+  history: 10000
+  multiplier: 3
+
+font:
+  normal:
+    family: Ricty
+    style: Regular
+  bold:
+    family: Ricty
+    style: Bold
+  italic:
+    family: Ricty
+    style: Italic
+  size: 26.0
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0

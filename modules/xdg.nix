@@ -4,7 +4,11 @@
   xdg = {
     enable = true;
     configFile = {
-      "alacritty/alacritty.yml".source = ./alacritty.yml;
+      # "alacritty/alacritty.yml".source = ./alacritty.yml;
+      "alacritty" = {
+        recursive = true;
+        source = ./alacritty;
+      };
       "bat/.batrc".source = ./.batrc;
       "dircolors/.dircolors".source = ./.dircolors;
       "fd/ignore".source = ./fdignore;

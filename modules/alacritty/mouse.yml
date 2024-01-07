@@ -1,0 +1,9 @@
+mouse:
+  double_click: { threshold: 300 }
+  triple_click: { threshold: 300 }
+  hide_when_typing: false
+  hints:
+    modifiers: None
+
+mouse_bindings:
+  - { mouse: Middle, action: PasteSelection }

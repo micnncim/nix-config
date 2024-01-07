@@ -2,6 +2,11 @@
 
 {
   imports = [
+    ./pkgs.nix
+    ./shell.nix
+    ./xdg.nix
+
+    ./alacritty.nix
     ./bash.nix
     ./direnv.nix
     ./fish.nix
@@ -10,10 +15,7 @@
     ./gpg.nix
     ./neovim.nix
     ./nix-index.nix
-    ./pkgs.nix
-    ./shell.nix
     ./tmux.nix
-    ./xdg.nix
   ];
 
   home.stateVersion = "22.11";
