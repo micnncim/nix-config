@@ -5,23 +5,23 @@
 	<key>DVTConsoleDebuggerInputTextColor</key>
 	<string>0.816187 0.837374 0.894673 1</string>
 	<key>DVTConsoleDebuggerInputTextFont</key>
-	<string>Ricty-Bold - 12.0</string>
+	<string>Ricty-Bold - 16.0</string>
 	<key>DVTConsoleDebuggerOutputTextColor</key>
 	<string>0.816187 0.837374 0.894673 1</string>
 	<key>DVTConsoleDebuggerOutputTextFont</key>
-	<string>Ricty-Regular - 12.0</string>
+	<string>Ricty-Bold - 16.0</string>
 	<key>DVTConsoleDebuggerPromptTextColor</key>
 	<string>0.450991 0.556703 0.711154 1</string>
 	<key>DVTConsoleDebuggerPromptTextFont</key>
-	<string>Ricty-Regular - 12.0</string>
+	<string>Ricty-Bold - 16.0</string>
 	<key>DVTConsoleExectuableInputTextColor</key>
 	<string>0.816187 0.837374 0.894673 1</string>
 	<key>DVTConsoleExectuableInputTextFont</key>
-	<string>Ricty-Oblique - 12.0</string>
+	<string>Ricty-Bold - 16.0</string>
 	<key>DVTConsoleExectuableOutputTextColor</key>
 	<string>0.48763 0.698625 0.777955 1</string>
 	<key>DVTConsoleExectuableOutputTextFont</key>
-	<string>Ricty-Bold - 12.0</string>
+	<string>Ricty-Bold - 16.0</string>
 	<key>DVTConsoleTextBackgroundColor</key>
 	<string>0.138852 0.15161 0.193536 1</string>
 	<key>DVTConsoleTextInsertionPointColor</key>
@@ -172,7 +172,7 @@
 		<key>xcode.syntax.comment.doc</key>
 		<string>Ricty-Regular - 16.0</string>
 		<key>xcode.syntax.comment.doc.keyword</key>
-		<string>Ricty-Regular - 16.0</string>
+		<string>Ricty-Bold - 16.0</string>
 		<key>xcode.syntax.declaration.other</key>
 		<string>Ricty-Regular - 16.0</string>
 		<key>xcode.syntax.declaration.type</key>
@@ -202,9 +202,9 @@
 		<key>xcode.syntax.identifier.variable.system</key>
 		<string>Ricty-Regular - 16.0</string>
 		<key>xcode.syntax.keyword</key>
-		<string>Ricty-Regular - 16.0</string>
+		<string>Ricty-Bold - 16.0</string>
 		<key>xcode.syntax.mark</key>
-		<string>Ricty-Regular - 16.0</string>
+		<string>Ricty-Bold - 16.0</string>
 		<key>xcode.syntax.markup.code</key>
 		<string>Ricty-Regular - 16.0</string>
 		<key>xcode.syntax.number</key>
