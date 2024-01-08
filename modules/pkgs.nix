@@ -59,6 +59,7 @@
 
       # Fonts
       nerdfonts
+      ricty
 
       # NUR
       nur.repos.micnncim.gctx
