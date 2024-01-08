@@ -34,4 +34,9 @@
       working_directory = "None";
     };
   };
+
+  xdg.configFile."alacritty" = {
+    recursive = true;
+    source = ./alacritty;
+  };
 }

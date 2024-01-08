@@ -48,4 +48,13 @@
       credential.helper = "osxkeychain";
     };
   };
+
+  xdg.configFile = {
+    "git" = {
+      recursive = true;
+      source = ./git;
+    };
+    "git/templates/hooks".source =
+      config.lib.file.mkOutOfStoreSymlink "${config.xdg.configHome}/git/hooks";
+  };
 }
