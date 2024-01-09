@@ -9,6 +9,7 @@ fish_add_path $HOME/go/bin
 # Use `--regex` to avoid conflicts with other abbreviations.
 abbr -a bat --regex '^cat$' bat
 abbr -a code --regex '^c$' code
+abbr -a ghq --regex '^ghq$' ghq get -p
 abbr -a git --regex '^g$' git
 abbr -a help --regex '^h$' help
 abbr -a kubectl --regex '^k$' kubectl
