@@ -4,7 +4,7 @@
   imports = [
     ./darwin/pam.nix
 
-    ./darwin/font.nix
+    ./darwin/fonts.nix
     ./darwin/gnupg.nix
     ./darwin/homebrew.nix
     ./darwin/nix.nix
