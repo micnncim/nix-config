@@ -13,7 +13,7 @@ abbr -a git --regex '^g$' git
 abbr -a help --regex '^h$' help
 abbr -a kubectl --regex '^k$' kubectl
 abbr -a kubectx --regex '^kc$' kubectx
-abbr -a kubectl --regex '^kn$' kubens
+abbr -a kubens --regex '^kn$' kubens
 abbr -a mkdir --regex '^mkdir$' mkdir -p
 abbr -a rip --regex '^rm$' rip
 abbr -a nvim --regex '^v$' nvim
