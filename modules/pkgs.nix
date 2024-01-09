@@ -65,5 +65,9 @@
       nur.repos.micnncim.gctx
       nur.repos.micnncim.kubectl-reveal-secret
       nur.repos.micnncim.slack-cli
-    ] ++ lib.optionals stdenv.isDarwin [ pinentry_mac ];
+    ] ++ lib.optionals stdenv.isDarwin [
+      aria
+      pinentry_mac
+      xcodes
+    ];
 }
