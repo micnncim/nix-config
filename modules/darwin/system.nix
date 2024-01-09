@@ -20,11 +20,20 @@
     defaults = {
       NSGlobalDomain = {
         "com.apple.trackpad.scaling" = 3.0;
+        AppleInterfaceStyle = "Dark";
+        AppleTemperatureUnit = "Celsius";
         InitialKeyRepeat = 20;
         KeyRepeat = 1;
       };
 
-      dock.autohide = true;
+      dock = {
+        autohide = true;
+        autohide-delay = 0.0;
+        autohide-time-modifier = 0.0;
+        mineffect = "genie";
+        orientation = "bottom";
+        show-recents = false;
+      };
 
       screencapture.location =
         "/Users/${username}/Google Drive/My Drive/Screenshots";
