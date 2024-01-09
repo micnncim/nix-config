@@ -11,21 +11,21 @@
       wget
 
       # Utils
+      atuin
       bat
+      eza
       fd
       jq
+      markdownlint-cli
       neofetch
       pre-commit
       procs
       ripgrep
+      ripsecrets
       rm-improved
       sd
       tealdeer
       typos
-      unstable.atuin
-      unstable.eza
-      unstable.markdownlint-cli
-      unstable.ripsecrets
 
       # Dev
       (google-cloud-sdk.withExtraComponents
@@ -40,7 +40,7 @@
       # Language servers
       nil
       nodePackages.bash-language-server
-      unstable.yaml-language-server
+      yaml-language-server
 
       # Container
       kubectl
