@@ -43,6 +43,7 @@
         default = "upstream";
         autoSetupRemote = true;
       };
+      pull.rebase = true;
       ghq.root = "${config.home.homeDirectory}/src";
     } // lib.optionals pkgs.stdenv.isDarwin {
       credential.helper = "osxkeychain";
