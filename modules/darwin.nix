@@ -10,6 +10,9 @@
     ./darwin/nix.nix
     ./darwin/security.nix
     ./darwin/shell.nix
+    ./darwin/sketchybar.nix
+    ./darwin/skhd.nix
     ./darwin/system.nix
+    ./darwin/yabai.nix
   ];
 }

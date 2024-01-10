@@ -19,11 +19,12 @@
     # TODO(micnncim): Add more.
     defaults = {
       NSGlobalDomain = {
-        "com.apple.trackpad.scaling" = 3.0;
         AppleInterfaceStyle = "Dark";
         AppleTemperatureUnit = "Celsius";
         InitialKeyRepeat = 20;
         KeyRepeat = 1;
+        _HIHideMenuBar = true; # We use SketchyBar.
+        "com.apple.trackpad.scaling" = 3.0;
       };
 
       dock = {
