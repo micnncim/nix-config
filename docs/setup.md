@@ -18,8 +18,7 @@ cd nix-config
 Install packages:
 
 ```console
-nix profile install nixpkgs#jq
-nix profile install nixpkgs#cachix
+nix profile install nixpkgs#jq nixpkgs#cachix
 ```
 
 Also set up a Cachix auth token:
