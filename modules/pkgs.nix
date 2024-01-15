@@ -24,7 +24,6 @@
       ripsecrets
       rm-improved
       sd
-      tealdeer
       typos
 
       # Dev
