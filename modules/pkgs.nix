@@ -68,6 +68,7 @@
     ] ++ lib.optionals stdenv.isDarwin [
       aria
       pinentry_mac
+      skhd
       xcodes
     ];
 }
