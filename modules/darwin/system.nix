@@ -29,7 +29,8 @@
 
       dock = {
         autohide = true;
-        mineffect = "genie";
+        mineffect = "scale";
+        minimize-to-application = true;
         orientation = "bottom";
         show-recents = false;
       };
