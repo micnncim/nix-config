@@ -30,14 +30,14 @@ in
       debug_output = "on";
     };
     extraConfig = ''
-      yabai -m rule --add app='^1Password$' manage=off
+      yabai -m rule --add app='^1Password$' manage=off grid=2:4:2:0:1:2
       yabai -m rule --add app='^Calculator$' manage=off
       yabai -m rule --add app='^coreautha$' manage=off
-      yabai -m rule --add app='^Dictionary$' manage=off
+      yabai -m rule --add app='^Dictionary$' manage=off grid=2:4:2:0:1:2
       yabai -m rule --add app='^Okta Verify$' manage=off
       yabai -m rule --add app='^Raycast$' manage=off
       yabai -m rule --add app='^System Information$' manage=off
-      yabai -m rule --add app='^System Settings$' manage=off
+      yabai -m rule --add app='^System Settings$' manage=off grid=2:4:2:0:1:2
       yabai -m rule --add app='^Tailscale$' manage=off
     '';
   };
