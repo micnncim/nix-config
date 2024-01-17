@@ -21,6 +21,7 @@
       "google-chrome"
       "google-drive"
       "google-japanese-ime"
+      "imageoptim"
       "karabiner-elements"
       "keyboardcleantool"
       "muzzle"
