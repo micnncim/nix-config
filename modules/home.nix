@@ -16,6 +16,7 @@
     ./gpg.nix
     ./neovim.nix
     ./nix-index.nix
+    ./ssh.nix
     ./tealdeer.nix
     ./tmux.nix
     ./xcode.nix
