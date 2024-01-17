@@ -6,9 +6,8 @@
     userName = "micnncim";
     userEmail = "micnncim@gmail.com";
     signing = {
-      key = "6FE4E6E1";
+      key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOqrJp7F4TZm8SDX3Os6EQ9voET0QIz542VxTgO8OXLg";
       signByDefault = true;
-      gpgPath = "${pkgs.gnupg}/bin/gpg";
     };
     aliases = {
       a = "add";
@@ -47,6 +46,13 @@
       url."git@github.com:".insteadOf = "https://github.com";
       ghq.root = "${config.home.homeDirectory}/src";
     } // lib.optionals pkgs.stdenv.isDarwin {
+      gpg = {
+        format = "ssh";
+        ssh = {
+          program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign";
+          allowedSignersFile = "${config.xdg.configHome}/git/allowed_signers";
+        };
+      };
       credential.helper = "osxkeychain";
     };
   };
