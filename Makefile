@@ -7,6 +7,9 @@ NIX_NAME ?= darwinConfigurations.$(HOSTNAME).system
 
 .DEFAULT_GOAL := install
 
+# Use op plugin if available.
+CACHIX_CMD := $(if $(shell command -v op),op plugin run -- cachix,cachix)
+
 .PHONY: install
 install: build switch
 
@@ -14,7 +17,7 @@ install: build switch
 build:
 	@nix build ".#$(NIX_NAME)" --json \
 		| jq -r '.[].outputs | to_entries[].value' \
-		| cachix push "$(CACHIX_CACHE)"
+		| $(CACHIX_CMD) push $(CACHIX_CACHE)
 
 .PHONY: build/no-cache
 build/no-cache:

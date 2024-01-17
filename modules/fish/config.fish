@@ -35,7 +35,7 @@ atuin init fish | source
 test -r "$XDG_CONFIG_HOME/dircolors/.dircolors" && eval (dircolors -c "$XDG_CONFIG_HOME/dircolors/.dircolors")
 
 # https://developer.1password.com/docs/cli/shell-plugins/
-# source $HOME/.op/plugins.sh
+test -e "$XDG_CONFIG_HOME/op/plugins.sh" && source "$XDG_CONFIG_HOME/op/plugins.sh"
 
 if isatty
     set -x GPG_TTY (tty)
