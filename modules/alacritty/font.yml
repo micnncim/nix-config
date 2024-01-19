@@ -1,0 +1,17 @@
+font:
+  normal:
+    family: Ricty
+    style: Regular
+  bold:
+    family: Ricty
+    style: Bold
+  italic:
+    family: Ricty
+    style: Italic
+  size: 26.0
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0

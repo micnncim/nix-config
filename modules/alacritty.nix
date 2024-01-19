@@ -4,15 +4,17 @@
   programs.alacritty = {
     enable = true;
     # We manage most of the configuration in YAML files but here we manage some
-    # values dynamically from Nix configuration and some tiny values for 
+    # values dynamically from Nix configuration and some tiny values for
     # convenience.
     settings = {
       import = map (path: "${config.xdg.configHome}/alacritty/${path}") [
         "colors.yml"
         "cursor.yml"
         "debug.yml"
+        "font.yml"
         "keybindings.yml"
         "mouse.yml"
+        "scrolling.yml"
         "selection.yml"
         "window.yml"
       ];
@@ -20,7 +22,7 @@
         TERM = "xterm-256color";
         # NOTE(micnncim): This is a workaround for the issue that `shell` whose value
         # is `fish` does not start fish shell on macOS.
-        # 
+        #
         # See:
         # - https://github.com/alacritty/alacritty/issues/6412
         # - https://github.com/alacritty/alacritty/issues/6746
