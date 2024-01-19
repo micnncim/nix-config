@@ -13,6 +13,7 @@
     ./fzf.nix
     ./gh.nix
     ./git.nix
+    ./go.nix
     ./gpg.nix
     ./neovim.nix
     ./nix-index.nix

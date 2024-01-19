@@ -4,7 +4,7 @@ fish_add_path /opt/homebrew/bin
 fish_add_path /run/current-system/sw/bin
 fish_add_path $HOME/.krew/bin
 fish_add_path $HOME/.nix-defexpr/channels
-fish_add_path $HOME/go/bin
+fish_add_path $GOBIN
 
 # Use `--regex` to avoid conflicts with other abbreviations.
 abbr -a bat --regex '^cat$' bat
