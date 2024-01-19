@@ -10,6 +10,7 @@
     casks = [
       "1password"
       "alt-tab"
+      "amie"
       "ankerwork"
       "bartender"
       "copilot-for-xcode"
