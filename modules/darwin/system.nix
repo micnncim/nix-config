@@ -35,6 +35,14 @@
         show-recents = false;
       };
 
+      finder = {
+        _FXShowPosixPathInTitle = true;
+        AppleShowAllFiles = true;
+        FXPreferredViewStyle = "clmv"; # Column view.
+        ShowPathbar = false;
+        ShowStatusBar = true;
+      };
+
       screencapture.location =
         "/Users/${username}/Google Drive/My Drive/Screenshots";
 
