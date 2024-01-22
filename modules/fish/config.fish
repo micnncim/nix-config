@@ -32,8 +32,6 @@ abbr -a --position anywhere --function __abbr_subcommand_l -- l
 starship init fish | source
 atuin init fish | source
 
-test -r "$XDG_CONFIG_HOME/dircolors/.dircolors" && eval (dircolors -c "$XDG_CONFIG_HOME/dircolors/.dircolors")
-
 # https://developer.1password.com/docs/cli/shell-plugins/
 test -e "$XDG_CONFIG_HOME/op/plugins.sh" && source "$XDG_CONFIG_HOME/op/plugins.sh"
 
