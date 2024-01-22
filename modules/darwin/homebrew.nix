@@ -33,6 +33,7 @@
       "spotify"
       "stats"
       "tailscale"
+      "todoist"
       "visual-studio-code"
       "vivaldi"
       "zoom"
