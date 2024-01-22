@@ -12,7 +12,6 @@
 
       # Utils
       atuin
-      bat
       eza
       fd
       jq

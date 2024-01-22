@@ -4,7 +4,6 @@
   xdg = {
     enable = true;
     configFile = {
-      "bat/.batrc".source = ./.batrc;
       "dircolors/.dircolors".source = ./.dircolors;
       "fd/ignore".source = ./fdignore;
       "karabiner/karabiner.json".source = ./karabiner.json;

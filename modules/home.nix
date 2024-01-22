@@ -8,6 +8,7 @@
 
     ./alacritty.nix
     ./bash.nix
+    ./bat.nix
     ./direnv.nix
     ./fish.nix
     ./fzf.nix
