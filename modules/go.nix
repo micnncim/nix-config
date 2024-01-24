@@ -3,7 +3,6 @@
 {
   programs.go = {
     enable = true;
-    package = pkgs.go;
     goPath = "src/go";
     goBin = "bin";
     goPrivate = [
