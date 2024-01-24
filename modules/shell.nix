@@ -10,7 +10,6 @@
     MANPAGER = "sh -c 'col -bx | ${pkgs.bat}/bin/bat -l man -p'";
     # https://github.com/sharkdp/bat/issues/652#issuecomment-529032263
     MANROFFOPT = "-c";
-    RIPGREP_CONFIG_PATH = "${config.xdg.configHome}/ripgrep/.ripgreprc";
     # https://cloud.google.com/blog/products/containers-kubernetes/kubectl-auth-changes-in-gke
     USE_GKE_GCLOUD_AUTH_PLUGIN = "True";
   };

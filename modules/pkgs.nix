@@ -18,7 +18,6 @@
       neofetch
       pre-commit
       procs
-      ripgrep
       ripsecrets
       rm-improved
       sd

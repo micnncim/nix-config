@@ -19,6 +19,7 @@
     ./gpg.nix
     ./neovim.nix
     ./nix-index.nix
+    ./ripgrep.nix
     ./ssh.nix
     ./starship.nix
     ./tealdeer.nix
