@@ -11,7 +11,6 @@
       wget
 
       # Utils
-      atuin
       eza
       fd
       jq

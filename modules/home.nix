@@ -7,6 +7,7 @@
     ./xdg.nix
 
     ./alacritty.nix
+    ./atuin.nix
     ./bash.nix
     ./bat.nix
     ./direnv.nix
