@@ -33,7 +33,6 @@
       nodejs_18 # For CopilotForXcode
       pinentry
       shellcheck
-      starship
 
       # Language servers
       nil

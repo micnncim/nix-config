@@ -20,6 +20,7 @@
     ./neovim.nix
     ./nix-index.nix
     ./ssh.nix
+    ./starship.nix
     ./tealdeer.nix
     ./tmux.nix
     ./xcode.nix

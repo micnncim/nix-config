@@ -12,7 +12,6 @@
         source = ./sketchybar;
         recursive = true;
       };
-      "starship/starship.toml".source = ./starship.toml;
     };
   };
 }
