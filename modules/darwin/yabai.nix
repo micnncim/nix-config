@@ -36,6 +36,7 @@ in
       yabai -m rule --add app='^Dictionary$' manage=off grid=2:4:2:0:1:2
       yabai -m rule --add app='^Okta Verify$' manage=off
       yabai -m rule --add app='^Raycast$' manage=off
+      yabai -m rule --add app='^Spark$' manage=off grid=1:2:1:0:1:1
       yabai -m rule --add app='^System Information$' manage=off
       yabai -m rule --add app='^System Settings$' manage=off grid=2:4:2:0:1:2
       yabai -m rule --add app='^Tailscale$' manage=off
