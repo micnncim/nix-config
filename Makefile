@@ -2,8 +2,11 @@ OUT := result
 
 CACHIX_CACHE ?= micnncim-nix-config
 
-HOSTNAME ?= $(shell hostname)
-NIX_NAME ?= darwinConfigurations.$(HOSTNAME).system
+ifeq ($(MACHINE_NAME),)
+	MACHINE_NAME := $(shell hostname)
+endif
+
+NIX_NAME ?= darwinConfigurations.$(MACHINE_NAME).system
 
 .DEFAULT_GOAL := install
 
@@ -25,4 +28,4 @@ build/no-cache:
 
 .PHONY: switch
 switch: $(OUT)/sw/bin/darwin-rebuild
-	@$(OUT)/sw/bin/darwin-rebuild switch --flake "."
+	@$(OUT)/sw/bin/darwin-rebuild switch --flake ".#$(MACHINE_NAME)"

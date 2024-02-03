@@ -33,6 +33,8 @@ export CACHIX_AUTH_TOKEN="..."
 
 You might need to rename a hostname of your machine.
 
+Or use `make MACHINE_NAME=<hostname>`.
+
 #### macOS
 
 ```console
