@@ -13,12 +13,12 @@ inputs.darwin.lib.darwinSystem {
       };
     }
 
-    ../modules/darwin.nix
+    ../modules/darwin
     inputs.home-manager.darwinModules.home-manager
     {
       home-manager.useGlobalPkgs = true;
       home-manager.useUserPackages = true;
-      home-manager.users.${username} = ../modules/home.nix;
+      home-manager.users.${username} = ../modules/home;
       home-manager.extraSpecialArgs = {
         inherit inputs overlays system username;
       };

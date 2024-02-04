@@ -14,13 +14,13 @@
 	<string>0.450991 0.556703 0.711154 1</string>
 	<key>DVTConsoleDebuggerPromptTextFont</key>
 	<string>Ricty-Bold - 16.0</string>
-	<key>DVTConsoleExectuableInputTextColor</key>
+	<key>DVTConsoleExecutableInputTextColor</key>
 	<string>0.816187 0.837374 0.894673 1</string>
-	<key>DVTConsoleExectuableInputTextFont</key>
+	<key>DVTConsoleExecutableInputTextFont</key>
 	<string>Ricty-Bold - 16.0</string>
-	<key>DVTConsoleExectuableOutputTextColor</key>
+	<key>DVTConsoleExecutableOutputTextColor</key>
 	<string>0.48763 0.698625 0.777955 1</string>
-	<key>DVTConsoleExectuableOutputTextFont</key>
+	<key>DVTConsoleExecutableOutputTextFont</key>
 	<string>Ricty-Bold - 16.0</string>
 	<key>DVTConsoleTextBackgroundColor</key>
 	<string>0.138852 0.15161 0.193536 1</string>

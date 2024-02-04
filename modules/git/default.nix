@@ -32,6 +32,7 @@
         navigate = true;
       };
     };
+    ignores = lib.splitString "\n" (builtins.readFile ./.gitignore);
     extraConfig = {
       color.ui = "auto";
       init = {
@@ -58,10 +59,8 @@
   };
 
   xdg.configFile = {
-    "git" = {
-      recursive = true;
-      source = ./git;
-    };
+    "git/allowed_signers".source = ./allowed_signers;
+    "git/hooks".source = ./hooks;
     "git/templates/hooks".source =
       config.lib.file.mkOutOfStoreSymlink "${config.xdg.configHome}/git/hooks";
   };

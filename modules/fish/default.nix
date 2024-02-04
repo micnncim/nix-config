@@ -1,7 +1,7 @@
 { config, lib, pkgs, username, ... }:
 
 let
-  sources = import ../nix/sources.nix;
+  sources = import ../../nix/sources.nix;
 in
 {
   programs.fish = {
@@ -15,7 +15,7 @@ in
     } // builtins.listToAttrs (map
       (n: {
         name = n;
-        value = (builtins.readFile ./fish/functions/${n}.fish);
+        value = (builtins.readFile ./functions/${n}.fish);
       }) [
       "__abbr_flag_ctx"
       "__abbr_flag_n"
@@ -33,7 +33,7 @@ in
       (lib.strings.intersperse "\n" [
         "fish_add_path /etc/profiles/per-user/${username}/bin"
         "source ${pkgs.google-cloud-sdk}/google-cloud-sdk/path.fish.inc"
-        (builtins.readFile ./fish/config.fish)
+        (builtins.readFile ./config.fish)
       ]);
     plugins = map
       (n: {

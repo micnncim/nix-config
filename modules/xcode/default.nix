@@ -5,14 +5,17 @@ lib.mkIf pkgs.stdenv.isDarwin {
   # Related: https://github.com/dracula/xcode/issues/7
   home.activation.copyXcodeThemes = lib.hm.dag.entryAfter [ "linkGeneration" ] ''
     $DRY_RUN_CMD mkdir -p ${config.home.homeDirectory}/Library/Developer/Xcode/UserData/FontAndColorThemes
-    $DRY_RUN_CMD cp -f ${config.xdg.configHome}/xcode/Nord.xccolortheme ${config.home.homeDirectory}/Library/Developer/Xcode/UserData/FontAndColorThemes/Nord.xccolortheme
+    $DRY_RUN_CMD cp -f ${config.xdg.configHome}/xcode/themes/Nord.xccolortheme ${config.home.homeDirectory}/Library/Developer/Xcode/UserData/FontAndColorThemes/Nord.xccolortheme
   '';
 
   home.file."${config.home.homeDirectory}/Library/Developer/Xcode/UserData/IDETemplateMacros.plist".source =
-    ./xcode/IDETemplateMacros.plist;
+    ./IDETemplateMacros.plist;
 
-  xdg.configFile."xcode" = {
-    recursive = true;
-    source = ./xcode;
+  xdg.configFile = {
+    # "xcode/themes/Nord.xccolortheme" = ./themes/Nord.xccolortheme;
+    "xcode/themes" = {
+      source = ./themes;
+      recursive = true;
+    };
   };
 }
