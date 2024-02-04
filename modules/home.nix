@@ -23,6 +23,7 @@
     ./nix-index.nix
     ./pre-commit.nix
     ./ripgrep.nix
+    ./sketchybar.nix
     ./ssh.nix
     ./starship.nix
     ./tealdeer.nix

@@ -3,11 +3,5 @@
 {
   xdg = {
     enable = true;
-    configFile = {
-      "sketchybar" = {
-        source = ./sketchybar;
-        recursive = true;
-      };
-    };
   };
 }
