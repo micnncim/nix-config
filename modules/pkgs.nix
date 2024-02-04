@@ -16,12 +16,10 @@
       jq
       markdownlint-cli
       neofetch
-      pre-commit
       procs
       ripsecrets
       rm-improved
       sd
-      typos
 
       # Dev
       _1password

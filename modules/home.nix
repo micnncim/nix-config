@@ -19,11 +19,13 @@
     ./gpg.nix
     ./neovim.nix
     ./nix-index.nix
+    ./pre-commit.nix
     ./ripgrep.nix
     ./ssh.nix
     ./starship.nix
     ./tealdeer.nix
     ./tmux.nix
+    ./typos.nix
     ./xcode.nix
   ];
 

@@ -1,13 +1,5 @@
 [files]
-extend-exclude = [ 
-    "*.json",
-    "*.toml",
-    "*generate*",
-    "go.mod", 
-    "go.sum",
-    "node_modules",
-    "vendor", 
-]
+extend-exclude = ["*.json", "go.mod", "go.sum", "node_modules", "vendor"]
 ignore-hidden = true
 ignore-files = true
 ignore-dot = true
