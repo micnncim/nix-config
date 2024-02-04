@@ -18,6 +18,7 @@
     ./git.nix
     ./go.nix
     ./gpg.nix
+    ./karabiner.nix
     ./neovim.nix
     ./nix-index.nix
     ./pre-commit.nix
