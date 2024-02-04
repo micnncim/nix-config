@@ -1,6 +1,11 @@
 { config, lib, pkgs, ... }:
 
 lib.mkIf pkgs.stdenv.isDarwin {
+  home.packages = with pkgs; [
+    aria
+    xcodes
+  ];
+
   # Seems symlink doesn't work for Xcode themes.
   # Related: https://github.com/dracula/xcode/issues/7
   home.activation.copyXcodeThemes = lib.hm.dag.entryAfter [ "linkGeneration" ] ''
@@ -12,7 +17,6 @@ lib.mkIf pkgs.stdenv.isDarwin {
     ./IDETemplateMacros.plist;
 
   xdg.configFile = {
-    # "xcode/themes/Nord.xccolortheme" = ./themes/Nord.xccolortheme;
     "xcode/themes" = {
       source = ./themes;
       recursive = true;
