@@ -45,7 +45,6 @@
       };
       pull.rebase = true;
       url."git@github.com:".insteadOf = "https://github.com";
-      ghq.root = "${config.home.homeDirectory}/src";
     } // lib.optionals pkgs.stdenv.isDarwin {
       gpg = {
         format = "ssh";

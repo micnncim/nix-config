@@ -14,6 +14,7 @@
     ../fish
     ../fzf
     ../gh
+    ../ghq
     ../git
     ../go
     ../gpg

@@ -24,7 +24,6 @@
       _1password
       (google-cloud-sdk.withExtraComponents
         ([ google-cloud-sdk.components.gke-gcloud-auth-plugin ]))
-      ghq
       git-lfs
       nodejs_18 # For CopilotForXcode
       pinentry
