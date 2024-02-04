@@ -4,7 +4,6 @@
   imports = [
     ./pkgs.nix
     ./shell.nix
-    ./xdg.nix
 
     ./alacritty.nix
     ./atuin.nix

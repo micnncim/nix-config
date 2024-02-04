@@ -1,6 +1,8 @@
 { config, lib, pkgs, ... }:
 
 {
+  xdg.enable = true;
+
   home.sessionVariables = {
     LANG = "en_US.UTF-8";
     LC_CTYPE = "UTF-8";
