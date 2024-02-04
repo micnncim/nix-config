@@ -1,14 +1,12 @@
 { config, lib, pkgs, ... }:
 
 {
-  home.packages = with pkgs; [
-    pre-commit
-  ];
+  home.packages = [ pkgs.pre-commit ];
 
   # pre-commit doesn't support variable substitution in the config file
   # so we have to use a Nix expression to generate the config file.
-  xdg.configFile."pre-commit/.pre-commit-config.yaml" = {
-    text = ''
+  xdg.configFile."pre-commit/.pre-commit-config.yaml".text =
+    ''
       repos:
       - repo: https://github.com/pre-commit/pre-commit-hooks
         rev: v3.2.0
@@ -48,5 +46,4 @@
           entry: bash -c 'typos --config ${config.xdg.configHome}/typos/typos.toml --write-changes'
           language: system
     '';
-  };
 }
