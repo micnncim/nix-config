@@ -11,6 +11,7 @@
     ./bash.nix
     ./bat.nix
     ./direnv.nix
+    ./fd.nix
     ./fish.nix
     ./fzf.nix
     ./gh.nix

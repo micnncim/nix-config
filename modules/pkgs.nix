@@ -12,7 +12,6 @@
 
       # Utils
       eza
-      fd
       jq
       markdownlint-cli
       neofetch
