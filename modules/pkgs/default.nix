@@ -10,10 +10,9 @@
       watch
       wget
 
-      # Utils
+      # Shell
       eza
       jq
-      markdownlint-cli
       neofetch
       procs
       ripsecrets
@@ -25,8 +24,9 @@
       (google-cloud-sdk.withExtraComponents
         ([ google-cloud-sdk.components.gke-gcloud-auth-plugin ]))
       git-lfs
-      nodejs_18 # For CopilotForXcode
+      markdownlint-cli
       shellcheck
+      vhs
 
       # Language servers
       nil
@@ -47,6 +47,9 @@
       nix-init
       nixpkgs-fmt
       nurl
+
+      # Required for Copilot.vim and Copilot for Xcode
+      nodejs_18
 
       # Fonts
       nerdfonts
