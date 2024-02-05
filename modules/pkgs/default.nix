@@ -59,6 +59,5 @@
       nur.repos.micnncim.slack-cli
     ] ++ lib.optionals stdenv.isDarwin [
       pinentry_mac
-      skhd
     ];
 }

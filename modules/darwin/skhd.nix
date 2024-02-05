@@ -1,6 +1,8 @@
 { config, lib, pkgs, ... }:
 
 {
+  environment.systemPackages = [ pkgs.skhd ];
+
   services.skhd = {
     enable = true;
     skhdConfig = ''
