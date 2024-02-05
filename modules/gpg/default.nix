@@ -1,5 +1,8 @@
 { config, lib, pkgs, ... }:
 
+let
+  isDarwin = pkgs.stdenv.isDarwin;
+in
 {
   programs.gpg = {
     enable = true;
@@ -7,8 +10,14 @@
     scdaemonSettings = { disable-ccid = true; };
   };
 
+  home.packages = with pkgs; [
+    pinentry
+  ] ++ lib.optionals isDarwin [
+    pinentry_mac
+  ];
+
   home.file."${config.programs.gpg.homedir}/gpg-agent.conf".text =
-    lib.mkIf pkgs.stdenv.isDarwin ''
+    lib.mkIf isDarwin ''
       pinentry-program ${pkgs.pinentry_mac}/Applications/pinentry-mac.app/Contents/MacOS/pinentry-mac
       default-cache-ttl 34560000
       max-cache-ttl 34560000

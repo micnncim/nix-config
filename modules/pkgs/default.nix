@@ -26,7 +26,6 @@
         ([ google-cloud-sdk.components.gke-gcloud-auth-plugin ]))
       git-lfs
       nodejs_18 # For CopilotForXcode
-      pinentry
       shellcheck
 
       # Language servers
@@ -57,7 +56,5 @@
       nur.repos.micnncim.gctx
       nur.repos.micnncim.kubectl-reveal-secret
       nur.repos.micnncim.slack-cli
-    ] ++ lib.optionals stdenv.isDarwin [
-      pinentry_mac
     ];
 }
