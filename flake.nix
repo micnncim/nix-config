@@ -20,6 +20,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    nix-index-database = {
+      url = "github:Mic92/nix-index-database";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
     nix-homebrew.url = "github:zhaofengli/nix-homebrew";
   };
 
@@ -32,6 +37,7 @@
     , micnncim-nur
     , home-manager
     , darwin
+    , nix-index-database
     , nix-homebrew
     , ...
     }@inputs:

@@ -15,6 +15,7 @@ inputs.darwin.lib.darwinSystem {
 
     ../modules/darwin
     inputs.home-manager.darwinModules.home-manager
+
     {
       home-manager.useGlobalPkgs = true;
       home-manager.useUserPackages = true;
@@ -23,6 +24,8 @@ inputs.darwin.lib.darwinSystem {
         inherit inputs overlays system username;
       };
     }
+
+    inputs.nix-index-database.darwinModules.nix-index
 
     inputs.nix-homebrew.darwinModules.nix-homebrew
     {
