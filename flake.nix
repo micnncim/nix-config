@@ -65,14 +65,17 @@
     {
       darwinConfigurations.vega = mkDarwin {
         system = "aarch64-darwin";
+        machine = "vega";
         username = "micnncim";
       };
       darwinConfigurations.altair = mkDarwin {
         system = "aarch64-darwin";
+        machine = "altair";
         username = "micnncim.v2";
       };
       darwinConfigurations.deneb = mkDarwin {
         system = "aarch64-darwin";
+        machine = "denab";
         username = "micnncim";
       };
     } // flake-utils.lib.eachDefaultSystem (system: rec {

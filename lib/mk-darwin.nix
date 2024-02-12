@@ -1,6 +1,6 @@
 { inputs, overlays }:
 
-{ system, username }:
+{ system, machine, username }:
 
 inputs.darwin.lib.darwinSystem {
   inherit system;
@@ -12,6 +12,8 @@ inputs.darwin.lib.darwinSystem {
         overlays = overlays;
       };
     }
+
+    ../machines/${machine}
 
     ../modules/darwin
     inputs.home-manager.darwinModules.home-manager
