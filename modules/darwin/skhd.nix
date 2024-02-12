@@ -39,9 +39,4 @@
       lalt - e : yabai -m window --toggle split
     '';
   };
-
-  # skhd requires Secure Keyboard Entry to be disabled.
-  system.activationScripts.skhd.text = ''
-    defaults write com.apple.Terminal SecureKeyboardEntry -bool false
-  '';
 }

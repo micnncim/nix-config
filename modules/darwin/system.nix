@@ -47,10 +47,17 @@
         "/Users/${username}/Google Drive/My Drive/Screenshots";
 
       trackpad.Clicking = true;
-    };
 
-    activationScripts.vscode.text = ''
-      defaults write com.microsoft.VSCode ApplePressAndHoldEnabled -bool false
-    '';
+      CustomUserPreferences = {
+        "com.apple.Terminal" = {
+          # skhd requires Secure Keyboard Entry to be disabled.
+          "SecureKeyboardEntry" = false;
+        };
+        "com.microsoft.VSCode" = {
+          # https://github.com/vscode-neovim/vscode-neovim#vscode-configuration
+          "ApplePressAndHoldEnabled" = false;
+        };
+      };
+    };
   };
 }
