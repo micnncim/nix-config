@@ -54,9 +54,11 @@
           "SecureKeyboardEntry" = false;
         };
         "com.apple.dt.Xcode" = {
-          "EnableSwiftBuildSystemIntegration" = true;
           "ShowBuildOperationDuration" = true;
           "XCFontAndColorCurrentDarkTheme" = "Nord.xccolortheme";
+        };
+        "com.apple.dt.XCBuild" = {
+          "EnableSwiftBuildSystemIntegration" = true;
         };
         "com.microsoft.VSCode" = {
           # https://github.com/vscode-neovim/vscode-neovim#vscode-configuration
