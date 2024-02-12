@@ -8,7 +8,8 @@
 
     # Enable experimental Nix command and Flakes.
     extraOptions = ''
-      auto-optimise-store = true
+      # https://github.com/NixOS/nix/issues/8939
+      auto-optimise-store = false
       experimental-features = nix-command flakes
       keep-outputs = true
       keep-derivations = true
