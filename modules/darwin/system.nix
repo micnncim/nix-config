@@ -53,6 +53,11 @@
           # skhd requires Secure Keyboard Entry to be disabled.
           "SecureKeyboardEntry" = false;
         };
+        "com.apple.dt.Xcode" = {
+          "EnableSwiftBuildSystemIntegration" = true;
+          "ShowBuildOperationDuration" = true;
+          "XCFontAndColorCurrentDarkTheme" = "Nord.xccolortheme";
+        };
         "com.microsoft.VSCode" = {
           # https://github.com/vscode-neovim/vscode-neovim#vscode-configuration
           "ApplePressAndHoldEnabled" = false;
