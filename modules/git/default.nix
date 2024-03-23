@@ -14,6 +14,7 @@
       b = "branch";
       c = "commit -s";
       d = "diff";
+      fixup = "!git log $(git var GIT_DEFAULT_BRANCH)..HEAD --pretty=format:'%h %s' | fzf | awk '{print $1}' | xargs git commit --fixup";
       l = "log --date=short --pretty=format:'%C(yellow)%h %Cgreen%cd %Cblue%cn %Creset%s'";
       pl = "pull";
       ps = "push";
