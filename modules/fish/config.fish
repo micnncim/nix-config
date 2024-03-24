@@ -16,8 +16,9 @@ abbr -a kubectl --regex '^k$' kubectl
 abbr -a kubectx --regex '^kc$' kubectx
 abbr -a kubens --regex '^kn$' kubens
 abbr -a mkdir --regex '^mkdir$' mkdir -p
-abbr -a rip --regex '^rm$' rip
 abbr -a nvim --regex '^v$' nvim
+abbr -a pr --regex '^pr$' gh pr create -w
+abbr -a rip --regex '^rm$' rip
 abbr -a xcode --regex '^x$' xcode
 
 abbr -a --position anywhere --function __abbr_flag_ctx -- -ctx
