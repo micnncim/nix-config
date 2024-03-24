@@ -10,18 +10,9 @@
       signByDefault = true;
     };
     aliases = {
-      a = "add";
-      b = "branch";
-      c = "commit -s";
-      d = "diff";
       fixup = "!git log $(git var GIT_DEFAULT_BRANCH)..HEAD --pretty=format:'%h %s' | fzf | awk '{print $1}' | xargs git commit --fixup";
       l = "log --date=short --pretty=format:'%C(yellow)%h %Cgreen%cd %Cblue%cn %Creset%s'";
-      pl = "pull";
-      ps = "push";
-      r = "remote";
-      rs = "reset";
       save = "!sh -c 'echo -n \"Enter stash message: \"; read message; git stash push -u -m \"$message\"'";
-      st = "status";
       sw = "!f() { if [[ $# -ge 1 ]] ; then git switch $@; else git switch $(git for-each-ref --format='%(refname:short)' refs/heads/ | fzf); fi }; f";
     };
     delta = {
