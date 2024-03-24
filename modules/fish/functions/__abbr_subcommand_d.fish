@@ -10,6 +10,10 @@ switch "$cmd[1]"
         echo "describe"
         return 0
 
+    case "git"
+        echo "diff"
+        return 0
+
     case "kubectl"
         echo "describe"
         return 0

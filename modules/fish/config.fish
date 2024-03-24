@@ -26,9 +26,18 @@ abbr -a --position anywhere --function __abbr_flag_n -- -n
 abbr -a --position anywhere --function __abbr_flag_o -- -o
 abbr -a --position anywhere --function __abbr_flag_p -- -p
 
+abbr -a --position anywhere --function __abbr_subcommand_a -- a
+abbr -a --position anywhere --function __abbr_subcommand_b -- b
+abbr -a --position anywhere --function __abbr_subcommand_c -- c
 abbr -a --position anywhere --function __abbr_subcommand_d -- d
+abbr -a --position anywhere --function __abbr_subcommand_f -- f
 abbr -a --position anywhere --function __abbr_subcommand_g -- g
 abbr -a --position anywhere --function __abbr_subcommand_l -- l
+abbr -a --position anywhere --function __abbr_subcommand_pl -- pl
+abbr -a --position anywhere --function __abbr_subcommand_ps -- ps
+abbr -a --position anywhere --function __abbr_subcommand_r -- r
+abbr -a --position anywhere --function __abbr_subcommand_rs -- rs
+abbr -a --position anywhere --function __abbr_subcommand_s -- s
 
 # https://developer.1password.com/docs/cli/shell-plugins/
 test -e "$XDG_CONFIG_HOME/op/plugins.sh" && source "$XDG_CONFIG_HOME/op/plugins.sh"
