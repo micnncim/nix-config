@@ -15,6 +15,7 @@ abbr -a help --regex '^h$' help
 abbr -a kubectl --regex '^k$' kubectl
 abbr -a kubectx --regex '^kc$' kubectx
 abbr -a kubens --regex '^kn$' kubens
+abbr -a make --regex '^m$' make
 abbr -a mkdir --regex '^mkdir$' mkdir -p
 abbr -a nvim --regex '^v$' nvim
 abbr -a pr --regex '^pr$' gh pr create -w
