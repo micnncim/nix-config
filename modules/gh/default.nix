@@ -5,6 +5,7 @@
     enable = true;
     extensions = with pkgs; [
       gh-dash
+      unstable.gh-copilot
       nur.repos.micnncim.gh-sync
     ];
     settings = {
