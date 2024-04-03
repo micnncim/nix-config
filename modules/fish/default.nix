@@ -22,6 +22,7 @@ in
       "__abbr_flag_o"
       "__abbr_flag_p"
       "__abbr_subcommand_a"
+      "__abbr_subcommand_ab"
       "__abbr_subcommand_b"
       "__abbr_subcommand_c"
       "__abbr_subcommand_d"

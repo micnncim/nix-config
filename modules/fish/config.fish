@@ -28,6 +28,7 @@ abbr -a --position anywhere --function __abbr_flag_o -- -o
 abbr -a --position anywhere --function __abbr_flag_p -- -p
 
 abbr -a --position anywhere --function __abbr_subcommand_a -- a
+abbr -a --position anywhere --function __abbr_subcommand_ab -- ab
 abbr -a --position anywhere --function __abbr_subcommand_b -- b
 abbr -a --position anywhere --function __abbr_subcommand_c -- c
 abbr -a --position anywhere --function __abbr_subcommand_d -- d
