@@ -1,6 +1,12 @@
 { config, lib, pkgs, ... }:
 
 {
+  home.packages = with pkgs;
+    [
+      git-absorb
+      git-lfs
+    ];
+
   programs.git = {
     enable = true;
     userName = "micnncim";
@@ -37,6 +43,10 @@
       };
       pull.rebase = true;
       url."git@github.com:".insteadOf = "https://github.com";
+      absorb = {
+        oneFixupPerCommit = true;
+        autoStageIfNothingStaged = true;
+      };
     } // lib.optionals pkgs.stdenv.isDarwin {
       gpg = {
         format = "ssh";
