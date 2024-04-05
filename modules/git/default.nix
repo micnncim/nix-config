@@ -16,7 +16,7 @@
       signByDefault = true;
     };
     aliases = {
-      fixup = "!git log $(git var GIT_DEFAULT_BRANCH)..HEAD --pretty=format:'%h %s' | fzf | awk '{print $1}' | xargs git commit --fixup";
+      fixup = "!git log $(git remote show origin | grep 'HEAD branch' | cut -d ' ' -f 5)..HEAD --pretty=format:'%h %s' | fzf | awk '{print $1}' | xargs git commit --fixup";
       l = "log --date=short --pretty=format:'%C(yellow)%h %Cgreen%cd %Cblue%cn %Creset%s'";
       save = "!sh -c 'echo -n \"Enter stash message: \"; read message; git stash push -u -m \"$message\"'";
       sw = "!f() { if [[ $# -ge 1 ]] ; then git switch $@; else git switch $(git for-each-ref --format='%(refname:short)' refs/heads/ | fzf); fi }; f";
