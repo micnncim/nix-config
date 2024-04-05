@@ -37,6 +37,7 @@
         defaultBranch = "main";
         templatedir = "${config.xdg.configHome}/git/templates";
       };
+      fetch.prune = true;
       push = {
         default = "upstream";
         autoSetupRemote = true;
