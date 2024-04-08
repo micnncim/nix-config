@@ -10,6 +10,7 @@
     ../bash
     ../bat
     ../direnv
+    ../editorconfig
     ../fd
     ../fish
     ../fzf
