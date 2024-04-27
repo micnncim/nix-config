@@ -34,6 +34,10 @@
       "*.rs" = {
         indent_size = 4;
       };
+      "go.mod" = {
+        indent_style = "tab";
+        indent_size = 4;
+      };
       "{Dockerfile,*.dockerfile}" = {
         indent_style = "tab";
         indent_size = 4;
