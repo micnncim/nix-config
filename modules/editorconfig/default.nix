@@ -28,6 +28,10 @@
         indent_size = 4;
         max_line_length = 79;
       };
+      "*.rego" = {
+        indent_style = "tab";
+        indent_size = 4;
+      };
       "*.swift" = {
         indent_size = 4;
       };
