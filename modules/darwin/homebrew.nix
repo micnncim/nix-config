@@ -11,7 +11,6 @@
       "1password"
       "alt-tab"
       "ankerwork"
-      "bartender"
       "copilot-for-xcode"
       "coscreen"
       "discord"
