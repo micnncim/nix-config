@@ -8,15 +8,15 @@
     # convenience.
     settings = {
       import = map (path: "${config.xdg.configHome}/alacritty/${path}") [
-        "colors.yml"
-        "cursor.yml"
-        "debug.yml"
-        "font.yml"
-        "keybindings.yml"
-        "mouse.yml"
-        "scrolling.yml"
-        "selection.yml"
-        "window.yml"
+        "colors.toml"
+        "cursor.toml"
+        "debug.toml"
+        "font.toml"
+        "keybindings.toml"
+        "mouse.toml"
+        "scrolling.toml"
+        "selection.toml"
+        "window.toml"
       ];
       env = {
         TERM = "xterm-256color";

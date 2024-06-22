@@ -1,0 +1,14 @@
+[window]
+decorations = "transparent"
+dynamic_padding = false
+dynamic_title = true
+opacity = 1.0
+startup_mode = "Windowed"
+
+[window.dimensions]
+columns = 260
+lines = 60
+
+[window.padding]
+x = 8
+y = 32

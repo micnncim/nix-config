@@ -1,0 +1,22 @@
+[font]
+size = 24.0
+
+[font.bold]
+family = "Ricty"
+style = "Bold"
+
+[font.glyph_offset]
+x = 0
+y = 0
+
+[font.italic]
+family = "Ricty"
+style = "Italic"
+
+[font.normal]
+family = "Ricty"
+style = "Regular"
+
+[font.offset]
+x = 0
+y = 0

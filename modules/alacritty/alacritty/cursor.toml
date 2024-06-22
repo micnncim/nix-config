@@ -1,0 +1,5 @@
+[cursor]
+unfocused_hollow = true
+
+[cursor.style]
+shape = "Block"

@@ -2,7 +2,9 @@
 
 {
   fonts = {
-    fontDir.enable = true;
-    fonts = with pkgs; [ nerdfonts ricty ];
+    packages = with pkgs; [
+      #  nerdfonts
+      ricty
+    ];
   };
 }

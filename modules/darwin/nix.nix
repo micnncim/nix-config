@@ -19,7 +19,7 @@
 
     gc = {
       automatic = true;
-      interval = { Hour = 24; };
+      interval = { Hour = 12; };
       options = "--delete-older-than 7d";
     };
 

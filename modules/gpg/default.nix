@@ -11,7 +11,9 @@ in
   };
 
   home.packages = with pkgs; [
-    pinentry
+    # Temporary remove pinentry until it's fixed.
+    # Ref: https://github.com/nix-community/home-manager/issues/3864
+    # pinentry
   ] ++ lib.optionals isDarwin [
     pinentry_mac
   ];
