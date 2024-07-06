@@ -43,7 +43,6 @@
         autoSetupRemote = true;
       };
       pull.rebase = true;
-      url."git@github.com:".insteadOf = "https://github.com/";
       absorb = {
         oneFixupPerCommit = true;
         autoStageIfNothingStaged = true;
