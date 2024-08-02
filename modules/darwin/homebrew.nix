@@ -13,6 +13,7 @@
       "ankerwork"
       "copilot-for-xcode"
       "coscreen"
+      "cursor"
       "discord"
       "docker"
       "figma"
