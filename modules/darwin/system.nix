@@ -64,6 +64,10 @@
           # https://github.com/vscode-neovim/vscode-neovim#vscode-configuration
           "ApplePressAndHoldEnabled" = false;
         };
+        # Cursor
+        "com.todesktop.230313mzl4w4u92" = {
+          "ApplePressAndHoldEnabled" = false;
+        };
       };
     };
   };
