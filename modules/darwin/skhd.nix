@@ -20,12 +20,6 @@
       shift + lalt - k : yabai -m window --swap north 2> /dev/null || yabai -m window --swap south
       shift + lalt - l : yabai -m window --swap east  2> /dev/null || yabai -m window --swap west
 
-      # Resize windows
-      shift + cmd - h : yabai -m window west  --resize right:-20:0 2> /dev/null || yabai -m window --resize right:-20:0
-      shift + cmd - j : yabai -m window north --resize bottom:0:20 2> /dev/null || yabai -m window --resize bottom:0:20
-      shift + cmd - k : yabai -m window south --resize top:0:-20   2> /dev/null || yabai -m window --resize top:0:-20
-      shift + cmd - l : yabai -m window east  --resize left:20:0   2> /dev/null || yabai -m window --resize left:20:0
-
       # Balance size of windows
       shift + lalt - 0 : yabai -m space --balance
 
