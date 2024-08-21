@@ -8,7 +8,7 @@ fish_add_path $GOBIN
 
 # Use `--regex` to avoid conflicts with other abbreviations.
 abbr -a bat --regex '^cat$' bat
-abbr -a code --regex '^c$' code
+abbr -a cursor --regex '^c$' cursor
 abbr -a ghq --regex '^ghq$' ghq get -p
 abbr -a git --regex '^g$' git
 abbr -a help --regex '^h$' help
