@@ -4,6 +4,9 @@
   services.nix-daemon.enable = true;
 
   nix = {
+    # Ref: https://github.com/NixOS/nix/issues/10109
+    package = pkgs.nixVersions.latest;
+
     configureBuildUsers = true;
 
     # Enable experimental Nix command and Flakes.
