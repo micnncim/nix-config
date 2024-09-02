@@ -12,6 +12,7 @@
 
       # Shell
       eza
+      dust
       jq
       neofetch
       procs
