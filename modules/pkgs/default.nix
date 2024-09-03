@@ -26,6 +26,7 @@
         ([ google-cloud-sdk.components.gke-gcloud-auth-plugin ]))
       markdownlint-cli
       shellcheck
+      shfmt
       vhs
 
       # Language servers
