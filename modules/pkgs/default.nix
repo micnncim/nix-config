@@ -60,5 +60,7 @@
       nur.repos.micnncim.gctx
       # nur.repos.micnncim.kubectl-reveal-secret
       nur.repos.micnncim.slack-cli
+    ] ++ lib.optionals pkgs.stdenv.isDarwin [
+      nur.repos.micnncim.vfkit
     ];
 }
