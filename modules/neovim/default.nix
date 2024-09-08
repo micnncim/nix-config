@@ -3,6 +3,7 @@
 {
   programs.neovim = {
     enable = true;
+    package = pkgs.unstable.neovim-unwrapped;
     plugins = with pkgs.vimPlugins; [
       copilot-vim
       nord-nvim
