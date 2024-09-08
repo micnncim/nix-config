@@ -1,4 +1,5 @@
 .DS_Store
+.cursorignore
 .env
 .envrc
 .idea
