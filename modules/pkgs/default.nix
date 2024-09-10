@@ -24,6 +24,7 @@
       _1password
       (google-cloud-sdk.withExtraComponents
         ([ google-cloud-sdk.components.gke-gcloud-auth-plugin ]))
+      hyperfine
       markdownlint-cli
       shellcheck
       shfmt
