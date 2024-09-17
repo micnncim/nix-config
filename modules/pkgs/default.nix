@@ -15,6 +15,7 @@
       dust
       jq
       neofetch
+      parallel
       procs
       ripsecrets
       rm-improved
