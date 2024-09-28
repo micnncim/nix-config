@@ -6,6 +6,10 @@ if [ "$cmd[-1]" != "s" ]
 end
 
 switch "$cmd[1]"
+    case "gh"
+        echo "sync"
+        return 0
+
     case "git"
         echo "status"
         return 0
