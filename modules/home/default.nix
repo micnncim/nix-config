@@ -1,4 +1,4 @@
-{ config, lib, pkgs, username, ... }:
+{ config, lib, pkgs, inputs, username, ... }:
 
 {
   imports = [
@@ -31,6 +31,8 @@
     ../tmux
     ../typos
     ../xcode
+
+    inputs.nix-index-database.hmModules.nix-index
   ];
 
   home.stateVersion = "22.11";
