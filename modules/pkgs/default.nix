@@ -27,6 +27,7 @@
         ([ google-cloud-sdk.components.gke-gcloud-auth-plugin ]))
       hyperfine
       markdownlint-cli
+      semgrep
       shellcheck
       shfmt
       vhs
