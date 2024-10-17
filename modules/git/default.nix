@@ -43,6 +43,7 @@
         autoSetupRemote = true;
       };
       pull.rebase = true;
+      lfs.enable = true;
       absorb = {
         oneFixupPerCommit = true;
         autoStageIfNothingStaged = true;
