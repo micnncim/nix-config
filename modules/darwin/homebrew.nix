@@ -12,6 +12,7 @@
       "alt-tab"
       "ankerwork"
       "copilot-for-xcode"
+      "chatgpt"
       "coscreen"
       "cursor"
       "discord"
