@@ -33,7 +33,7 @@ main() {
     config="${config_base}"
   fi
 
-  local -r cmd="pre-commit run --config ${config} --hook-stage commit --color always"
+  local -r cmd="pre-commit run --config ${config} --hook-stage pre-commit --color always"
 
   printf "Running %s...\n\n" "$(blue "'${cmd}'")" >&2
   eval "${cmd}"

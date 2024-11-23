@@ -36,7 +36,7 @@ lfs() {
     return 0
   fi
 
-  git lfs pre-push "$@"
+  git lfs post-checkout "$@"
 }
 
 main() {
@@ -49,7 +49,7 @@ main() {
     config="${config_base}"
   fi
 
-  local -r cmd="pre-commit run --config ${config} --hook-stage pre-push --color always"
+  local -r cmd="pre-commit run --config ${config} --hook-stage post-checkout --color always"
 
   printf "Running %s...\n\n" "$(blue "'${cmd}'")" >&2
   eval "${cmd}"
