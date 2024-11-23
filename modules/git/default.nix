@@ -5,6 +5,7 @@
     [
       git-absorb
       git-lfs
+      git-sizer
     ];
 
   programs.git = {
