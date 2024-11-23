@@ -21,11 +21,12 @@
       rm-improved
       sd
 
-      # Dev
+      # Utilities
       _1password
       (google-cloud-sdk.withExtraComponents
         ([ google-cloud-sdk.components.gke-gcloud-auth-plugin ]))
       hyperfine
+      imagemagick
       markdownlint-cli
       semgrep
       shellcheck
