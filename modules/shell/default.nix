@@ -18,10 +18,14 @@
   };
 
   home.shellAliases = {
-    gh = "op plugin run -- gh";
     ll = "eza -la";
     llt = "eza -laTF --git --group-directories-first --git-ignore --ignore-glob .git";
     ls = "eza";
     lt = "eza -T";
+
+    # 1Password
+    cachix = "op plugin run -- cachix";
+    gh = "op plugin run -- gh";
+    src = "op plugin run -- src";
   };
 }
