@@ -63,6 +63,11 @@
       };
     in
     {
+      darwinConfigurations.sirius = mkDarwin {
+        system = "aarch64-darwin";
+        machine = "sirius";
+        username = "micnncim";
+      };
       darwinConfigurations.vega = mkDarwin {
         system = "aarch64-darwin";
         machine = "vega";
