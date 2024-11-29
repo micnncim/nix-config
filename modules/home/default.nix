@@ -20,6 +20,7 @@
     ../go
     ../gpg
     ../karabiner
+    ../man
     ../neovim
     ../nix-index
     ../pre-commit
