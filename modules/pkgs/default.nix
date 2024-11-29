@@ -11,10 +11,10 @@
       wget
 
       # Shell
-      eza
       dust
+      eza
+      fastfetch
       jq
-      neofetch
       parallel
       procs
       ripsecrets
