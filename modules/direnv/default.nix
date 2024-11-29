@@ -12,6 +12,7 @@ in
         prefix = [
           "${homeDir}/src/github.com/micnncim"
           "${homeDir}/src/github.com/ergastirio"
+          "${homeDir}/src/github.com/ergastirio-labs"
           "${homeDir}/src/github.com/kouzoh"
         ];
       };
