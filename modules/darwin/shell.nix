@@ -6,5 +6,10 @@
     shell = pkgs.fish;
   };
 
-  environment = { loginShell = "/etc/profiles/per-user/${username}/bin/fish"; };
+  programs.fish.enable = true;
+
+  environment.variables = {
+    EDITOR = "nvim";
+    PAGER = "less";
+  };
 }

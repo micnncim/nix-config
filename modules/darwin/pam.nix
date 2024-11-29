@@ -53,6 +53,7 @@ in
           if ! grep 'pam_watchid.so' ${pamFile} > /dev/null; then
             $DRY_RUN_CMD sudo mkdir --parents ${pamPath}
             $DRY_RUN_CMD sudo install -o root -g wheel -m 444 ${pam-watchid}/lib/pam_watchid.so ${watchPath}
+            # shellcheck disable=SC2016
             $DRY_RUN_CMD ${sed} -i '2i\
           auth       sufficient     pam_watchid.so "reason=execute a command as root" # enabled by nix-darwin: `${watchOption}`
             ' ${pamFile}
