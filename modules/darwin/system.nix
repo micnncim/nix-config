@@ -25,8 +25,8 @@
         AppleTemperatureUnit = "Celsius";
         InitialKeyRepeat = 20;
         KeyRepeat = 1;
-        _HIHideMenuBar = true; # We use SketchyBar.
         "com.apple.trackpad.scaling" = 3.0;
+        # _HIHideMenuBar = true; # Uncomment if using SketchyBar.
       };
 
       dock = {
