@@ -6,7 +6,6 @@
     package = pkgs.unstable.neovim-unwrapped;
     plugins = with pkgs.vimPlugins; [
       copilot-vim
-      nord-nvim
       nvim-treesitter
       nvim-treesitter-textobjects
       vim-markdown
@@ -29,8 +28,6 @@
       }
     ];
     extraConfig = ''
-      colorscheme nord
-
       set number
 
       nnoremap <Space> <Nop>

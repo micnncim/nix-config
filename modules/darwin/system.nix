@@ -57,7 +57,7 @@
         };
         "com.apple.dt.Xcode" = {
           "ShowBuildOperationDuration" = true;
-          "XCFontAndColorCurrentDarkTheme" = "Nord.xccolortheme";
+          "XCFontAndColorCurrentDarkTheme" = "Catppuccin Mocha.xccolortheme";
         };
         "com.apple.dt.XCBuild" = {
           "EnableSwiftBuildSystemIntegration" = true;

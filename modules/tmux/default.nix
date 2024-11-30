@@ -21,14 +21,6 @@
           set -g @continuum-boot-options 'alacritty'
         '';
       }
-      {
-        plugin = nord;
-        extraConfig = ''
-          # Disable patched fonts.
-          # https://www.nordtheme.com/docs/ports/tmux/configuration
-          set -g @nord_tmux_no_patched_font '1'
-        '';
-      }
     ];
     extraConfig = builtins.readFile ./tmux.conf;
   };

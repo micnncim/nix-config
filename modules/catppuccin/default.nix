@@ -1,7 +1,8 @@
 { config, lib, pkgs, ... }:
 
 {
-  programs.bat = {
+  catppuccin = {
     enable = true;
+    flavor = "mocha";
   };
 }

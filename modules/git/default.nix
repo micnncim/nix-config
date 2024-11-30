@@ -26,7 +26,6 @@
       enable = true;
       options = {
         dark = true;
-        syntax-theme = "Nord";
         line-numbers = true;
         navigate = true;
       };

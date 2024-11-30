@@ -9,6 +9,7 @@
     ../atuin
     ../bash
     ../bat
+    ../catppuccin
     ../direnv
     ../editorconfig
     ../fd

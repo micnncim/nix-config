@@ -27,6 +27,9 @@ inputs.darwin.lib.darwinSystem {
           inherit inputs overlays system username;
         };
         backupFileExtension = "backup";
+        sharedModules = [
+          inputs.catppuccin.homeManagerModules.catppuccin
+        ];
       };
     }
 

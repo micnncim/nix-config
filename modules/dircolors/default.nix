@@ -6,6 +6,5 @@
     enableBashIntegration = true;
     enableFishIntegration = true;
     enableZshIntegration = true;
-    extraConfig = builtins.readFile ./dircolors;
   };
 }

@@ -8,7 +8,6 @@
     # convenience.
     settings = {
       import = map (path: "${config.xdg.configHome}/alacritty/${path}") [
-        "colors.toml"
         "cursor.toml"
         "debug.toml"
         "font.toml"

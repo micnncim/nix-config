@@ -10,7 +10,7 @@ lib.mkIf pkgs.stdenv.isDarwin {
   # Related: https://github.com/dracula/xcode/issues/7
   home.activation.copyXcodeThemes = lib.hm.dag.entryAfter [ "linkGeneration" ] ''
     $DRY_RUN_CMD mkdir -p ${config.home.homeDirectory}/Library/Developer/Xcode/UserData/FontAndColorThemes
-    $DRY_RUN_CMD cp -f ${config.xdg.configHome}/xcode/themes/Nord.xccolortheme ${config.home.homeDirectory}/Library/Developer/Xcode/UserData/FontAndColorThemes/Nord.xccolortheme
+    $DRY_RUN_CMD cp -f ${config.xdg.configHome}/xcode/themes/Catppuccin\ Mocha.xccolortheme ${config.home.homeDirectory}/Library/Developer/Xcode/UserData/FontAndColorThemes
   '';
 
   home.file."${config.home.homeDirectory}/Library/Developer/Xcode/UserData/IDETemplateMacros.plist".source =
