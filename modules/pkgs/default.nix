@@ -56,10 +56,6 @@
       # Required for Copilot.vim and Copilot for Xcode
       nodejs_18
 
-      # Fonts
-      # nerdfonts
-      ricty
-
       # NUR
       nur.repos.micnncim.gctx
       # nur.repos.micnncim.kubectl-reveal-secret

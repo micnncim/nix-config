@@ -2,9 +2,6 @@
 
 {
   fonts = {
-    packages = with pkgs; [
-      #  nerdfonts
-      ricty
-    ];
+    packages = with pkgs; [ ];
   };
 }

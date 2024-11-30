@@ -1,8 +1,8 @@
 [font]
-size = 24.0
+size = 16.0
 
 [font.bold]
-family = "Ricty"
+family = "MonaspiceNe Nerd Font"
 style = "Bold"
 
 [font.glyph_offset]
@@ -10,11 +10,11 @@ x = 0
 y = 0
 
 [font.italic]
-family = "Ricty"
+family = "MonaspiceNe Nerd Font"
 style = "Italic"
 
 [font.normal]
-family = "Ricty"
+family = "MonaspiceNe Nerd Font"
 style = "Regular"
 
 [font.offset]
