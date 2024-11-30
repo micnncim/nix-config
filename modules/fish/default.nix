@@ -45,6 +45,7 @@ in
       (lib.strings.intersperse "\n" [
         "fish_add_path /etc/profiles/per-user/${username}/bin"
         "source ${pkgs.google-cloud-sdk}/google-cloud-sdk/path.fish.inc"
+        "set -x LS_COLORS \"$(${pkgs.vivid}/bin/vivid generate catppuccin-mocha)\""
         (builtins.readFile ./config.fish)
       ]);
     plugins = map
