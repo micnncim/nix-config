@@ -20,10 +20,10 @@ format = """\
 
 # https://starship.rs/config/#character
 [character]
-format = "$symbol  "
-success_symbol = "[•](bold green)"
-error_symbol = "[•](bold red)"
-vicmd_symbol = "[V](bold green)"
+format = "$symbol "
+success_symbol = "[ ](bold green)"
+error_symbol = "[ ](bold red)"
+vimcmd_symbol = "[V](bold green)"
 
 # https://starship.rs/config/#directory
 [directory]
