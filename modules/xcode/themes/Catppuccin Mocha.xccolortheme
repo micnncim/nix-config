@@ -15,13 +15,13 @@
 	<string>0.65098 0.890196 0.631373 1</string>
 	<key>DVTConsoleDebuggerPromptTextFont</key>
 	<string>MonaspaceNeon-Bold - 14.0</string>
-	<key>DVTConsoleExectuableInputTextColor</key>
+	<key>DVTConsoleExecutableInputTextColor</key>
 	<string>0.803922 0.839216 0.956863 1</string>
-	<key>DVTConsoleExectuableInputTextFont</key>
+	<key>DVTConsoleExecutableInputTextFont</key>
 	<string>MonaspaceNeon-Medium - 14.0</string>
-	<key>DVTConsoleExectuableOutputTextColor</key>
+	<key>DVTConsoleExecutableOutputTextColor</key>
 	<string>0.803922 0.839216 0.956863 1</string>
-	<key>DVTConsoleExectuableOutputTextFont</key>
+	<key>DVTConsoleExecutableOutputTextFont</key>
 	<string>MonaspaceNeon-Bold - 14.0</string>
 	<key>DVTConsoleTextBackgroundColor</key>
 	<string>0.117647 0.117647 0.180392 1</string>
