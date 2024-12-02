@@ -7,16 +7,20 @@
     # values dynamically from Nix configuration and some tiny values for
     # convenience.
     settings = {
-      import = map (path: "${config.xdg.configHome}/alacritty/${path}") [
-        "cursor.toml"
-        "debug.toml"
-        "font.toml"
-        "keybindings.toml"
-        "mouse.toml"
-        "scrolling.toml"
-        "selection.toml"
-        "window.toml"
-      ];
+      general = {
+        import = map (path: "${config.xdg.configHome}/alacritty/${path}") [
+          "cursor.toml"
+          "debug.toml"
+          "font.toml"
+          "keybindings.toml"
+          "mouse.toml"
+          "scrolling.toml"
+          "selection.toml"
+          "window.toml"
+        ];
+        live_config_reload = true;
+        working_directory = "None";
+      };
       env = {
         TERM = "xterm-256color";
         # NOTE(micnncim): This is a workaround for the issue that `shell` whose value
@@ -27,12 +31,10 @@
         # - https://github.com/alacritty/alacritty/issues/6746
         SHELL = "/etc/profiles/per-user/${username}/bin/fish";
       };
-      shell = {
+      terminal.shell = {
         program = "/etc/profiles/per-user/${username}/bin/fish";
         args = [ "--login" ];
       };
-      live_config_reload = true;
-      working_directory = "None";
     };
   };
 
