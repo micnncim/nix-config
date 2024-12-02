@@ -12,4 +12,9 @@
     EDITOR = "nvim";
     PAGER = "less";
   };
+
+  environment.shells = with pkgs;[
+    bashInteractive
+    fish
+  ];
 }
