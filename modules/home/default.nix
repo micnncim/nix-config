@@ -27,6 +27,7 @@
     ../pre-commit
     ../ripgrep
     ../sketchybar
+    ../spotify
     ../ssh
     ../starship
     ../tealdeer

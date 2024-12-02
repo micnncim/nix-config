@@ -52,6 +52,22 @@
         "type": "github"
       }
     },
+    "flake-compat": {
+      "flake": false,
+      "locked": {
+        "lastModified": 1732722421,
+        "narHash": "sha256-HRJ/18p+WoXpWJkcdsk9St5ZiukCqSDgbOGFa8Okehg=",
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "rev": "9ed2ac151eada2306ca8c418ebd97807bb08f6ac",
+        "type": "github"
+      },
+      "original": {
+        "owner": "edolstra",
+        "repo": "flake-compat",
+        "type": "github"
+      }
+    },
     "flake-utils": {
       "inputs": {
         "systems": "systems"
@@ -289,7 +305,29 @@
         "nix-index-database": "nix-index-database",
         "nixpkgs": "nixpkgs_4",
         "nixpkgs-unstable": "nixpkgs-unstable",
-        "nur": "nur"
+        "nur": "nur",
+        "spicetify-nix": "spicetify-nix"
+      }
+    },
+    "spicetify-nix": {
+      "inputs": {
+        "flake-compat": "flake-compat",
+        "nixpkgs": [
+          "nixpkgs"
+        ]
+      },
+      "locked": {
+        "lastModified": 1733026768,
+        "narHash": "sha256-hxjD+dVnL2W9n1kZlmYAx2ou4ttLgzfPuEdoCsiy7cE=",
+        "owner": "Gerg-L",
+        "repo": "spicetify-nix",
+        "rev": "c7a940a0152bdd9914c02f8f1eea2697d548cc16",
+        "type": "github"
+      },
+      "original": {
+        "owner": "Gerg-L",
+        "repo": "spicetify-nix",
+        "type": "github"
       }
     },
     "systems": {

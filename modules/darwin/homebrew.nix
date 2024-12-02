@@ -30,7 +30,6 @@
       "raycast"
       "sf-symbols"
       "slack"
-      "spotify"
       "stats"
       "tailscale"
       "todoist"

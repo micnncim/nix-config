@@ -21,6 +21,10 @@
     };
     nix-homebrew.url = "github:zhaofengli/nix-homebrew";
     catppuccin.url = "github:catppuccin/nix";
+    spicetify-nix = {
+      url = "github:Gerg-L/spicetify-nix";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
