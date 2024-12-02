@@ -11,6 +11,7 @@ in
       fish_greeting = "";
       fish_user_key_bindings = ''
         bind \c] __ghq_jump
+        bind \cg lazygit
       '';
     } // builtins.listToAttrs (map
       (n: {
