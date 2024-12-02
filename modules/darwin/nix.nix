@@ -26,6 +26,8 @@
       options = "--delete-older-than 7d";
     };
 
+    optimise.automatic = true;
+
     settings = {
       trusted-users = [ "@admin" ];
 
