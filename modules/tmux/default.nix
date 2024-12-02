@@ -35,6 +35,7 @@
         set -g @catppuccin_status_fill "icon"
         set -g @catppuccin_status_connect_separator "no"
         set -g @catppuccin_date_time_text "%H:%M"
+        set -g @catppuccin_application_icon " "
       '';
     };
     extraConfig = builtins.readFile ./tmux.conf;
