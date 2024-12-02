@@ -3,26 +3,6 @@
 set -eu
 set -o pipefail
 
-readonly ESC=$(printf '\033')
-readonly BLUE="${ESC}[34m"
-readonly NO_COLOR="${ESC}[m"
-
-readonly EXECUTABLES=(pre-commit)
-
-blue() {
-  echo -n "${BLUE}${1}${NO_COLOR}"
-}
-
-# Verify if executables are in the PATH.
-check_executables() {
-  for e in "${EXECUTABLES[@]}"; do
-    if ! type -p "${e}" >/dev/null; then
-      echo "${e} not found on the system" >&2
-      return 1
-    fi
-  done
-}
-
 lfs() {
   if [[ ! -f .gitattributes ]]; then
     return 0
@@ -40,20 +20,6 @@ lfs() {
 }
 
 main() {
-  check_executables
-
-  local -r config_base=".pre-commit-config.yaml"
-
-  local config="${XDG_CONFIG_HOME}/pre-commit/${config_base}"
-  if [[ -f "${config_base}" ]]; then
-    config="${config_base}"
-  fi
-
-  local -r cmd="pre-commit run --config ${config} --hook-stage post-merge --color always"
-
-  printf "Running %s...\n\n" "$(blue "'${cmd}'")" >&2
-  eval "${cmd}"
-
   lfs "$@"
 }
 
