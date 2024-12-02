@@ -22,7 +22,7 @@
       sd
 
       # Utilities
-      _1password
+      _1password-cli
       (google-cloud-sdk.withExtraComponents
         ([ google-cloud-sdk.components.gke-gcloud-auth-plugin ]))
       hyperfine
