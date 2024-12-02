@@ -9,6 +9,7 @@
     settings = {
       update_check = false;
       enter_accept = false;
+      show_help = false;
     };
   };
 }
