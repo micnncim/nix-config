@@ -21,6 +21,7 @@
     ../go
     ../gpg
     ../karabiner
+    ../lazygit
     ../man
     ../neovim
     ../nix-index
