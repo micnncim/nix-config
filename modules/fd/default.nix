@@ -1,7 +1,12 @@
 { config, lib, pkgs, ... }:
 
 {
-  home.packages = [ pkgs.fd ];
-
-  xdg.configFile."fd/ignore".source = ./fdignore;
+  programs.fd = {
+    enable = true;
+    hidden = true;
+    ignores = [
+      ".git"
+      "node_modules"
+    ];
+  };
 }
