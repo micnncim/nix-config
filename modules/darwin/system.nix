@@ -35,6 +35,8 @@
         minimize-to-application = true;
         orientation = "bottom";
         show-recents = false;
+        persistent-apps = [ ];
+        persistent-others = [ ];
       };
 
       finder = {
