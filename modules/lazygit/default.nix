@@ -29,6 +29,13 @@
           description = "Create pull request";
           loadingText = "Creating pull request...";
         }
+        {
+          key = "S";
+          context = "localBranches";
+          command = "op plugin run -- gh sync";
+          description = "Sync repository";
+          loadingText = "Syncing repository...";
+        }
       ];
     };
   };
