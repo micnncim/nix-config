@@ -8,16 +8,14 @@
     # convenience.
     settings = {
       general = {
-        import = map (path: "${config.xdg.configHome}/alacritty/${path}") [
-          "cursor.toml"
-          "debug.toml"
-          "font.toml"
-          "keybindings.toml"
-          "mouse.toml"
-          "scrolling.toml"
-          "selection.toml"
-          "window.toml"
-        ];
+        import = map (path: "${config.xdg.configHome}/alacritty/${path}")
+          (map
+            (path: builtins.baseNameOf path)
+            (builtins.filter
+              (lib.hasSuffix ".toml")
+              (lib.filesystem.listFilesRecursive ./alacritty)
+            )
+          );
         live_config_reload = true;
         working_directory = "None";
       };
