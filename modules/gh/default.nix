@@ -7,6 +7,7 @@
       gh-actions-cache
       gh-dash
       unstable.gh-copilot
+      nur.repos.micnncim.gh-pr-status
       nur.repos.micnncim.gh-sync
     ];
     settings = {
