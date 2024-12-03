@@ -7,7 +7,6 @@ format = """\
   $git_commit\
   $git_state\
   $git_status\
-  ${custom.pr_status}\
   $time\
   $cmd_duration\
   $line_break\
@@ -86,10 +85,10 @@ format = "[$symbol$account(@$domain)( \\($project:$region\\))( \\[$active\\])]($
 symbol = "󱇶  "
 style = "lavender"
 
-# https://starship.rs/config/#custom-commands
-[custom.pr_status]
-command = "gh-pr-status"      # https://github.com/micnncim/gh-commands/blob/main/commands/gh-pr-status
-when = "[ -d .git ]"
-format = "[$output]($style) "
-style = "lavender"
-ignore_timeout = true
+# # https://starship.rs/config/#custom-commands
+# [custom.pr_status]
+# command = "gh pr-status"      # https://github.com/micnncim/gh-commands/blob/main/commands/gh-pr-status
+# when = "[ -d .git ]"
+# format = "[$output]($style) "
+# style = "lavender"
+# ignore_timeout = true
