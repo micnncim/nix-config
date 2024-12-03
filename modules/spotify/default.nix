@@ -14,6 +14,8 @@ in
 
   programs.spicetify = {
     enable = true;
+    # https://github.com/Gerg-L/spicetify-nix/issues/238
+    spicetifyPackage = pkgs.unstable.spicetify-cli;
     enabledExtensions = with spicePkgs.extensions; [
       history
       keyboardShortcut
