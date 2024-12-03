@@ -14,34 +14,15 @@ in
         bind \cg lazygit
       '';
     } // builtins.listToAttrs (map
-      (n: {
-        name = n;
-        value = (builtins.readFile ./functions/${n}.fish);
-      }) [
-      "__abbr_flag_ctx"
-      "__abbr_flag_n"
-      "__abbr_flag_o"
-      "__abbr_flag_p"
-      "__abbr_subcommand_a"
-      "__abbr_subcommand_ab"
-      "__abbr_subcommand_b"
-      "__abbr_subcommand_c"
-      "__abbr_subcommand_d"
-      "__abbr_subcommand_f"
-      "__abbr_subcommand_g"
-      "__abbr_subcommand_g"
-      "__abbr_subcommand_l"
-      "__abbr_subcommand_l"
-      "__abbr_subcommand_pl"
-      "__abbr_subcommand_ps"
-      "__abbr_subcommand_r"
-      "__abbr_subcommand_rs"
-      "__abbr_subcommand_s"
-      "__ghq_jump"
-      "fkill"
-      "help"
-      "xcode"
-    ]);
+      (path: {
+        name = (lib.strings.removeSuffix ".fish" (builtins.baseNameOf path));
+        value = (builtins.readFile path);
+      })
+      (builtins.filter
+        (lib.hasSuffix ".fish")
+        (lib.filesystem.listFilesRecursive ./functions)
+      )
+    );
     interactiveShellInit = lib.strings.concatStrings
       (lib.strings.intersperse "\n" [
         "fish_add_path /etc/profiles/per-user/${username}/bin"
