@@ -8,6 +8,8 @@
         commit.signOff = true;
         paging.pager = "${pkgs.delta}/bin/delta --dark --paging=never";
         disableForcePushing = true;
+        autoFetch = false;
+        autoRefresh = false;
       };
       gui = {
         language = "en";
