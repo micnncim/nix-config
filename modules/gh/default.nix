@@ -11,9 +11,6 @@
     ];
     settings = {
       git_protocol = "ssh";
-      aliases = {
-        b = "!gh browse -b $(git rev-parse --abbrev-ref HEAD)";
-      };
     };
   };
 }
