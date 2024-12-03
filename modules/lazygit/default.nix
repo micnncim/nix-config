@@ -36,6 +36,13 @@
           description = "Sync repository";
           loadingText = "Syncing repository...";
         }
+        {
+          key = "M";
+          context = "localBranches";
+          command = "op plugin run -- gh pr merge --squash --delete-branch";
+          description = "Merge pull request";
+          loadingText = "Merging pull request...";
+        }
       ];
     };
   };
