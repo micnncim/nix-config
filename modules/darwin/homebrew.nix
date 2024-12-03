@@ -36,10 +36,6 @@
       "visual-studio-code"
       "vivaldi"
       "zoom"
-
-      # Fonts
-      "font-monaspace"
-      "font-monaspace-nerd-font"
     ];
     masApps = {
       "Get Plain Text" = 508368068;

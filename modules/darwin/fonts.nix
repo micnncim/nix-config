@@ -2,6 +2,9 @@
 
 {
   fonts = {
-    packages = with pkgs; [ ];
+    packages = with pkgs; [
+      monaspace
+      unstable.nerd-fonts.monaspace
+    ];
   };
 }
