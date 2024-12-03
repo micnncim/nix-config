@@ -21,18 +21,8 @@
         live_config_reload = true;
         working_directory = "None";
       };
-      env = {
-        TERM = "xterm-256color";
-        # NOTE(micnncim): This is a workaround for the issue that `shell` whose value
-        # is `fish` does not start fish shell on macOS.
-        #
-        # See:
-        # - https://github.com/alacritty/alacritty/issues/6412
-        # - https://github.com/alacritty/alacritty/issues/6746
-        SHELL = "/etc/profiles/per-user/${username}/bin/fish";
-      };
       terminal.shell = {
-        program = "/etc/profiles/per-user/${username}/bin/fish";
+        program = "${pkgs.fish}/bin/fish";
         args = [ "--login" ];
       };
     };
