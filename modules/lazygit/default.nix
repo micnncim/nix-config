@@ -10,6 +10,10 @@
         disableForcePushing = true;
         autoFetch = false;
         autoRefresh = false;
+        commitPrefix = {
+          pattern = "^(micnncim\/)?([a-zA-Z0-9-_/]+)";
+          replace = "$2: ";
+        };
       };
       gui = {
         language = "en";
