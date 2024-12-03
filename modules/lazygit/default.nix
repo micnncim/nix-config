@@ -23,6 +23,13 @@
       promptToReturnFromSubprocess = false;
       customCommands = [
         {
+          key = "o";
+          context = "localBranches";
+          command = "op plugin run -- gh browse --branch {{.SelectedLocalBranch.Name}}";
+          description = "Open branch in browser";
+          loadingText = "Opening branch in browser...";
+        }
+        {
           key = "O";
           context = "localBranches";
           command = "git push && op plugin run -- gh pr create --fill --web";
