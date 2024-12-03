@@ -18,7 +18,6 @@ abbr -a kubens --regex '^kn$' kubens
 abbr -a make --regex '^m$' make
 abbr -a mkdir --regex '^mkdir$' mkdir -p
 abbr -a nvim --regex '^v$' nvim
-abbr -a pr --regex '^pr$' gh pr create -w
 abbr -a rip --regex '^rm$' rip
 abbr -a xcode --regex '^x$' xcode
 
