@@ -9,16 +9,6 @@ let
       rev = "e38c03fadcea463e583b879893a5032486b1b10a";
       ref = "main";
     };
-    # buildInputs = [ pkgs.swift ];
-    # buildPhase = ''
-    #   substituteInPlace Makefile \
-    #     --replace-warn swiftc /usr/bin/swiftc \
-    #     --replace-warn lipo /usr/bin/lipo
-    #   make
-    # '';
-    # installPhase = ''
-    #   mkdir -p $out/lib && cp pam_watchid.so $out/lib/pam_watchid.so
-    # '';
     nativeBuildInputs = [ pkgs.swift ];
     buildPhase = ''
       runHook preBuild
