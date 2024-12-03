@@ -24,7 +24,7 @@
       customCommands = [
         {
           key = "O";
-          context = "global";
+          context = "localBranches";
           command = "git push && op plugin run -- gh pr create --fill --web";
           description = "Create pull request";
           loadingText = "Creating pull request...";
