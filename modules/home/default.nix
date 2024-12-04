@@ -35,8 +35,6 @@
     ../tmux
     ../typos
     ../xcode
-
-    inputs.nix-index-database.hmModules.nix-index
   ];
 
   home.stateVersion = "22.11";
