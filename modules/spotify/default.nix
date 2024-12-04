@@ -10,6 +10,7 @@ in
 
   programs.spicetify = {
     enable = true;
+    spotifyPackage = pkgs.unstable.spotify;
     # https://github.com/Gerg-L/spicetify-nix/issues/238
     spicetifyPackage = pkgs.unstable.spicetify-cli;
     enabledExtensions = with spicePkgs.extensions; [
