@@ -8,10 +8,6 @@ in
     inputs.spicetify-nix.homeManagerModules.default
   ];
 
-  home.packages = with pkgs; [
-    spotify
-  ];
-
   programs.spicetify = {
     enable = true;
     # https://github.com/Gerg-L/spicetify-nix/issues/238
