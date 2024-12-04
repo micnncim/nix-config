@@ -30,6 +30,10 @@
         navigate = true;
       };
     };
+    lfs = {
+      enable = true;
+      skipSmudge = true;
+    };
     ignores = lib.splitString "\n" (builtins.readFile ./.gitignore);
     extraConfig = {
       color.ui = "auto";
@@ -43,18 +47,9 @@
         autoSetupRemote = true;
       };
       pull.rebase = true;
-      lfs.enable = true;
       absorb = {
         oneFixupPerCommit = true;
         autoStageIfNothingStaged = true;
-      };
-      filter = {
-        lfs = {
-          clean = "git-lfs clean -- %f";
-          smudge = "git-lfs smudge -- %f";
-          process = "git-lfs filter-process";
-          required = true;
-        };
       };
     } // lib.optionals pkgs.stdenv.isDarwin {
       gpg = {
