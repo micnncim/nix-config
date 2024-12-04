@@ -4,7 +4,6 @@
   home.packages = with pkgs;
     [
       git-absorb
-      git-lfs
       git-sizer
     ];
 
