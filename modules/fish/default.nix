@@ -76,6 +76,7 @@ in
       fish_add_path $GOBIN
 
       source ${pkgs.google-cloud-sdk}/google-cloud-sdk/path.fish.inc
+      swift package completion-tool generate-fish-script | source
 
       set -x LS_COLORS \"$(${pkgs.vivid}/bin/vivid generate catppuccin-mocha)\"
 
