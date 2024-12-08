@@ -1,4 +1,4 @@
-{ config, lib, pkgs, username, ... }:
+{ config, lib, pkgs, ... }:
 
 {
   programs.alacritty = {
@@ -8,13 +8,9 @@
     # convenience.
     settings = {
       general = {
-        import = map (path: "${config.xdg.configHome}/alacritty/${path}")
-          (map
-            (path: builtins.baseNameOf path)
-            (builtins.filter
-              (lib.hasSuffix ".toml")
-              (lib.filesystem.listFilesRecursive ./alacritty)
-            )
+        import = builtins.filter (lib.hasSuffix ".toml")
+          (map (path: toString path)
+            (lib.filesystem.listFilesRecursive ./alacritty)
           );
         live_config_reload = true;
         working_directory = "None";
@@ -24,10 +20,5 @@
         args = [ "--login" ];
       };
     };
-  };
-
-  xdg.configFile."alacritty" = {
-    recursive = true;
-    source = ./alacritty;
   };
 }
