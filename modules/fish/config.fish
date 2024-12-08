@@ -40,9 +40,6 @@ abbr -a --position anywhere --function __abbr_subcommand_r -- r
 abbr -a --position anywhere --function __abbr_subcommand_rs -- rs
 abbr -a --position anywhere --function __abbr_subcommand_s -- s
 
-# https://developer.1password.com/docs/cli/shell-plugins/
-test -e "$XDG_CONFIG_HOME/op/plugins.sh" && source "$XDG_CONFIG_HOME/op/plugins.sh"
-
 if isatty
     set -x GPG_TTY (tty)
 end
