@@ -6,9 +6,14 @@
     arguments = [
       "--max-columns=500"
       "--max-columns-preview"
-      "--colors=match:fg:green"
       "--smart-case"
       "--hidden"
+
+      # Catppuccin Mocha
+      "--colors=path:fg:180,190,254" # Lavender
+      "--colors=line:fg:166,227,161" # Green
+      "--colors=match:fg:250,179,135" # Peach
+      "--colors=match:style:bold"
 
       "--glob=!**/.git/**"
       "--glob=!**/dist/**"
