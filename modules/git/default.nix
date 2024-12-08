@@ -12,7 +12,7 @@
     userName = "micnncim";
     userEmail = "micnncim@gmail.com";
     signing = {
-      key = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIOqrJp7F4TZm8SDX3Os6EQ9voET0QIz542VxTgO8OXLg";
+      key = lib.strings.trim (lib.strings.concatStringsSep " " (lib.lists.drop 1 (lib.splitString " " (builtins.readFile ./allowed_signers))));
       signByDefault = true;
     };
     aliases = {
@@ -35,35 +35,39 @@
     };
     ignores = lib.splitString "\n" (builtins.readFile ./.gitignore);
     extraConfig = {
+      absorb = {
+        autoStageIfNothingStaged = true;
+        maxStack = 100;
+        oneFixupPerCommit = true;
+      };
       color.ui = "auto";
+      fetch.prune = true;
       init = {
         defaultBranch = "main";
-        templatedir = "${config.xdg.configHome}/git/templates";
+        templateDir = "${config.xdg.configHome}/git/templates";
       };
-      fetch.prune = true;
+      pull = {
+        ff = "only";
+        rebase = true;
+      };
       push = {
         default = "upstream";
         autoSetupRemote = true;
       };
-      pull.rebase = true;
-      absorb = {
-        oneFixupPerCommit = true;
-        autoStageIfNothingStaged = true;
-      };
+      rebase.autoSquash = true;
     } // lib.optionals pkgs.stdenv.isDarwin {
+      credential.helper = "osxkeychain";
       gpg = {
         format = "ssh";
         ssh = {
           program = "/Applications/1Password.app/Contents/MacOS/op-ssh-sign";
-          allowedSignersFile = "${config.xdg.configHome}/git/allowed_signers";
+          allowedSignersFile = toString ./allowed_signers;
         };
       };
-      credential.helper = "osxkeychain";
     };
   };
 
   xdg.configFile = {
-    "git/allowed_signers".source = ./allowed_signers;
     "git/hooks".source = ./hooks;
     "git/templates/hooks".source =
       config.lib.file.mkOutOfStoreSymlink "${config.xdg.configHome}/git/hooks";
