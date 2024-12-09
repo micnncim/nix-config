@@ -13,6 +13,7 @@
     ../direnv
     ../editorconfig
     ../fd
+    ../fonts
     ../fish
     ../fzf
     ../gh

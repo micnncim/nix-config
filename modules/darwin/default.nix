@@ -5,7 +5,6 @@
     ./pam.nix
 
     ./aerospace.nix
-    ./fonts.nix
     ./gnupg.nix
     ./homebrew.nix
     ./nix.nix
