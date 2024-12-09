@@ -6,23 +6,23 @@
 	<key>DVTConsoleDebuggerInputTextColor</key>
 	<string>0.803922 0.839216 0.956863 1</string>
 	<key>DVTConsoleDebuggerInputTextFont</key>
-	<string>MonaspaceNeon-Bold - 14.0</string>
+	<string>MonaspaceNeon-Bold - 15.0</string>
 	<key>DVTConsoleDebuggerOutputTextColor</key>
 	<string>0.803922 0.839216 0.956863 1</string>
 	<key>DVTConsoleDebuggerOutputTextFont</key>
-	<string>MonaspaceNeon-Medium - 14.0</string>
+	<string>MonaspaceNeon-Medium - 15.0</string>
 	<key>DVTConsoleDebuggerPromptTextColor</key>
 	<string>0.65098 0.890196 0.631373 1</string>
 	<key>DVTConsoleDebuggerPromptTextFont</key>
-	<string>MonaspaceNeon-Bold - 14.0</string>
+	<string>MonaspaceNeon-Bold - 15.0</string>
 	<key>DVTConsoleExecutableInputTextColor</key>
 	<string>0.803922 0.839216 0.956863 1</string>
 	<key>DVTConsoleExecutableInputTextFont</key>
-	<string>MonaspaceNeon-Medium - 14.0</string>
+	<string>MonaspaceNeon-Medium - 15.0</string>
 	<key>DVTConsoleExecutableOutputTextColor</key>
 	<string>0.803922 0.839216 0.956863 1</string>
 	<key>DVTConsoleExecutableOutputTextFont</key>
-	<string>MonaspaceNeon-Bold - 14.0</string>
+	<string>MonaspaceNeon-Bold - 15.0</string>
 	<key>DVTConsoleTextBackgroundColor</key>
 	<string>0.117647 0.117647 0.180392 1</string>
 	<key>DVTConsoleTextInsertionPointColor</key>
@@ -54,7 +54,7 @@
 	<key>DVTMarkupTextOtherHeadingColor</key>
 	<string>1 1 1 0.5</string>
 	<key>DVTMarkupTextOtherHeadingFont</key>
-	<string>.AppleSystemUIFont - 14.0</string>
+	<string>.AppleSystemUIFont - 15.0</string>
 	<key>DVTMarkupTextPrimaryHeadingColor</key>
 	<string>0.803922 0.839216 0.956863 1</string>
 	<key>DVTMarkupTextPrimaryHeadingFont</key>
@@ -163,59 +163,59 @@
 	<key>DVTSourceTextSyntaxFonts</key>
 	<dict>
 		<key>xcode.syntax.attribute</key>
-		<string>MonaspaceNeon-Regular - 14.0</string>
+		<string>MonaspaceNeon-Regular - 15.0</string>
 		<key>xcode.syntax.character</key>
-		<string>MonaspaceNeon-Regular - 14.0</string>
+		<string>MonaspaceNeon-Regular - 15.0</string>
 		<key>xcode.syntax.comment</key>
-		<string>MonaspaceNeon-Regular - 14.0</string>
+		<string>MonaspaceNeon-Regular - 15.0</string>
 		<key>xcode.syntax.comment.doc</key>
-		<string>MonaspaceNeon-Regular - 14.0</string>
+		<string>MonaspaceNeon-Regular - 15.0</string>
 		<key>xcode.syntax.comment.doc.keyword</key>
-		<string>MonaspaceNeon-Bold - 14.0</string>
+		<string>MonaspaceNeon-Bold - 15.0</string>
 		<key>xcode.syntax.declaration.other</key>
-		<string>MonaspaceNeon-Regular - 14.0</string>
+		<string>MonaspaceNeon-Regular - 15.0</string>
 		<key>xcode.syntax.declaration.type</key>
-		<string>MonaspaceNeon-Regular - 14.0</string>
+		<string>MonaspaceNeon-Regular - 15.0</string>
 		<key>xcode.syntax.identifier.class</key>
-		<string>MonaspaceNeon-Regular - 14.0</string>
+		<string>MonaspaceNeon-Regular - 15.0</string>
 		<key>xcode.syntax.identifier.class.system</key>
-		<string>MonaspaceNeon-Regular - 14.0</string>
+		<string>MonaspaceNeon-Regular - 15.0</string>
 		<key>xcode.syntax.identifier.constant</key>
-		<string>MonaspaceNeon-Regular - 14.0</string>
+		<string>MonaspaceNeon-Regular - 15.0</string>
 		<key>xcode.syntax.identifier.constant.system</key>
-		<string>MonaspaceNeon-Regular - 14.0</string>
+		<string>MonaspaceNeon-Regular - 15.0</string>
 		<key>xcode.syntax.identifier.function</key>
-		<string>MonaspaceNeon-Regular - 14.0</string>
+		<string>MonaspaceNeon-Regular - 15.0</string>
 		<key>xcode.syntax.identifier.function.system</key>
-		<string>MonaspaceNeon-Regular - 14.0</string>
+		<string>MonaspaceNeon-Regular - 15.0</string>
 		<key>xcode.syntax.identifier.macro</key>
-		<string>MonaspaceNeon-Regular - 14.0</string>
+		<string>MonaspaceNeon-Regular - 15.0</string>
 		<key>xcode.syntax.identifier.macro.system</key>
-		<string>MonaspaceNeon-Regular - 14.0</string>
+		<string>MonaspaceNeon-Regular - 15.0</string>
 		<key>xcode.syntax.identifier.type</key>
-		<string>MonaspaceNeon-Regular - 14.0</string>
+		<string>MonaspaceNeon-Regular - 15.0</string>
 		<key>xcode.syntax.identifier.type.system</key>
-		<string>MonaspaceNeon-Regular - 14.0</string>
+		<string>MonaspaceNeon-Regular - 15.0</string>
 		<key>xcode.syntax.identifier.variable</key>
-		<string>MonaspaceNeon-Regular - 14.0</string>
+		<string>MonaspaceNeon-Regular - 15.0</string>
 		<key>xcode.syntax.identifier.variable.system</key>
-		<string>MonaspaceNeon-Regular - 14.0</string>
+		<string>MonaspaceNeon-Regular - 15.0</string>
 		<key>xcode.syntax.keyword</key>
-		<string>MonaspaceNeon-Bold - 14.0</string>
+		<string>MonaspaceNeon-Bold - 15.0</string>
 		<key>xcode.syntax.mark</key>
-		<string>MonaspaceNeon-Bold - 14.0</string>
+		<string>MonaspaceNeon-Bold - 15.0</string>
 		<key>xcode.syntax.markup.code</key>
-		<string>MonaspaceNeon-Regular - 14.0</string>
+		<string>MonaspaceNeon-Regular - 15.0</string>
 		<key>xcode.syntax.number</key>
-		<string>MonaspaceNeon-Regular - 14.0</string>
+		<string>MonaspaceNeon-Regular - 15.0</string>
 		<key>xcode.syntax.plain</key>
-		<string>MonaspaceNeon-Regular - 14.0</string>
+		<string>MonaspaceNeon-Regular - 15.0</string>
 		<key>xcode.syntax.preprocessor</key>
-		<string>MonaspaceNeon-Regular - 14.0</string>
+		<string>MonaspaceNeon-Regular - 15.0</string>
 		<key>xcode.syntax.string</key>
-		<string>MonaspaceNeon-Regular - 14.0</string>
+		<string>MonaspaceNeon-Regular - 15.0</string>
 		<key>xcode.syntax.url</key>
-		<string>MonaspaceNeon-Regular - 14.0</string>
+		<string>MonaspaceNeon-Regular - 15.0</string>
 	</dict>
 </dict>
 </plist>
