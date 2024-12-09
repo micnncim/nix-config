@@ -41,7 +41,7 @@
         }
         {
           key = "S";
-          context = "global";
+          context = "global,files";
           command = "op plugin run -- gh sync";
           description = "Sync repository";
           loadingText = "Syncing repository...";
