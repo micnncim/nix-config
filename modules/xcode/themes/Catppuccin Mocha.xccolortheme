@@ -1,4 +1,3 @@
-<!-- https://github.com/catppuccin/xcode/blob/main/themes/Catppuccin%20Mocha.xccolortheme -->
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
@@ -15,13 +14,13 @@
 	<string>0.65098 0.890196 0.631373 1</string>
 	<key>DVTConsoleDebuggerPromptTextFont</key>
 	<string>MonaspaceNeon-Bold - 15.0</string>
-	<key>DVTConsoleExecutableInputTextColor</key>
+	<key>DVTConsoleExectuableInputTextColor</key>
 	<string>0.803922 0.839216 0.956863 1</string>
-	<key>DVTConsoleExecutableInputTextFont</key>
-	<string>MonaspaceNeon-Medium - 15.0</string>
-	<key>DVTConsoleExecutableOutputTextColor</key>
+	<key>DVTConsoleExectuableInputTextFont</key>
+	<string>MonaspaceNeon-Regular - 15.0</string>
+	<key>DVTConsoleExectuableOutputTextColor</key>
 	<string>0.803922 0.839216 0.956863 1</string>
-	<key>DVTConsoleExecutableOutputTextFont</key>
+	<key>DVTConsoleExectuableOutputTextFont</key>
 	<string>MonaspaceNeon-Bold - 15.0</string>
 	<key>DVTConsoleTextBackgroundColor</key>
 	<string>0.117647 0.117647 0.180392 1</string>
@@ -31,6 +30,8 @@
 	<string>0.270588 0.278431 0.352941 1</string>
 	<key>DVTFontAndColorVersion</key>
 	<integer>1</integer>
+	<key>DVTLineSpacing</key>
+	<real>1</real>
 	<key>DVTMarkupTextBackgroundColor</key>
 	<string>0.18856 0.195 0.22444 1</string>
 	<key>DVTMarkupTextBorderColor</key>
@@ -211,6 +212,16 @@
 		<key>xcode.syntax.plain</key>
 		<string>MonaspaceNeon-Regular - 15.0</string>
 		<key>xcode.syntax.preprocessor</key>
+		<string>MonaspaceNeon-Regular - 15.0</string>
+		<key>xcode.syntax.regex</key>
+		<string>MonaspaceNeon-Regular - 15.0</string>
+		<key>xcode.syntax.regex.capturename</key>
+		<string>MonaspaceNeon-Regular - 15.0</string>
+		<key>xcode.syntax.regex.charname</key>
+		<string>MonaspaceNeon-Regular - 15.0</string>
+		<key>xcode.syntax.regex.number</key>
+		<string>MonaspaceNeon-Regular - 15.0</string>
+		<key>xcode.syntax.regex.other</key>
 		<string>MonaspaceNeon-Regular - 15.0</string>
 		<key>xcode.syntax.string</key>
 		<string>MonaspaceNeon-Regular - 15.0</string>
