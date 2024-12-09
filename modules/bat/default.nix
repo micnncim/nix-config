@@ -7,6 +7,7 @@
       map-syntax = [
         "*.lock:JSON"
         "*ignore:Git Ignore"
+        "Package.resolved:JSON"
       ];
     };
   };
