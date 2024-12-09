@@ -35,7 +35,7 @@
         {
           key = "O";
           context = "global";
-          command = "git push && op plugin run -- gh pr create --fill --web";
+          command = "git push && op plugin run -- gh pr create --web";
           description = "Create pull request";
           loadingText = "Creating pull request...";
         }
