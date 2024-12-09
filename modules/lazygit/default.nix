@@ -28,7 +28,7 @@
         {
           key = "o";
           context = "localBranches";
-          command = "op plugin run -- gh browse --branch {{.SelectedLocalBranch.Name}}";
+          command = "if state=$(op plugin run -- gh pr view --json state --jq .state) && [ \"$state\" = \"OPEN\" ]; then op plugin run -- gh pr view --web; else op plugin run -- gh browse --branch {{.SelectedLocalBranch.Name}}; fi";
           description = "Open branch in browser";
           loadingText = "Opening branch in browser...";
         }
