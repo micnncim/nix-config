@@ -16,8 +16,8 @@
       };
       gui = {
         language = "en";
-        commitAuthorShortLength = 16;
-        commitAuthorLongLength = 24;
+        commitAuthorShortLength = 8;
+        commitAuthorLongLength = 16;
         spinner.frames = [ "⣾" "⣽" "⣻" "⢿" "⡿" "⣟" "⣯" "⣷" ];
       };
       update.method = "never";
