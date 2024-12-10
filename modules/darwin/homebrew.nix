@@ -21,6 +21,7 @@
       "google-chrome"
       "google-drive"
       "google-japanese-ime"
+      "hammerspoon"
       "imageoptim"
       "karabiner-elements"
       "keyboardcleantool"

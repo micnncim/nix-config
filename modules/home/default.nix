@@ -13,14 +13,15 @@
     ../direnv
     ../editorconfig
     ../fd
-    ../fonts
     ../fish
+    ../fonts
     ../fzf
     ../gh
     ../ghq
     ../git
     ../go
     ../gpg
+    ../hammerspoon
     ../karabiner
     ../lazygit
     ../man
