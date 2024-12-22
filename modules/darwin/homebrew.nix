@@ -36,7 +36,11 @@
       "todoist"
       "visual-studio-code"
       "vivaldi"
+      "voicevox"
       "zoom"
+    ];
+    taps = [
+      "VOICEVOX/voicevox"
     ];
     masApps = {
       "Get Plain Text" = 508368068;
