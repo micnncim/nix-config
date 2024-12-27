@@ -38,6 +38,10 @@
       "vivaldi"
       "voicevox"
       "zoom"
+
+      # TODO(micnncim): Switch to Nix after the following PR is merged:
+      # Ref: https://github.com/NixOS/nixpkgs/pull/368404
+      "ghostty"
     ];
     taps = [
       "VOICEVOX/voicevox"

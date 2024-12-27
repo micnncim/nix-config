@@ -17,6 +17,7 @@
     ../fonts
     ../fzf
     ../gh
+    ../ghostty
     ../ghq
     ../git
     ../go
