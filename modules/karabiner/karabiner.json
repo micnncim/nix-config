@@ -137,7 +137,8 @@
                                             "^org\\.macports\\.X11$",
                                             "^com\\.sublimetext\\.",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com\\.todesktop\\.230313mzl4w4u92$"
+                                            "^com\\.todesktop\\.230313mzl4w4u92$",
+                                            "^com\\.mitchellh\\.ghostty$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -231,7 +232,8 @@
                                             "^org\\.macports\\.X11$",
                                             "^com\\.sublimetext\\.",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com\\.todesktop\\.230313mzl4w4u92$"
+                                            "^com\\.todesktop\\.230313mzl4w4u92$",
+                                            "^com\\.mitchellh\\.ghostty$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -295,7 +297,8 @@
                                             "^org\\.macports\\.X11$",
                                             "^com\\.sublimetext\\.",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com\\.todesktop\\.230313mzl4w4u92$"
+                                            "^com\\.todesktop\\.230313mzl4w4u92$",
+                                            "^com\\.mitchellh\\.ghostty$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -358,7 +361,8 @@
                                             "^org\\.macports\\.X11$",
                                             "^com\\.sublimetext\\.",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com\\.todesktop\\.230313mzl4w4u92$"
+                                            "^com\\.todesktop\\.230313mzl4w4u92$",
+                                            "^com\\.mitchellh\\.ghostty$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -467,7 +471,8 @@
                                             "^org\\.macports\\.X11$",
                                             "^com\\.sublimetext\\.",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com\\.todesktop\\.230313mzl4w4u92$"
+                                            "^com\\.todesktop\\.230313mzl4w4u92$",
+                                            "^com\\.mitchellh\\.ghostty$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -531,7 +536,8 @@
                                             "^org\\.macports\\.X11$",
                                             "^com\\.sublimetext\\.",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com\\.todesktop\\.230313mzl4w4u92$"
+                                            "^com\\.todesktop\\.230313mzl4w4u92$",
+                                            "^com\\.mitchellh\\.ghostty$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -594,7 +600,8 @@
                                             "^org\\.macports\\.X11$",
                                             "^com\\.sublimetext\\.",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com\\.todesktop\\.230313mzl4w4u92$"
+                                            "^com\\.todesktop\\.230313mzl4w4u92$",
+                                            "^com\\.mitchellh\\.ghostty$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -657,7 +664,8 @@
                                             "^org\\.macports\\.X11$",
                                             "^com\\.sublimetext\\.",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com\\.todesktop\\.230313mzl4w4u92$"
+                                            "^com\\.todesktop\\.230313mzl4w4u92$",
+                                            "^com\\.mitchellh\\.ghostty$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -720,7 +728,8 @@
                                             "^org\\.macports\\.X11$",
                                             "^com\\.sublimetext\\.",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com\\.todesktop\\.230313mzl4w4u92$"
+                                            "^com\\.todesktop\\.230313mzl4w4u92$",
+                                            "^com\\.mitchellh\\.ghostty$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -878,7 +887,8 @@
                                             "^org\\.macports\\.X11$",
                                             "^com\\.sublimetext\\.",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com\\.todesktop\\.230313mzl4w4u92$"
+                                            "^com\\.todesktop\\.230313mzl4w4u92$",
+                                            "^com\\.mitchellh\\.ghostty$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -941,7 +951,8 @@
                                             "^org\\.macports\\.X11$",
                                             "^com\\.sublimetext\\.",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com\\.todesktop\\.230313mzl4w4u92$"
+                                            "^com\\.todesktop\\.230313mzl4w4u92$",
+                                            "^com\\.mitchellh\\.ghostty$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -1009,7 +1020,8 @@
                                             "^org\\.macports\\.X11$",
                                             "^com\\.sublimetext\\.",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com\\.todesktop\\.230313mzl4w4u92$"
+                                            "^com\\.todesktop\\.230313mzl4w4u92$",
+                                            "^com\\.mitchellh\\.ghostty$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -1077,7 +1089,8 @@
                                             "^org\\.macports\\.X11$",
                                             "^com\\.sublimetext\\.",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com\\.todesktop\\.230313mzl4w4u92$"
+                                            "^com\\.todesktop\\.230313mzl4w4u92$",
+                                            "^com\\.mitchellh\\.ghostty$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -1150,7 +1163,8 @@
                                             "^org\\.macports\\.X11$",
                                             "^com\\.sublimetext\\.",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com\\.todesktop\\.230313mzl4w4u92$"
+                                            "^com\\.todesktop\\.230313mzl4w4u92$",
+                                            "^com\\.mitchellh\\.ghostty$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
@@ -1218,7 +1232,8 @@
                                             "^org\\.macports\\.X11$",
                                             "^com\\.sublimetext\\.",
                                             "^com\\.microsoft\\.VSCode$",
-                                            "^com\\.todesktop\\.230313mzl4w4u92$"
+                                            "^com\\.todesktop\\.230313mzl4w4u92$",
+                                            "^com\\.mitchellh\\.ghostty$"
                                         ],
                                         "type": "frontmost_application_unless"
                                     }
