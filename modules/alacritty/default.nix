@@ -2,7 +2,10 @@
 
 {
   programs.alacritty = {
-    enable = true;
+    # TODO(micnncim): Delete the whole module a while after we've migrated to
+    # Ghostty.
+    enable = false;
+
     # We manage most of the configuration in YAML files but here we manage some
     # values dynamically from Nix configuration and some tiny values for
     # convenience.
