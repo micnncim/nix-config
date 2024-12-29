@@ -71,50 +71,53 @@ in
         alt-shift-k = [ "join-with up" "mode main" ];
         alt-shift-l = [ "join-with right" "mode main" ];
       };
-      # TODO(micnncim): Add back in after the following issue is fixed:
-      # https://github.com/LnL7/nix-darwin/issues/1142
-      # on-window-detected = [
-      #   {
-      #     # 1Password
-      #     "if".app-id = "com.1password.1password";
-      #     run = [ "layout floating" ]; # Exclude
-      #   }
-      #   {
-      #     # Alacritty
-      #     "if".app-id = "org.alacritty";
-      #     run = [ "move-node-to-workspace ${workspaces.work}" ];
-      #   }
-      #   {
-      #     # Code
-      #     "if".app-id = "com.microsoft.VSCode";
-      #     run = [ "move-node-to-workspace ${workspaces.work}" ];
-      #   }
-      #   {
-      #     # Cursor
-      #     "if".app-id = "com.todesktop.230313mzl4w4u92";
-      #     run = [ "move-node-to-workspace ${workspaces.work}" ];
-      #   }
-      #   {
-      #     # Dictionary
-      #     "if".app-id = "com.apple.Dictionary";
-      #     run = [ "layout floating" ]; # Exclude
-      #   }
-      #   {
-      #     # Simulator
-      #     "if".app-id = "com.apple.iphonesimulator";
-      #     run = [ "layout floating" ]; # Exclude
-      #   }
-      #   {
-      #     # System Settings
-      #     "if".app-id = "com.apple.systempreferences";
-      #     run = [ "layout floating" ]; # Exclude
-      #   }
-      #   {
-      #     # Xcode
-      #     "if".app-id = "com.apple.dt.Xcode";
-      #     run = [ "move-node-to-workspace ${workspaces.work}" ];
-      #   }
-      # ];
+      on-window-detected = [
+        {
+          # 1Password
+          "if".app-id = "com.1password.1password";
+          run = [ "layout floating" ]; # Exclude
+        }
+        {
+          # Alacritty
+          "if".app-id = "org.alacritty";
+          run = [ "move-node-to-workspace ${workspaces.work}" ];
+        }
+        {
+          # Code
+          "if".app-id = "com.microsoft.VSCode";
+          run = [ "move-node-to-workspace ${workspaces.work}" ];
+        }
+        {
+          # Cursor
+          "if".app-id = "com.todesktop.230313mzl4w4u92";
+          run = [ "move-node-to-workspace ${workspaces.work}" ];
+        }
+        {
+          # Dictionary
+          "if".app-id = "com.apple.Dictionary";
+          run = [ "layout floating" ]; # Exclude
+        }
+        {
+          # Ghostty
+          "if".app-id = "com.mitchellh.ghostty";
+          run = [ "move-node-to-workspace ${workspaces.work}" ];
+        }
+        {
+          # Simulator
+          "if".app-id = "com.apple.iphonesimulator";
+          run = [ "layout floating" ]; # Exclude
+        }
+        {
+          # System Settings
+          "if".app-id = "com.apple.systempreferences";
+          run = [ "layout floating" ]; # Exclude
+        }
+        {
+          # Xcode
+          "if".app-id = "com.apple.dt.Xcode";
+          run = [ "move-node-to-workspace ${workspaces.work}" ];
+        }
+      ];
     };
   };
 }
