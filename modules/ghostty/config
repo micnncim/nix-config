@@ -1,7 +1,0 @@
-theme = catppuccin-mocha
-font-family = "MonaspiceNe Nerd Font"
-font-size = 16
-
-# TODO(micnncim): Tweak the configuration to make it work nicely with
-# AeroSpace.
-# Ref: https://github.com/nikitabobko/AeroSpace/issues/68
