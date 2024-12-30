@@ -10,12 +10,15 @@ in
     theme = "catppuccin-mocha";
     font-family = "MonaspiceNe Nerd Font";
     font-size = 16;
+    font-feature = "-dlig";
 
     window-padding-x = 10;
     window-padding-y = 10;
 
     # Set " " to hide the title
     title = ''" "'';
+
+    macos-option-as-alt = true;
 
     command = "${pkgs.tmux}/bin/tmux";
 
