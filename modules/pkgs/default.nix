@@ -33,6 +33,7 @@
       shellcheck
       shfmt
       vhs
+      xsv
 
       # Language servers
       nil
