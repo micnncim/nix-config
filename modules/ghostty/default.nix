@@ -4,6 +4,8 @@ let
   tmuxPrefix = "\\x14"; # \x14 (Ctrl+t)
 in
 {
+  home.packages = [ pkgs.unstable.ghostty ];
+
   # TODO(micnncim): Switch to Home Manager after the following PR is merged:
   # Ref: https://github.com/nix-community/home-manager/pull/6235
   xdg.configFile."ghostty/config".text = lib.generators.toKeyValue { listsAsDuplicateKeys = true; } {
