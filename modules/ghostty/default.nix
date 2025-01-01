@@ -21,6 +21,7 @@ in
     title = ''" "'';
 
     macos-option-as-alt = true;
+    auto-update = "off";
 
     command = "${pkgs.tmux}/bin/tmux";
 
