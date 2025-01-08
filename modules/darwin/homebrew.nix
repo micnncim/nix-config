@@ -32,6 +32,7 @@
       "slack"
       "stats"
       "todoist"
+      "visual-studio-code"
       "vivaldi"
       "voicevox"
       "zoom"

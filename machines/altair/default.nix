@@ -17,7 +17,6 @@
   homebrew = {
     casks = [
       "google-chrome"
-      "visual-studio-code"
       "tailscale"
     ];
   };
