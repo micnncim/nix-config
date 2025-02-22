@@ -47,6 +47,9 @@
       qemu
       stern
 
+      # LLM
+      ollama
+
       # Nix
       cachix
       comma
